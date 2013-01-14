@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>This sample illustrates how to create a Splitter with Nested Side Splitters</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxtabs.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            $('#splitContainer').jqxSplitter({ height: 600, width: 600, orientation: 'vertical', theme: theme, panels: [{ size: '20%' }, { size: '50%'}] });
+            $('#leftSplitter').jqxSplitter({ height: '100%', width: '100%', orientation: 'horizontal', theme: theme, panels: [{ size: '30%' }, { size: '30%'}] });
+            $('#rightSplitter').jqxSplitter({ height: '100%', width: '100%', orientation: 'horizontal', theme: theme, panels: [{ size: '30%' }, { size: '30%'}] });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id="splitContainer">
+        <div id="leftSplitter">
+            <div class="splitter-panel">
+                West - North
+            </div>
+            <div class="splitter-panel">
+                West - Center
+            </div>
+            <div class="splitter-panel">
+                West - South
+            </div>
+        </div>
+        <div>
+            Center</div>
+        <div id="rightSplitter">
+            <div class="splitter-panel">
+                East - North
+            </div>
+            <div class="splitter-panel">
+                East - Center
+            </div>
+            <div class="splitter-panel">
+                East - South
+            </div>
+        </div>
+    </div>
+</body>
+</html>

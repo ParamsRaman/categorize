@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Button, Toggle Button, Repeat Button, Link Button, Help Documentation" />
+    <meta name="description" content="This page represents the help documentation of the jqxButton, jqxToggleButton, jqxRepeatButton and jqxLinkButton widgets." />
+    <title>jqxDropDownButton</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the dropDownButton.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a dropDownButton with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton({disabled: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the button height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton({ height: '25px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the button width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton({ width: '250px'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>enableBrowserBoundsDetection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDropDownButton with the <code>enableBrowserBoundsDetection</code>
+                            property specified. When this property is set to true, the popup may open
+                            above the button, if there's not enough available space below the button.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton({ enableBrowserBoundsDetection: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span50'>autoOpen</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the DropDown is automatically opened when the mouse cursor is moved over the widget.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDropDownButton with the <code>autoOpen</code> property specified.
+                        </p>
+                        <pre><code>$("#dropdownbutton").jqxDropDownButton({ autoOpen: true });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>dropDownHorizontalAlignment</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'left'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Sets the DropDown's alignment. Possible values: 'left' and 'right'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <pre><code>$('#dropdownbutton').jqxDropDownButton({ dropDownHorizontalAlignment: 'right'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+    <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span29'>openDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the delay of the 'open' animation.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the openDelay property
+                        </p>
+                        <pre><code>
+$('#button').jqxDropDownButton({openDelay: 200});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+      <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span30'>closeDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the delay of the 'close' animation.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the closeDelay property
+                        </p>
+                        <pre><code>
+$('#button').jqxDropDownButton({closeDelay: 200});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+     <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span42'>animationType</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'slide'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the type of the animation. Possible values: 'fade', 'slide' and 'none'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the animationType property
+                        </p>
+                        <pre><code>
+$('#button').jqxDropDownButton({animationType: 'none'});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>open</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the button's popup is opened.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the open event by type: jqxDropDownButton.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').bind('open', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>close</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the button's popup is closed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the close event by type: jqxDropDownButton.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').bind('close', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>setContent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the button's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the setContent method.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton('setContent', 'my content'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>getContent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the button's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the getContent method.
+                        </p>
+                        <pre><code>var content = $('#jqxDropDownButton').jqxDropDownButton('getContent'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>open</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Shows the button's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the showDropDown method.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton('open'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>close</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Hides the button's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the hideDropDown method.
+                        </p>
+                        <pre><code>$('#jqxDropDownButton').jqxDropDownButton('close'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

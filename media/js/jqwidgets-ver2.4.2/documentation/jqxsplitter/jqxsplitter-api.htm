@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Splitter JavaScript, jQuery Splitter, Splitter, Splitter Widget, jqxSplitter, Split Layout" />
+    <meta name="description" content="This page represents the help documentation of the jqxSplitter widget." />
+    <title>jqxSplitter API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+        <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+      <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                   null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the splitter width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({width: '200px'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the splitter's height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({ height:"300px" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>panels</span>
+                </td>
+                <td>
+                    <span>Array</span>
+                </td>
+                <td>
+                    []
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or get's panels properties.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>panels</code> property specified.
+                        </p>
+                        <pre><code>
+$('#jqxSplitter').jqxSplitter(
+    {panels:[ 
+    { min: 300, max:'450px', size: 330, 
+        collapsible: false, collapsed: false, resizable: true }, 
+    { min: 100, max:'550px', 
+        collapsible: true, collapsed: false, resizable: true }]});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>orientation</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'horizontal'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or get's splitter's orientation.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>orientation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({orientation:"vertical"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>cookies</span>
+                </td>
+                <td>
+                    <span>Bool</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or get's whether the splitter layout is going to be saved in cookies on it's change.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>cookies</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({cookies: true});</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>cookieOptions</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    {}
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or get's cookies options.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>cookieOptions</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({cookieOptions: {domain: 'jqwidgets.com', expires: 90}});</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>enableCollapseAnimation</span>
+                </td>
+                <td>
+                    <span>Bool</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets whether the collapse animation is enabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>enableCollapseAnimation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({enableCollapseAnimation: false});</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>animationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets the animation duration.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>animationDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({animationDuration: 300});</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the splitter is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>splitBarSize</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    5
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets splitbar's size. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>splitBarSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({ splitBarSize: '15px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>touchSplitBarSize</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    15
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets splitbar's size when a touch device is used. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSplitter with the <code>touchSplitBarSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter({ touchSplitBarSize: '15px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>resize</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Resize event is triggered when panels are resized.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the resize event by type: jqxSplitter.
+                        </p>
+                        <pre><code>$('#jqxSplitter').bind('resize', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>expanded</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Expanded is triggered when any panel have been expanded.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the expanded event by type: jqxSplitter.
+                        </p>
+                        <pre><code>$('#jqxSplitter').bind('expanded', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>resizeStart</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Resize start is triggered when any split bar start being dragged.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the resizeStart event by type: jqxSplitter.
+                        </p>
+                        <pre><code>$('#jqxSplitter').bind('resizeStart', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>collapsed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Collapsed event is triggered when any panel have been collapsed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the collapsed event by type: jqxSplitter.
+                        </p>
+                        <pre><code>$('#jqxSplitter').bind('collapsed', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+   
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>exportLayout</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Exporting the current panel's state into a JSON string.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the exportLayout method.
+                        </p>
+                        <pre><code> $('#jqxSplitter').jqxSplitter('exportLayout');</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>importLayout</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p> Setting splitter layout with a JSON string.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the importLayout method.
+                        </p>
+                        <pre><code>
+$('#jqxSplitter').jqxSplitter('setTitle', '
+    { "panels": [
+    {"max":"200","min":"100","collapsible":"false","resizable":"true",
+        "collapsed":"false","size":"100" },
+    {"collapsible":"true","resizable":"true",
+        "collapsed":"false","size":"150" },
+    {"min":"0","collapsible":"true","resizable":"true",
+        "collapsed":"false","size":"10" },
+    {"min":"0","collapsible":"true","resizable":"true",
+        "collapsed":"false","size":"1319" }],
+    "orientation": "horizontal" }');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>expandAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Expanding specific panel if it's allready have been collapsed.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the expandAt method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('expandAt', 3);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>collapseAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Collapsing specific panel if it's expanded.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the collapseAt method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('collapseAt', 3);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Disabling the splitter</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('disable');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Enabling the splitter</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('enable');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>refresh</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Updates the splitter's layout</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the refresh method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('refresh');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>showCollapseButtonAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Showing collapse button on specific split bar.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the showCollapseButtonAt method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('showCollapseButtonAt', 1);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>hideCollapseButtonAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Hiding collapse button on specific split bar.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the hideCollapseButtonAt method.
+                        </p>
+                        <pre><code>$('#jqxSplitter').jqxSplitter('hideCollapseButtonAt', 1);</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

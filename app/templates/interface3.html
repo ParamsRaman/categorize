@@ -1,0 +1,191 @@
+<html>
+<title>Categorization HIT</title>
+
+<head>
+		<!-- Include the required JavaScript libraries: -->
+	        <script type="text/javascript" src="/js/jqwidgets-ver2.4.2/scripts/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/scripts/gettheme.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxbuttons.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxscrollbar.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxpanel.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxtree.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxcheckbox.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxlistbox.js"></script>
+		<script type="text/javascript" src="/js/jQuery.awesomeCloud.plugin-abcfb86/jquery.awesomeCloud-0.2.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen" />
+		<link rel="stylesheet" href="/js/jqwidgets-ver2.4.2/jqwidgets/styles/jqx.base.css" type="text/css" />
+		<style type="text/css">
+					.wordcloud {
+						border: 1px solid #036;
+						height: 250px;
+						margin: 20px 4px 0px 20px;
+						padding: 0px;
+						page-break-after: always;
+						page-break-inside: avoid;
+						width: 250px;
+					}
+				</style>
+		
+		<script type="text/javascript">
+				var counter = 0;
+		        $(document).ready(function () {
+		            // Create jqxTree 
+		            var theme = getTheme();
+		
+					var movies = new Array();
+
+		            // List of products to categorize
+		            movies[0] = { ID: 1, Image: '1.jpg', Title: "Samsonite Luggage 2 Pack Vinyl ID Tag" };
+		            movies[1] = { ID: 2, Image: '2.jpg', Title: "Seirus Innovation Men's Hyperlite All Weather Glove" };
+		            movies[2] = { ID: 3, Image: '3.jpg', Title: "180s Women's Tahoe Ear Warmer" };
+					movies[3] = { ID: 4, Image: '4.jpg', Title: "Intimo Men's Classic Satin Robe" };
+					movies[4] = { ID: 5, Image: '5.jpg', Title: "Sewell Direct SW-29480 HDTV Antenna" };
+					movies[5] = { ID: 6, Image: '6.jpg', Title: "SANUS SYSTEMS BF-31B Wood Speaker Stands" };
+					movies[6] = { ID: 7, Image: '7.jpg', Title: "Logitech B100 Optical USB Mouse" };
+					movies[7] = { ID: 8, Image: '8.jpg', Title: "Orion SkyScanner 100mm TableTop Reflector Telescope" };
+					movies[8] = { ID: 9, Image: '9.jpg', Title: "Bogs Men's Classic Ultra Mid Waterproof Boot" };
+					movies[9] = { ID: 10, Image: '10.jpg', Title: "ASICS Men's Japan Thunder 3 Track and Field Shoe" };
+					movies[10] = { ID: 11, Image: '11.jpg', Title: "BANDOLINO HAPPYME WEDGE SANDAL LIGHT NATURAL SYNTHETIC WOMENS SIZE 7.5 M" };
+					movies[11] = { ID: 12, Image: '12.jpg', Title: "Rubbermaid FGH12500 Invader Side Gate Wet Mop Gray Aluminum Handle with Large Yellow Plastic Head, 54\" Length" };
+					movies[12] = { ID: 13, Image: '13.jpg', Title: "Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA" };
+					movies[13] = { ID: 14, Image: '14.jpg', Title: "Happy Birthday Confetti" };
+					movies[14] = { ID: 15, Image: '15.jpg', Title: "Heath Zenith SL-6135 Basic Solutions Indoor Remote Control" };
+					movies[15] = { ID: 16, Image: '16.jpg', Title: "Totally Bamboo 20-7930 3-Piece Cutting Board Set" };
+					movies[16] = { ID: 17, Image: '17.jpg', Title: "Kikkerland Drunk Shot Glasses, Set of 4" };
+					movies[17] = { ID: 18, Image: '18.jpg', Title: "LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins" };
+					movies[18] = { ID: 19, Image: '19.jpg', Title: "Ecko Juniors Sundress Dress - Style ERF06075" };
+					movies[19] = { ID: 20, Image: '20.jpg', Title: "37mm 0.3x Baby Death Fisheye Lens for Video Camcorder" };
+					movies[20] = { ID: 21, Image: '', Title: "" };
+
+					var innerText = "<img src=\"/images/" + movies[counter]["ID"] + ".jpg\" alt=\"pic1\" border=\"1\" height=\"180px\" width=\"180px\" style=\"vertical-align: middle;\">&nbsp;&nbsp;<span style=\"vertical-align: middle;\">" + movies[counter]["Title"] + "&nbsp;&nbsp;</span>";
+					$(".item").html(innerText);
+		
+		            // create jqxTree
+		            $('#jqxTree').jqxTree({ height: '400px', hasThreeStates: false, checkboxes: true, width: '330px', theme: theme });
+		            $('#jqxCheckBox').jqxCheckBox({ width: '200px', height: '25px', checked: true, theme: theme });
+		            $('#jqxCheckBox').bind('change', function (event) {
+		                var checked = event.args.checked;
+		                $('#jqxTree').jqxTree({ hasThreeStates: checked });
+		            });
+		            $("#jqxTree").jqxTree('selectItem', $("#home")[0]);
+		        });
+		</script>
+		
+		<script type="text/javascript">
+		        $(document).ready(function () {
+		            // create jqxCheckBox.
+		            $("#jqxcheckbox1").jqxCheckBox({ width: 120, height: 25 });
+		            // bind to change event.
+		            $("#jqxcheckbox1").bind('change', function (event) {
+		                var checked = event.args.checked;
+		                $('#log').html('checked: ' + checked);
+		            });
+					$("#jqxcheckbox2").jqxCheckBox({ width: 120, height: 25 });
+		            // bind to change event.
+		            $("#jqxcheckbox2").bind('change', function (event) {
+		                var checked = event.args.checked;
+		                $('#log').html('checked: ' + checked);
+		            });
+					$("#jqxcheckbox3").jqxCheckBox({ width: 120, height: 25 });
+		            // bind to change event.
+		            $("#jqxcheckbox3").bind('change', function (event) {
+		                var checked = event.args.checked;
+		                $('#log').html('checked: ' + checked);
+		            });
+		        });
+
+	     function isValid(){
+                 var checked1 = $("#jqxcheckbox1").jqxCheckBox('checked');
+                 var checked2 = $("#jqxcheckbox2").jqxCheckBox('checked');
+                 var checked3 = $("#jqxcheckbox3").jqxCheckBox('checked');
+	   	 if(!checked1 && !checked2 && !checked3)
+		 {
+		     alert('Please select atleast one suitable category..');
+		     return false;
+		 }
+		 else
+		 {
+		     return true;
+		 }
+	     }
+
+		</script>
+</head>
+
+<body>
+	<form action='' onsubmit="return isValid();">
+	<div class="box"><div class="qnlabel" style="float: none">&nbsp;&nbsp;Select the word cloud that best applies to the following shopping product:</div>
+    	<div class="item"><img src="/images/18.jpg" alt="pic1" border="1" height="180px" width="180px" style="vertical-align: middle;"> &nbsp;&nbsp;<span style="vertical-align: middle;">Joe Browns Women's Whimsical Knit Tunic And Scarf &nbsp;&nbsp;</span> </div>
+		<div id="choices">
+		
+			<div id="wordcloud1" class="wordcloud" style="float: left">
+				<span data-weight="18">clothing</span><span data-weight="16">gloves</span><span data-weight="24">womens</span><span data-weight="22">winter clothing</span><span data-weight="19">tank</span><span data-weight="21">sundresses</span>
+			</div>
+			
+			<div id="wordcloud2" class="wordcloud" style="float: left">
+				<span data-weight="14">electronics</span><span data-weight="16">camcorders</span><span data-weight="14">TVs</span><span data-weight="22">lenses</span><span data-weight="16">blu-ray discs</span><span data-weight="15">reflectors</span>
+			</div>
+			
+			<div id="wordcloud3" class="wordcloud" style="float: left">
+				<span data-weight="20">knives</span><span data-weight="27">cutting boards</span><span data-weight="38">pans</span><span data-weight="26">casseroles</span><span data-weight="20">steamers</span><span data-weight="19">wine glasses</span>
+			</div>
+			<div id="checkboxes" style="float: left">
+				<div id='jqxcheckbox1' class='jqxcheckbox' style="float:left; padding-left:100px; padding-top: 10px">Select Cloud1</div><div id='jqxcheckbox2' class='jqxcheckbox' style="float:left; padding-left:150px; padding-top: 10px">Select Cloud2</div><div id='jqxcheckbox3' class='jqxcheckbox' style="float:left; padding-left:150px; padding-top: 10px">Select Cloud3</div>
+			</div>
+		
+		</div>
+		<div class="buttonbar"><input type="submit" value="Next>"></div>
+    </div>
+    
+    <script>
+				$(document).ready(function(){
+					$("#wordcloud1").awesomeCloud({
+						"size" : {
+							"grid" : 16,
+							"normalize" : false
+						},
+						"options" : {
+							"color" : "random-dark",
+							"rotationRatio" : 0.2,
+							"printMultiplier" : 3,
+							"sort" : "random"
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "square"
+					});
+					$("#wordcloud2").awesomeCloud({
+						"size" : {
+							"grid" : 16,
+							"normalize" : false
+						},
+						"options" : {
+							"color" : "random-dark",
+							"rotationRatio" : 0.2,
+							"printMultiplier" : 3,
+							"sort" : "random"
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "square"
+					});
+					$("#wordcloud3").awesomeCloud({
+						"size" : {
+							"grid" : 16,
+							"normalize" : false
+						},
+						"options" : {
+							"color" : "random-dark",
+							"rotationRatio" : 0.2,
+							"printMultiplier" : 3,
+							"sort" : "random"
+						},
+						"font" : "'Times New Roman', Times, serif",
+						"shape" : "square"
+					});
+				});
+	</script>
+     </form>				
+</body>
+      
+</html>

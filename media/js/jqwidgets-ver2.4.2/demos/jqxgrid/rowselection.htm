@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>This example shows how to use the Grid Row Selection API.
+    </title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.classic.css" type="text/css" />
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.darkblue.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="generatedata.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+
+            // prepare the data
+            var data = generatedata(200);
+
+            var source =
+            {
+                localdata: data,
+                datatype: "array"
+            };
+
+            // initialize jqxGrid
+            $("#jqxgrid").jqxGrid(
+            {
+                width: 670,
+                source: source,
+                theme: theme,
+                columns: [
+                  { text: 'Id', datafield: 'id', width: 50 },
+                  { text: 'First Name', datafield: 'firstname', width: 100 },
+                  { text: 'Last Name', datafield: 'lastname', width: 100 },
+                  { text: 'Product', datafield: 'productname', width: 180 },
+                  { text: 'Quantity', datafield: 'quantity', width: 80, cellsalign: 'right' },
+                  { text: 'Unit Price', datafield: 'price', width: 90, cellsalign: 'right', cellsformat: 'c2' },
+                  { text: 'Total', datafield: 'total', width: 100, cellsalign: 'right', cellsformat: 'c2' }
+                ]
+            });
+
+            // initialize buttons and checkboxes.
+            $("#selectrowbutton").jqxButton({ theme: theme });
+            $("#scrolltobutton").jqxButton({ theme: theme });
+            $("#clearselectionbutton").jqxButton({ theme: theme });
+            $("#enableselection").jqxDropDownList({ theme: theme, autoDropDownHeight: true, dropDownWidth: 230, width: 120, height: 25, selectedIndex: 1, source: ['none', 'single row', 'multiple rows',
+             'multiple rows extended']
+            });
+            $("#enablehover").jqxCheckBox({ theme: theme, checked: true });
+
+            // select a row.
+            $("#selectrowbutton").click(function () {
+                var index = parseInt($("#rowindexinput").val());
+                if (!isNaN(index)) {
+                    $("#jqxgrid").jqxGrid('selectrow', index);
+                }
+            });
+
+            // clears the selection.
+            $("#clearselectionbutton").click(function () {
+                $("#jqxgrid").jqxGrid('clearselection');
+            });
+
+            // scroll to a row.
+            $("#scrolltobutton").click(function () {
+                var index = parseInt($("#rowindexinput2").val());
+                if (!isNaN(index)) {
+                    $("#jqxgrid").jqxGrid('ensurerowvisible', index);
+                }
+            });
+
+            // enable or disable the selection.
+            $("#enableselection").bind('select', function (event) {
+                var index = event.args.index;
+                switch (index) {
+                    case 0:
+                        $("#jqxgrid").jqxGrid('selectionmode', 'none');
+                        break;
+                    case 1:
+                        $("#jqxgrid").jqxGrid('selectionmode', 'singlerow');
+                        break;
+                    case 2:
+                        $("#jqxgrid").jqxGrid('selectionmode', 'multiplerows');
+                        break;
+                    case 3:
+                        $("#jqxgrid").jqxGrid('selectionmode', 'multiplerowsextended');
+                        break;
+                }
+            });
+
+            // enable or disable the hover state.
+            $("#enablehover").bind('change', function (event) {
+                $("#jqxgrid").jqxGrid('enablehover', event.args.checked);
+            });
+
+            // display selected row index.
+            $("#jqxgrid").bind('rowselect', function (event) {
+                $("#selectrowindex").html(event.args.rowindex);
+            });
+
+            // display unselected row index.
+            $("#jqxgrid").bind('rowunselect', function (event) {
+                $("#unselectrowindex").html(event.args.rowindex);
+            });
+
+            // select the second row.
+            $("#jqxgrid").jqxGrid('selectrow', 2);
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: left;">
+        <div id="jqxgrid">
+        </div>
+        <div style="margin-top: 20px;">
+            <div style="float: left;">
+                <div>
+                    <input value="100" style="width: 50px;" maxlength="4" id="rowindexinput2" type="text" />
+                    <input id="scrolltobutton" type="button" value="Scroll to Row" />
+                </div>
+               <div style="margin-top: 10px;" id="enablehover">
+                    Enable Hover</div>
+            </div>
+            <div style="float: left; margin-left: 20px;">
+                <div>
+                    <input value="0" style="width: 50px;" maxlength="4" id="rowindexinput" type="text" />
+                    <input id="selectrowbutton" type="button" value="Select Row" />
+                    <input id="clearselectionbutton" type="button" value="Clear Selection" />
+                </div>
+                <div style="margin-top: 10px;">
+                    <span>Selection Mode</span>
+                    <div style="margin-top: 5px;" id="enableselection">
+                    </div>
+                </div>     
+            </div>
+            <div style="float: left; margin-left: 20px;">
+                <span>Selection Log:</span>
+                <div style="margin-top: 10px;">
+                    <span>Selected Row Index:</span> <span id="selectrowindex"></span>
+                    <br />
+                    <span>Unselected Row Index:</span> <span id="unselectrowindex"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

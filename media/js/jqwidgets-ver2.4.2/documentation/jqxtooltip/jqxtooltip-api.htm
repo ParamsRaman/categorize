@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Tooltip, jqxTooltip, tool tip, tip, title, popup" />
+    <meta name="description" content="This page represents the help documentation of the jqxTooltip widget." />
+    <title>jqxTooltip API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>content</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    jqxTooltip
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxTooltip's content.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>content</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({content: 'Custom String'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>location</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'bottom-right'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxTooltip's location. The location property defines the tooltip's
+                            display position. The default value is set to 'bottom-right' which means that when
+                            the mouse cursor is over a html element that has an associated tooltip, the tooltip
+                            will be displayed at the bottom-right edge of the element.
+                        </p>
+                        <br />
+                        Possible values: "top", "left", "bottom", "right", "bottom-right", "top-right",
+                        "top-left", "absolute", "relative"
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>location</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({content: 'Custom String'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>horizontalOffset</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the horizontal offset of the tooltip.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>horizontalOffset</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ horizontalOffset:3 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>verticalOffset</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the vertical offset of the tooltip.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>verticalOffset</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ verticalOffset:3 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>enableAnimation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the fade animation is enabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>enableAnimation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ enableAnimation:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>animationShowDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    450
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the delay of the fade animation when the tooltip is going to be opened.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>animationShowDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ animationShowDuration:250 }); </code></pre>
+                    </div>
+                </td>
+            </tr> 
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>animationHideDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    250
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the delay of the fade animation when the tooltip is going to be closed.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>animationHideDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ animationHideDuration:250 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>animationHideDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    4000
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the tooltip's display time-interval.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>animationHideDelay</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ animationHideDelay:1000 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>animationShowDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    4000
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the time-interval which specifies how much time the mouse cursor should be over the tooltip's target before the tooltip is opened.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>animationShowDelay</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ animationShowDelay:1000 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>showHtml</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether to treat the 'content' property value as html inside the tooltip.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>showHtml</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ showHtml: false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets whether the tooltip is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTooltip with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip({ disabled:false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>shown</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the tooltip is opened.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the shown event by type: jqxTooltip.
+                        </p>
+                        <pre><code>$('#jqxTooltip').bind('shown', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>closed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the tooltip is closed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the shown closed by type: jqxTooltip.
+                        </p>
+                        <pre><code>$('#jqxTooltip').bind('closed', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>close</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Closes the tooltip.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the close method.
+                        </p>
+                        <pre><code>$('#jqxTooltip').jqxTooltip('close'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>open</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Opens the tooltip.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the open method.
+                        </p>
+                        <pre><code>//@param String - tooltip's content.</code></pre>
+                        <pre><code>//@param(optional) Number - tooltip's vertical offset.</code></pre>
+                        <pre><code>//@param(optional) Number - tooltip's horizontal offset.</code></pre>
+                        <pre><code>$('#jqxTooltip').jqxTooltip('open', 'content'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>add</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Adds a tooltip to html element.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the add method.
+                        </p>
+                        <pre><code>//@param element - html element.</code></pre>
+                        <pre><code>//@param String - tooltip's text.</code></pre>
+                        <pre><code>var element = $('#bottomRight');</code></pre>
+                        <pre><code>$("#jqxTooltip").jqxTooltip('add', element, 'jqxTooltip');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>remove</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Removes a tooltip associated to a html element.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the remove method.
+                        </p>
+                        <pre><code>// @param element - html element.</code></pre>
+                        <pre><code>var element = $('#bottomRight');</code></pre>
+                        <pre><code>$("#jqxTooltip").jqxTooltip('remove', element);</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

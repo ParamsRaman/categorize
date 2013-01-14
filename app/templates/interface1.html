@@ -1,0 +1,107 @@
+<html>
+<title>Interface 1</title>
+
+<head>
+		<!-- Include the required JavaScript libraries: -->
+	        <script type="text/javascript" src="/js/jqwidgets-ver2.4.2/scripts/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/scripts/gettheme.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxbuttons.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxscrollbar.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxpanel.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxtree.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxcheckbox.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxlistbox.js"></script>
+		<script type="text/javascript" src="/js/jQuery.awesomeCloud.plugin-abcfb86/jquery.awesomeCloud-0.2.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen" />
+		<link rel="stylesheet" href="/js/jqwidgets-ver2.4.2/jqwidgets/styles/jqx.base.css" type="text/css" />
+		
+		<script type="text/javascript">
+		    var counter = 0;
+		    
+            	$(document).ready(function () {
+	
+                var theme = getTheme();
+		var source = $('input#choicesId').val().split('||')
+		//alert($('input#choicesId').val());	
+
+                // Create a jqxListBox
+                $("#listbox").jqxListBox({ source: source, checkboxes: true, width: 400, height: 400, theme: theme });
+
+                $("#listbox").bind('checkChange', function (event) {
+                    var args = event.args;
+                    if (args.checked) {
+                        $("#Events").html("Checked: " + args.label);
+                    }
+                    else {
+                        $("#Events").html("Unchecked: " + args.label);
+                    }
+                });
+            });
+
+			$.extend({
+			  getUrlVars: function(){
+			    var vars = [], hash;
+			    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			    for(var i = 0; i < hashes.length; i++)
+			    {
+			      hash = hashes[i].split('=');
+			      vars.push(hash[0]);
+			      vars[hash[0]] = hash[1];
+			    }
+			    return vars;
+			  },
+			  getUrlVar: function(name){
+			    return $.getUrlVars()[name];
+			  }
+			});
+
+	     function isValid(){
+	         var items = $("#listbox").jqxListBox('getCheckedItems');
+                 var count = items.length;
+		 if(count == 0)
+		 {
+		     alert('Please select atleast one suitable category..');
+		     return false;
+		 }
+		 else
+		 {
+		     var tmp = [];
+		     for (var index in items) {
+      		         if (items[index]!= -1) {
+			     //alert(items[index].label);
+			     tmp.push(items[index].label);
+                         }
+		     }
+		
+
+		     var result = tmp.join("||").trim();	
+		     //alert("joined: " + result.substring(0, result.length - 2));	
+		     $('input[name="selected_choice"]').attr('value', result.substring(0, result.length - 2));
+		     return true;
+		 }
+	     }
+        </script>
+		
+</head>
+
+<body>
+	<form name="interface1_data_form" action='/interface1' onsubmit="return isValid();" method="POST">
+	<div class="box"><div class="qnlabel" style="float: none"><b>Task: [{{task_id}} out of {{total_num_tasks}}] </b>&nbsp;&nbsp;Select all the categories that apply to the following shopping product:</div>
+    	<div id="item"><img src="{{item_image}}" alt="pic1" border="1" height="180px" width="180px" style="vertical-align: middle;"> &nbsp;&nbsp;<span style="vertical-align: middle;font-size:12pt;"> {{item_name}} &nbsp;&nbsp;</span> </div>
+		<div id="choices">
+			<div id='jqxWidget'>
+	            <div id="listbox"></div>
+	        </div>
+	
+		</div>
+		<div class="buttonbar"><input type="submit" value="Next>"></div>
+		<input type="hidden" name="choices" id="choicesId" value="{{choices_string}}" />
+		<input type="hidden" name="selected_choice" id="selectedChoice" />
+    </div>
+
+        </form>
+</body>
+      
+</html>

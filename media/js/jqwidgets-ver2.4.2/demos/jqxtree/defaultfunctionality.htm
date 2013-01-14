@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery Tree, Tree Widget, TreeView" />
+    <meta name="description" content="The jqxTree can easily display images next to each item. In order to achieve that, you need to add 'img' element inside a 'li' element." />
+    <title id='Description'>The jqxTree in this demo displays images next to the tree items.
+    </title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            // Create jqxTree
+            $('#jqxTree').jqxTree({ theme: theme });
+            // Create jqxExpander
+            $('#jqxExpander').jqxExpander({ showArrow: false, toggleMode: 'none', width: '300px', height: 'auto', theme: theme });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div id='jqxExpander'>
+            <div>
+                Folders</div>
+            <div id='jqxTree'>
+                <ul>
+                    <li item-expanded='true'>
+                        <img style='float: left; margin-right: 5px;' src='../../images/mailIcon.png' /><span
+                            item-title="true">Mail</span>
+                        <ul>
+                            <li item-expanded='true'>
+                                <img style='float: left; margin-right: 5px;' src='../../images/calendarIcon.png' /><span
+                                    item-title="true">Calendar</span> </li>
+                            <li>
+                                <img style='float: left; margin-right: 5px;' src='../../images/contactsIcon.png' /><span
+                                    item-title="true">Contacts</span> </li>
+                            <li>
+                                <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                    item-title="true"> <span>Inbox</span><span style='color: Blue;'> (3)</span></span>
+                                <ul>
+                                    <li>
+                                        <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                            item-title="true">jQWidgets</span>
+                                        <ul>
+                                            <li>
+                                                <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                                    item-title="true">Admin</span> </li>
+                                            <li>
+                                                <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                                    item-title="true">Corporate</span> </li>
+                                            <li>
+                                                <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                                    item-title="true">Finance</span> </li>
+                                            <li>
+                                                <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                                    item-title="true">Other</span> </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                            item-title="true">Personal</span> </li>
+                                </ul>
+                            </li>
+                            <li item-expanded='true'>
+                                <img style='float: left; margin-right: 5px;' src='../../images/recycle.png' /><span
+                                    item-title="true"> <span>Deleted Items</span><span style='color: Blue;'> (10)</span></span>
+                                <ul>
+                                    <li>
+                                        <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                            item-title="true">Today</span> </li>
+                                    <li>
+                                        <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                            item-title="true">Last Week</span> </li>
+                                    <li>
+                                        <img style='float: left; margin-right: 5px;' src='../../images/folder.png' /><span
+                                            item-title="true">Last Month</span> </li>
+                                </ul>
+                                <li>
+                                    <img style='float: left; margin-right: 5px;' src='../../images/notesIcon.png' /><span
+                                        item-title="true">Notes</span> </li>
+                                <li>
+                                    <img style='float: left; margin-right: 5px;' src='../../images/settings.png' /><span
+                                        item-title="true">Settings</span> </li>
+                                <li>
+                                    <img style='float: left; margin-right: 5px;' src='../../images/favorites.png' /><span
+                                        item-title="true">Favorites</span> </li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

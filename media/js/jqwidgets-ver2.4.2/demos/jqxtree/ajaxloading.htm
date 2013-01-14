@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>This sample demonstrates how to load Tree Items via Ajax
+    </title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            // Create jqxTree
+            var tree = $('#jqxTree');
+
+            var source = [{ label: "Root", expanded: true,
+                items: [
+                    { label: "Root Folder 1", items: [{ value: "ajax1.htm", label: 'Loading...'}] },
+                    { label: "Root Folder 2", items: [{ value: "ajax2.htm", label: 'Loading...'}] }
+                ]
+            }];
+
+            tree.jqxTree({ source: source, theme: theme, width: 200 });
+            tree.bind('expand', function (event) {
+                if (tree.jqxTree('getItem', event.args.element).label == "Root")
+                    return;
+
+                var $element = $(event.args.element);
+                var loader = false;
+                var loaderItem = null;
+                var children = $element.find('li');
+                $.each(children, function () {
+                    var item = tree.jqxTree('getItem', this);
+                    if (item.label == 'Loading...') {
+                        loaderItem = item;
+                        loader = true;
+                        return false
+                    };
+                });
+
+                if (loader) {
+                    $.ajax({
+                        url: loaderItem.value,
+                        success: function (data, status, xhr) {
+                            var items = jQuery.parseJSON(data);
+                            tree.jqxTree('addTo', items, $element[0]);
+                            tree.jqxTree('removeItem', loaderItem.element);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id="jqxTree">
+    </div>
+</body>
+</html>

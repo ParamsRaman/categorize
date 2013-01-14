@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, switch button, Radio Button, RadioButton, CheckInput, RadioInput, Button" />
+    <meta name="description" content="This page represents the help documentation of the jqxSwitchButton and jqxRadioButton widgets." />
+    <title>jqxSwitchButton and jqxRadioButton API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({width:"200px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({height:"400px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets whether the switch button is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>orientation</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'horizontal'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Sets the orientation.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>orientation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({ orientation:vertical }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>onLabel</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'On'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Sets the string displayed when the button is checked.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>onLabel</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({ onLabel:'ON' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>offLabel</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'Off'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Sets the string displayed when the button is unchecked.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>offLabel</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({ offLabel:'OFF' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>thumbSize</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    '40%'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Sets the size of the thumb in percentages.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>thumbSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({ thumbSize:'50%' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>checked</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the ckeck state. Possible Values: true, false.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxSwitchButton with the <code>checked</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton({ checked:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>  
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>checked</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Checked' event is triggered when the switch button is checked.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the checked event by type: jqxSwitchButton.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').bind('checked', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>unchecked</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Unchecked' event is triggered when the switch button is unchecked.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unchecked event by type: jqxSwitchButton.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').bind('unchecked', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>change</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Change' is triggered when the switch button's state changes from one state to another.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the change event by type: jqxSwitchButton.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').bind('change', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>check</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Checks the ckeckbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the check method.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton('check');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>uncheck</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Unchecks the button.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the uncheck method.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton('uncheck');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>toggle</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Toggles the check state. This method is automatically called when the user clicks the switch button.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the toggle method.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton('toggle');</code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disables the switch button.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton('disable');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Enables the switch button.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        <pre><code>$('#jqxSwitchButton').jqxSwitchButton('enable');</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

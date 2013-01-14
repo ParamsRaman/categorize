@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Button, Toggle Button, Repeat Button, Link Button, Help Documentation" />
+    <meta name="description" content="This page represents the help documentation of the jqxButton, jqxToggleButton, jqxRepeatButton and jqxLinkButton widgets." />
+    <title>jqxButton, jqxToggleButton, jqxRepeatButton and jqxLinkButton API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>roundedCorners</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'jqx-rc-all'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the rounded corners functionality. This property setting has
+                            effect in browsers which support CSS border-radius.
+                        </p>
+                        <br />
+                        Possible Values:
+                        <br />
+                        <pre><code>'all' - for all corners</code></pre>
+                        <pre><code>'top'- for top corners</code></pre>
+                        <pre><code>'bottom' - for bottom corners</code></pre>
+                        <pre><code>'left' - for left corners</code></pre>
+                        <pre><code>'right' - for right corners</code></pre>
+                        <pre><code>'top-right' - for top right corners</code></pre>
+                        <pre><code>'top-left' - for top left corners</code></pre>
+                        <pre><code>'bottom-right' - for bottom right corners</code></pre>
+                        <pre><code>'bottom-left' - for bottom left corners</code></pre>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>roundedCorners</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxButton").jqxButton({ width: '150', height: '25', roundedCorners: 'jqx-rc-t'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>delay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    50
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Specifies the interval between two Click events. This property is available only
+                            in the jqxRepeatButton. The jqxRepeatButton raises Click events repeatedly when
+                            the button is pressed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>roundedCorners</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxButton").jqxRepeatButton({ width: '150', height: '25', delay: 25});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the button.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButton({disabled: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the button height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButton({ height: '25px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the button width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a button with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButton({ width: '250px'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>click</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the button is clicked.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the click event by type: jqxButton.
+                        </p>
+                        <pre><code>$('#jqxButton').bind('click', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>toggle</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Toggles the button's checked state. ( available in jqxToggleButton ).
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the toggle method.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxToggleButton('toggle'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

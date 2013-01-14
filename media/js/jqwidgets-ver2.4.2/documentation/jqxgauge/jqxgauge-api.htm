@@ -1,0 +1,859 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Chart, Chart plugin, Data Visualization, Help Documentation" />
+    <meta name="description" content="This page represents the help documentation of the jqxGauge widget." />
+    <title>jqxGauge API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="Div1">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>width</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets the gauge's width. This property accepts size in pixels and percentage.<br /><br />
+                            Initializing jqxGauge with the width property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ width: 400 });
+</code>
+</pre>                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>height</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets the gauge's height. This property accepts size in pixels and percentage.<br /><br />
+                            Initializing jqxGauge with the height property specified:</p>
+<pre>
+<code>   
+    $('#gauge').jqxGauge({ height: 400 });
+</code>
+</pre>                       
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>radius</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    '50%'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets gauge's radius. This property accepts size in pixels and percentage.
+                            Initializing jqxGauge with the radius property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ radius: 200 });
+</code>
+</pre>
+                        
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>startAngle</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    30
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets gauge's startAngle. This property specifies the beggining of the gauge's scale and is measured in degrees.
+                            Initializing jqxGauge with the startAngle property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ startAngle: 10 });
+</code>
+</pre>
+                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>endAngle</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    270
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets gauge's endAngle. This property specifies the end of the gauge's scale and is measured in degrees.
+                            Initializing jqxGauge with the endAngle property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ endAngle: 70 });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>value</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets gauge's value.<br /><br />
+                            Initializing jqxGauge with the value property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ value: 15 });   
+</code>
+</pre>                        
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>min</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets gauge's minimum value.<br /><br />
+                            Initializing jqxGauge with the min property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ min: 10 });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>max</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    220
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets jqxGauge's max value.<br /><br />
+                            Initializing jqxGauge with the max property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ max: 200 });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>colorScheme</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'scheme01'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the gauge's color pallete. jqxGauge suppports 11 color schemes from 'scheme01'
+                            to 'scheme11'.<br /><br />
+                            Initializing jqxGauge with the colorScheme property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ colorScheme: 'scheme06' });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets whether the jqxGauge is disabled.<br /><br />
+                            Initializing jqxGauge with the disabled property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ disabled: true });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>ticksDistance</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    '20%"
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets and gets the ticks position. This property can be specified using percents (between '0%' and '100%') or using pixels.
+                            If the ticksRadius is '0%' this will position the ticks in the outer border of the gauge and if it's '100%' ticks will be positioned near the center<br /><br />
+                            Initializing jqxGauge with the ticksRadius property specified:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge({ ticksDistance: '26%' });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>animationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets jqxGauge's animation duration [ms].<br /><br />
+                            Initializing jqxGauge with the animationDuration property specified:</p>
+<pre><code>
+    $('#gauge').jqxGauge({ animationDuration: 300 });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>easing</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    linear
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets or gets jqxGauge's animation easing.<br /><br />
+                            Possible easings are: 'linear', 'easeOutBack', 'easeInQuad', 'easeInOutCirc', 'easeInOutSine', 'easeOutCubic'.
+                            Initializing jqxGauge with the easing property specified:</p>
+<pre><code>
+    $('#gauge').jqxGauge({ easing: 'easeOutCubic' });
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>showRanges</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This property indicates whether the gauge's ranges will be visible.
+                            Initializing jqxGauge with the showRanges property specified:</p>
+<pre><code>
+       $('#gauge').jqxGauge({ showRanges: false });     
+</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>ranges</span>
+                </td>
+                <td>
+                    <span>Array</span>
+                </td>
+                <td>
+                    []
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This property is array of objects. Each object is different range. The range is colored area with specified size.
+                            Here is sample initialization of the jqxGauge with the ranges array:
+                        </p>
+<pre><code>
+var ranges = [{
+    startValue: 0,
+    endValue: 35,
+    startWidth: 1,
+    endWidth: 5,
+    startDistance: '5%',
+    endDistance: '5%',
+    style: {
+        fill: '#dddddd',
+        stroke: '#dddddd'
+    }
+},
+{
+    startValue: 35,
+    endValue: 55,
+    startWidth: 5,
+    endWidth: 10,
+    startDistance: '5%',
+    endDistance: '5%',
+    style: {
+        fill: '#dddddd',
+        stroke: '#dddddd'
+    }
+}];
+$('#gauge').jqxGauge({ ranges: ranges });
+</code></pre>
+                        <ul>
+                            <li>startValue - the value from which the range will start</li>
+                            <li>endValue - the value where the current range will end</li>
+                            <li>startWidth - the width of the range in it's start</li>
+                            <li>endWidth - the end width of the range</li>
+                            <li>startDistance [optional]- this property is measured in pixels or percentage. It indicates the distance from the gauge's outer boundary to the start of the range.</li>
+                            <li>endDistance [optional]- this property is measured in pixels or percentage. It indicates the distance from the gauge's outer boundary to the end of the range.</li>
+                            <li>style - this property is object containing style information for the range. It accepts properties like 'fill', 'stroke', etc. </li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>style</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { fill: '#ffffff', stroke: '#ffffff' }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's style.<br />
+                            Here is sample initialization of the jqxGauge with style property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ style: { fill: '#cccccc', stroke: '#cccccc' }});
+</code></pre>
+    In the upper code we are setting the jqxGauge to be with background color '#cccccc' and stroke '#cccccc'.
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>ticksMinor</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { size: '10%', interval: 5, style: { stroke: '#898989'}, visible: true }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's minor ticks.<br />
+                            Here is sample initialization of the jqxGauge with ticksMinor property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ ticksMinor: { size: '5%', interval: 15, style: { stroke: '#898989'}, visible: true }});
+</code></pre>
+        <ul>
+            <li>size - specifies the length of the tick. This property can be set in pixels or in percentage.</li>
+            <li>interval - specifies the ticks frequency. With interval equals to 5 each fifth value of the gauge will have a minor tick.</li>
+            <li>visible - indicates if the minor ticks will be visible.</li>
+            <li>style - sets ticks style (color and thickness)</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>ticksMajor</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { size: '10%', interval: 5, style: { stroke: '#898989'}, visible: true }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's major ticks.<br />
+                            Here is sample initialization of the jqxGauge with ticksMajor property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ ticksMajor: { size: '10px', interval: 15, style: { stroke: '#898989'}, visible: true }});
+</code></pre>
+        <ul>
+            <li>size - specifies the length of the tick. This property is measured in pixels or percentage.</li>
+            <li>interval - specifies the ticks frequency. With interval equals to 5 each fifth value of the gauge will have a major tick.</li>
+            <li>visible - indicates if the major ticks will be visible.</li>
+            <li>style - sets ticks style (color and thickness)</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>border</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { size: '10%', style: { stroke: '#cccccc'}, visible: true, showGradient: true }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's border.<br />
+                            Here is sample initialization of the jqxGauge with border property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ border: { size: '11%', style: { stroke: '#898989'}, visible: true }});
+</code></pre>
+        <ul>
+            <li>size - specifies the size of the border. Border's size can be set in percentage or in pixels.</li>
+            <li>visible - indicates if the border will be visible.</li>
+            <li>style - sets border style (color and thickness)</li>
+            <li>showGradient - whether a gradient background will be used</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>caption</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { value: '', position: 'bottom', offset: [0, 0], visible: true }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's caption.<br />
+                            Here is sample initialization of the jqxGauge with caption property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ caption: { value: 'jQWidgets', position: 'bottom', offset: [0, 10], visible: true }});
+</code></pre>
+        <ul>
+            <li>value - specifies the text.</li>
+            <li>position - specifies the caption position. There four different positions - top, bottom, left and right. You can customize the position using the offset property described bellow.</li>
+            <li>offset - array with two number elements. The first one indicates the left offset and the second one the top offset.</li>
+            <li>visible - indicates whether the caption will be visible.</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>cap</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { size: '4%', style: { fill: 'theme-specific-color', stroke: 'theme-specific-color' } , visible: true }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's cap.<br />
+                            Here is sample initialization of the jqxGauge with the cap property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ cap: { size: '5%', style: { fill: '#ff0000', stroke: '#00ff00' } , visible: true }});
+</code></pre>
+        <ul>
+            <li>size - specifies the gauge's size. This property can be set as percentage or in pixels.</li>
+            <li>style - specifies the gauge's cap styles. Here you can set it's fill or stroke colors.</li>
+            <li>visible - indicates whether the cap will be visible.</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>pointer</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { pointerType: 'default', style: { fill: 'theme-specific-color', stroke: 'theme-specific-color' }, length: '70%', width: '2%', visible: true }
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's pointer.<br />
+                            Here is sample initialization of the jqxGauge with the pointer property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ pointer: { pointerType: 'default', style: { fill: '#ff0000', stroke: '#ff0000' }, length: '80%', width: '3%', visible: true }});
+</code></pre>
+        <ul>
+            <li>pointerType - specifies the pointer type. Possible values for this property are - 'default' and 'rectangle'. If it's value is 'default' the pointer will be arrow otherwise it'll be rectangle.</li>
+            <li>style - specifies the gauge's pointer style. Here you can set it's fill or stroke color.</li>
+            <li>width - specifies pointer's width. This property can be set in percents ('0%' - '100%') or in pixels.</li>
+            <li>length - specifies pointer's length. This property can be set in percents ('0%' - '100%') or in pixels.</li>
+            <li>visible - indicates whether the pointer will be visible.</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>labels</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                    { distance: '38%', position: 'none', interval: 20, offset: [0, -10], visible: true, formatValue: function (value) {
+                        return value;
+                    }}
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the gauge's properties for it's labels.<br />
+                            Here is sample initialization of the jqxGauge with the labels property specified:
+                        </p>
+<pre><code>
+$('#gauge').jqxGauge({ labels: { distance: '50px', position: 'inside', interval: 20, offset: [0, -10], visible: true, formatValue: function (value) {
+                        return value;
+                    }}
+                });
+</code></pre>
+        <ul>
+            <li>distance - specifies the labels distance from the gauge's center. This value could be set in percents ('0%' - '100%') or using pixels. This property is with lower priority than the position property.</li>
+            <li>position - specifies the gauge's labels position. Possible values for this property are 'inside', 'outside' and 'none' (if you want to use the distance property). If it's value is inside the labels are going to be shown inside the scale otherwise they will be shown outside. This property is with higher priority than the distance property.</li>
+            <li>style - specifies the gauge's pointer style. Here you can set it's fill or stroke color.</li>
+            <li>interval - specifies labels's frequency.</li>
+            <li>offset - specifies labels's offset. This property is array with two elements. The first one is the left offset and the second one is the top offset.</li>
+            <li>formatValue - callback used for formatting the label. This function accepts a single parameter which the user can format and return to the labels renderer.</li>
+            <li>visible - indicates whether the labels will be visible.</li>
+        </ul>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <br />
+    </div>        
+    <div id="events">
+        <h2 class="documentation-top-header">
+            Events</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Arguments
+                </th>
+                <th>
+                </th>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>valueChanging</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            The event is being raised while the gauge's value is changing.<br /><br />
+                            Example:</p>
+<pre>
+<code>
+    $('#gauge').bind('valueChanging', function (e) {
+        alert('Value changed: ' + e.args.value);
+    });
+    $('#gauge').jqxGauge('value', 220);
+</code>
+</pre>
+                        
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>valueChanged</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            The event is raised when the gauge's value is changed.<br /><br />
+                            Example:</p>
+<pre>
+<code>
+    $('#gauge').bind('valueChanged', function (e) {
+        alert('Value changed: ' + e.args.value);
+    });
+    $('#gauge').jqxGauge('value', 220);
+</code>
+</pre>
+                    </div>
+                </td>
+            </tr>
+      </table>
+    </div>
+     <div id="methods">
+        <h2 class="documentation-top-header">
+            Methods</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Arguments
+                </th>
+                <th>
+                    Return Value
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>disable</span>
+                </td>
+                <td>
+                    <span>None</span>
+                </td>
+                <td>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method disables the gauge.<br /><br />
+                            Example:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge('disable');
+</code>
+</pre>                        
+                    </div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>enable</span>
+                </td>
+                <td>
+                    <span>None</span>
+                </td>
+                <td>
+                    None
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method enables the gauge.<br /><br />
+                            Example:</p>
+<pre>
+<code>
+    $('#gauge').jqxGauge('enable');
+</code>
+</pre>                        
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <br />
+    </div>
+                 
+</body>
+</html>

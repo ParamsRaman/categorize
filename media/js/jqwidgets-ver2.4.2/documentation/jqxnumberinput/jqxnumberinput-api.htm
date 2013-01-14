@@ -1,0 +1,787 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Input, Number Input, Currency Input, Percentage Input, Floating-Point Input, Decimal Input, jqxNumberInput" />
+    <meta name="description" content="This page represents the help documentation of the jqxNumberInput widget." />
+    <title>jqxNumberInput API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>decimal</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the input's number.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>decimal</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ decimal: 5 }) </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>min</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the input's minimum value.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>min</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ min: 5 }) </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>max</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the input's maximum value.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>max</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ max: 50 }) </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets width of the input in pixels. Only positive values have effect.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ width: '250px' }) </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets height of the input in pixels.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ height: '50px' }) </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>validationMessage</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'Invalid value'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the validation message of the jqxNumberInput. This message is displayed when the value is not in the min - max range.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>validationMessage</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ validationMessage: 'Please enter a valid value.' }) </code></pre>
+                    </div>
+                </td>
+            </tr>
+                  <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>inputMode</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'advanced'
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the input mode. Possible values: 'advanced' and 'simple'. In the advanced mode, the number input behavior resembles a masked input with numeric mask. In the simple mode, the
+                            widget works as a normal textbox, but restricts the user's input to numbers.
+                            </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>inputMode</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ inputMode: 'simple' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>spinMode</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'advanced'
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the spin mode. Possible values: 'none', 'advanced' and 'simple'. In the advanced mode, the value is increased depending on the
+                            caret's position. The 'none' mode specifies that the spin behavior is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>spinMode</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ spinMode: 'simple' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>spinButtons</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Shows or hides the spin buttons.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>spinButtons</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ spinButtons: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>spinButtonsWidth</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    18
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the width of the spin buttons.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>spinButtonsWidth</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ spinButtonsWidth: 20 });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>spinButtonsStep</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the increase/decrease step.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>spinButtonsStep</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ spinButtonsStep: 1 });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>textAlign</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'right'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the alignment.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>textAlign</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxNumberInput").jqxNumberInput({ textAlign: "left" });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>readOnly</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or Sets the readOnly state of the input.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>readOnly</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ readOnly: true })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>promptChar</span>
+                </td>
+                <td>
+                    <span>Char</span>
+                </td>
+                <td>
+                    -
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the prompt char displayed when an editable char is empty. Possible Values:
+                            "_"; "?"; "#".</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>promptChar</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ promptChar: "#" })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>decimalDigits</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    2
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Indicates the number of decimal places to use in numeric values.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>decimalDigits</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ decimalDigits: 3 })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>decimalSeparator</span>
+                </td>
+                <td>
+                    <span>Char</span>
+                </td>
+                <td>
+                    '.'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the char to use as the decimal separator in numeric values.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>decimalSeparator</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ decimalSeparator: "," })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>groupSeparator</span>
+                </td>
+                <td>
+                    <span>Char</span>
+                </td>
+                <td>
+                    ','
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the string that separates groups of digits to the left of the decimal
+                            in numeric values.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>groupSeparator</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ groupSeparator: "." })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>groupSize</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    3
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the number of digits in each group to the left of the decimal in numeric
+                            values.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>groupSize</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ groupSize: 5 })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>symbol</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    ''
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the string to use as currency or percentage symbol.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>symbol</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ symbol: '$' })<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>symbolPosition</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'left'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the position of the symbol in the input.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>symbolPosition</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ symbolPosition: 'right'})<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>digits</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    8
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the digits in the input</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>digits</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ digits: 8})<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>negativeSymbol</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    '-'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the string to use as negative symbol.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxNumberInput with the <code>negativeSymbol</code> property specified.
+                        </p>
+                        <pre> $("#jqxNumberInput").jqxNumberInput({ negativeSymbol: '-'})<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>valuechanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered after value is changed.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the valuechanged event by type: jqxNumberInput.
+                        </p>
+                        <pre><code>$('#jqxNumberInput').bind('valuechanged', function () { // Some code here.
+                            }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>textchanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user entered entered a text.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the textchanged event by type: jqxNumberInput.
+                        </p>
+                        <pre><code>$('#jqxNumberInput').bind('textchanged', function () { // Some code here.});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>clearDecimal</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Clears the value.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the clearDecimal method.
+                        </p>
+                        <pre><code>$('#jqxNumberInput').jqxNumberInput('clearDecimal');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>inputValue</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the value including the formatting characters such as group and decimal
+                            separators.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the inputValue method.
+                        </p>
+                        <pre><code>$('#jqxNumberInput').jqxNumberInput('inputValue', '555');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>getDecimal</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the value.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the getDecimal method.
+                        </p>
+                        <pre><code>var value = $('#jqxNumberInput').jqxNumberInput('getDecimal');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>setDecimal</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the value.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the setDecimal method.
+                        </p>
+                        <pre><code>$('#jqxNumberInput').jqxNumberInput('setDecimal', 555);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>val</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the value.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Get the value using the val method.
+                        </p>
+                        <pre><code>var value = $('#jqxNumberInput').jqxNumberInput('val');</code></pre>
+                        <p>
+                            Set the value using the val method.
+                        </p>
+                        <pre><code>$('#jqxNumberInput').jqxNumberInput('val', 561.23);</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

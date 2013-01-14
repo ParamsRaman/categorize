@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>The Grid plugin can localize all the displayed strings by passing a localization object to the 'localizestrings' function.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.pager.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.sort.js"></script> 
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+
+            var url = "../sampledata/orders.xml";
+
+            // prepare the data
+            var source =
+            {
+                datatype: "xml",
+                datafields: [
+                    { name: 'ShipName', map: 'm\\:properties>d\\:ShipName' },
+                    { name: 'ShipCity', map: 'm\\:properties>d\\:ShipCity' },
+                    { name: 'ShipCountry', map: 'm\\:properties>d\\:ShipCountry' }
+                ],
+                root: "entry",
+                record: "content",
+                id: 'm\\:properties>d\\:OrderID',
+                url: url
+            };
+
+            $("#jqxgrid").jqxGrid(
+            {
+                width: 670,
+                source: source,
+                theme: theme,
+                altrows: true,
+                autoheight: true,
+                pageable: true,
+                sortable: true,
+                columns: [
+                  { text: 'Ship Name', datafield: 'ShipName', width: 250 },
+                  { text: 'Ship Stadt', datafield: 'ShipCity', width: 100 },
+                  { text: 'Ship Land', datafield: 'ShipCountry' }
+                ]
+            });
+
+            $("#jqxgrid").bind('bindingcomplete', function () {
+                var localizationobj = {};
+                localizationobj.pagergotopagestring = "Gehe zu:";
+                localizationobj.pagershowrowsstring = "Zeige Zeile:";
+                localizationobj.pagerrangestring = " von ";
+                localizationobj.pagernextbuttonstring = "voriger";
+                localizationobj.pagerpreviousbuttonstring = "nächster";
+                localizationobj.sortascendingstring = "Sortiere aufsteigend";
+                localizationobj.sortdescendingstring = "Sortiere absteigend";
+                localizationobj.sortremovestring = "Entferne Sortierung";
+
+                // apply localization.
+                $("#jqxgrid").jqxGrid('localizestrings', localizationobj);
+            });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: left;">
+        <div style="float: left;" id="jqxgrid"></div>
+    </div>
+</body>
+</html>

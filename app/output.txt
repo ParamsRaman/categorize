@@ -1,0 +1,366 @@
+clothing ---- appended to ----> ROOT
+accessories ---- appended to ----> clothing
+scarves ---- appended to ----> accessories
+woollen scarves ---- appended to ----> scarves
+silk scarves ---- appended to ----> scarves
+knit scarves ---- appended to ----> scarves
+LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins ---- appended to ----> knit scarves
+luggage, bags &amp; travel ---- appended to ----> accessories
+bags & backpacks ---- appended to ----> luggage, bags &amp; travel
+gym bags ---- appended to ----> bags & backpacks
+school backpack ---- appended to ----> bags & backpacks
+hiking bag ---- appended to ----> bags & backpacks
+luggage ---- appended to ----> luggage, bags &amp; travel
+carry on ---- appended to ----> luggage
+rolling luggage ---- appended to ----> luggage
+travel accessories ---- appended to ----> luggage, bags &amp; travel
+luggage tags ---- appended to ----> travel accessories
+Samsonite Luggage 2 Pack Vinyl ID Tag ---- appended to ----> luggage tags
+shoe bags ---- appended to ----> travel accessories
+mens ---- appended to ----> clothing
+shirts & polos ---- appended to ----> mens
+turtle necks ---- appended to ----> shirts & polos
+formals ---- appended to ----> shirts & polos
+sports casuals ---- appended to ----> shirts & polos
+sleepwear & robes ---- appended to ----> mens
+pajamas ---- appended to ----> sleepwear & robes
+pajama tops ---- appended to ----> pajamas
+pajama bottoms ---- appended to ----> pajamas
+robes ---- appended to ----> sleepwear & robes
+cotton robes ---- appended to ----> robes
+satin robes ---- appended to ----> robes
+Intimo Men's Classic Satin Robe ---- appended to ----> satin robes
+socks ---- appended to ----> mens
+dress socks ---- appended to ----> socks
+sports socks ---- appended to ----> socks
+womens ---- appended to ----> clothing
+cold weather ---- appended to ----> womens
+ear muffs ---- appended to ----> cold weather
+180s Women's Tahoe Ear Warmer ---- appended to ----> ear muffs
+gloves ---- appended to ----> cold weather
+Seirus Innovation Men's Hyperlite All Weather Glove ---- appended to ----> gloves
+scarves ALREADY IN MAP!!!!! 
+scarves ---- appended to ----> cold weather
+coats & jackets ---- appended to ----> womens
+woollen jacket ---- appended to ----> coats & jackets
+leather jacket ---- appended to ----> coats & jackets
+dresses ---- appended to ----> womens
+formals ALREADY IN MAP!!!!! 
+formals ---- appended to ----> dresses
+sundresses ---- appended to ----> dresses
+Ecko Juniors Sundress Dress - Style ERF06075 ---- appended to ----> sundresses
+tank ---- appended to ----> dresses
+home ---- appended to ----> ROOT
+kitchen & dining ---- appended to ----> home
+bakeware ---- appended to ----> kitchen & dining
+bakers & casseroles ---- appended to ----> bakeware
+casseroles ---- appended to ----> bakers & casseroles
+bakers ---- appended to ----> bakers & casseroles
+baking tools & accessories ---- appended to ----> bakeware
+beaters ---- appended to ----> baking tools & accessories
+baking cups ---- appended to ----> baking tools & accessories
+cookie cutters ---- appended to ----> baking tools & accessories
+mixing bowls ---- appended to ----> baking tools & accessories
+bar tools & glasses ---- appended to ----> kitchen & dining
+glassware & stemware ---- appended to ----> bar tools & glasses
+beer mugs ---- appended to ----> glassware & stemware
+juice glasses ---- appended to ----> glassware & stemware
+shot glasses ---- appended to ----> glassware & stemware
+Kikkerland Drunk Shot Glasses, Set of 4 ---- appended to ----> shot glasses
+tumblers ---- appended to ----> glassware & stemware
+wine glasses ---- appended to ----> glassware & stemware
+wine goblets ---- appended to ----> wine glasses
+tasting sets ---- appended to ----> wine glasses
+corkscrews & openers ---- appended to ----> bar tools & glasses
+champagne openers ---- appended to ----> corkscrews & openers
+pump corkscrews ---- appended to ----> corkscrews & openers
+screwpull levers ---- appended to ----> corkscrews & openers
+cookware ---- appended to ----> kitchen & dining
+pressure cookers ---- appended to ----> cookware
+roasting pans ---- appended to ----> cookware
+lids ---- appended to ----> cookware
+tea kettles ---- appended to ----> cookware
+steamers ---- appended to ----> cookware
+dining room furniture ---- appended to ----> kitchen & dining
+dining chair ---- appended to ----> dining room furniture
+extendable tables ---- appended to ----> dining room furniture
+kitchen knives & cutlery ---- appended to ----> kitchen & dining
+cake knives ---- appended to ----> kitchen knives & cutlery
+chef's knives ---- appended to ----> kitchen knives & cutlery
+cutting boards ---- appended to ----> kitchen knives & cutlery
+Totally Bamboo 20-7930 3-Piece Cutting Board Set ---- appended to ----> cutting boards
+electric knives ---- appended to ----> kitchen knives & cutlery
+knife sharpeners ---- appended to ----> kitchen knives & cutlery
+specialty knives ---- appended to ----> kitchen knives & cutlery
+mincing knives ---- appended to ----> specialty knives
+seafood knives ---- appended to ----> specialty knives
+food knives ---- appended to ----> specialty knives
+home appliances ---- appended to ----> home
+air conditioners & fans ---- appended to ----> home appliances
+ceiling fans & accessories ---- appended to ----> air conditioners & fans
+ceiling fans ---- appended to ----> ceiling fans & accessories
+accessories ALREADY IN MAP!!!!! 
+accessories ---- appended to ----> ceiling fans & accessories
+down rods ---- appended to ----> accessories
+remote control ---- appended to ----> accessories
+Heath Zenith SL-6135 Basic Solutions Indoor Remote Control ---- appended to ----> remote control
+household fans ---- appended to ----> air conditioners & fans
+pedestal fans ---- appended to ----> household fans
+table fans ---- appended to ----> household fans
+window fans ---- appended to ----> household fans
+large appliances ---- appended to ----> home appliances
+cooktops ---- appended to ----> large appliances
+dishwashers ---- appended to ----> large appliances
+convertible dishwashers ---- appended to ----> dishwashers
+portable dishwashers ---- appended to ----> dishwashers
+food waste disposers ---- appended to ----> large appliances
+refrigerators ---- appended to ----> large appliances
+freeze-on-top refrigerators ---- appended to ----> refrigerators
+freeze-on-bottom refrigerators ---- appended to ----> refrigerators
+side-by-side refrigerators ---- appended to ----> refrigerators
+freezerless refrigerators ---- appended to ----> refrigerators
+washers & dryers ---- appended to ----> large appliances
+clothes dryers ---- appended to ----> washers & dryers
+clothes washers ---- appended to ----> washers & dryers
+combination washers & dryers ---- appended to ----> washers & dryers
+small appliances ---- appended to ----> home appliances
+blenders ---- appended to ----> small appliances
+countertop blenders ---- appended to ----> blenders
+hand blenders ---- appended to ----> blenders
+coffee tea & espresso appliances ---- appended to ----> small appliances
+beverage warmers ---- appended to ----> coffee tea & espresso appliances
+coffee grinders ---- appended to ----> coffee tea & espresso appliances
+espresso machines ---- appended to ----> coffee tea & espresso appliances
+manual espresso machines ---- appended to ----> espresso machines
+semi-automatic espresso machines ---- appended to ----> espresso machines
+super-automatic espresso machines ---- appended to ----> espresso machines
+steam espresso machines ---- appended to ----> espresso machines
+milk steamers ---- appended to ----> coffee tea & espresso appliances
+milk frothers ---- appended to ----> coffee tea & espresso appliances
+electric cookware ---- appended to ----> small appliances
+can openers ---- appended to ----> electric cookware
+cookers ---- appended to ----> electric cookware
+countertop burners ---- appended to ----> electric cookware
+kettles ---- appended to ----> electric cookware
+mixers ---- appended to ----> small appliances
+hand mixers ---- appended to ----> mixers
+stand mixers ---- appended to ----> mixers
+vacuum cleaning & storage ---- appended to ----> home
+air purifiers ---- appended to ----> vacuum cleaning & storage
+air freshners ---- appended to ----> air purifiers
+electric air freshners ---- appended to ----> air freshners
+air sprays ---- appended to ----> air freshners
+solid and liquid freshners ---- appended to ----> air freshners
+cleaning supplies ---- appended to ----> vacuum cleaning & storage
+brushes ---- appended to ----> cleaning supplies
+dusting ---- appended to ----> cleaning supplies
+dust clothes ---- appended to ----> dusting
+dust mops ---- appended to ----> dusting
+feather dusters ---- appended to ----> dusting
+moping ---- appended to ----> cleaning supplies
+buckets ---- appended to ----> moping
+wet mops ---- appended to ----> moping
+accessories ALREADY IN MAP!!!!! 
+accessories ---- appended to ----> moping
+mop handles ---- appended to ----> accessories
+Rubbermaid FGH12500 Invader Side Gate Wet Mop Gray Aluminum Handle with Large Yellow Plastic Head, 54" Length ---- appended to ----> mop handles
+mop handles & sponges ---- appended to ----> accessories
+paper towels ---- appended to ----> cleaning supplies
+toys & games ---- appended to ----> ROOT
+sports & outdoor ---- appended to ----> toys & games
+pools & water ---- appended to ----> sports & outdoor
+baby floats ---- appended to ----> pools & water
+kiddie pools ---- appended to ----> pools & water
+pool toys ---- appended to ----> pools & water
+sports ---- appended to ----> sports & outdoor
+baseball & softball ---- appended to ----> sports
+baseball bats ---- appended to ----> baseball & softball
+aluminium ---- appended to ----> baseball bats
+wood ---- appended to ----> baseball bats
+baseballs ---- appended to ----> baseball & softball
+batting gloves ---- appended to ----> baseball & softball
+helmets ---- appended to ----> baseball & softball
+basketball ---- appended to ----> sports
+basketballs ---- appended to ----> basketball
+backboards ---- appended to ----> basketball
+boxing ---- appended to ----> sports
+punching bags ---- appended to ----> boxing
+boxing gloves ---- appended to ----> boxing
+party supplies ---- appended to ----> toys & games
+gift wrapping supplies ---- appended to ----> party supplies
+gift bags ---- appended to ----> gift wrapping supplies
+gift wrap ribbons ---- appended to ----> gift wrapping supplies
+gift wrap paper ---- appended to ----> gift wrapping supplies
+wrapping tissue ---- appended to ----> gift wrapping supplies
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA ---- appended to ----> wrapping tissue
+decorations ---- appended to ----> party supplies
+balloons ---- appended to ----> decorations
+banners ---- appended to ----> decorations
+confetti ---- appended to ----> decorations
+Happy Birthday Confetti ---- appended to ----> confetti
+stuffed animals & plush ---- appended to ----> toys & games
+teddy bears ---- appended to ----> stuffed animals & plush
+plush puppets ---- appended to ----> stuffed animals & plush
+animals ---- appended to ----> stuffed animals & plush
+plush backpacks & purses ---- appended to ----> stuffed animals & plush
+plush backpacks ---- appended to ----> plush backpacks & purses
+plush purses ---- appended to ----> plush backpacks & purses
+shoes ---- appended to ----> ROOT
+shoe care & cleaning ---- appended to ----> shoes
+polishes ---- appended to ----> shoe care & cleaning
+shoe brushes ---- appended to ----> shoe care & cleaning
+shoe dryers ---- appended to ----> shoe care & cleaning
+shoe care kits & sets ---- appended to ----> shoe care & cleaning
+mens ALREADY IN MAP!!!!! 
+mens ---- appended to ----> shoes
+athletic ---- appended to ----> mens
+running ---- appended to ----> athletic
+track & field ---- appended to ----> running
+ASICS Men's Japan Thunder 3 Track and Field Shoe ---- appended to ----> track & field
+spikes ---- appended to ----> running
+trail ---- appended to ----> running
+volleyball ---- appended to ----> athletic
+tennis ---- appended to ----> athletic
+boat shoes ---- appended to ----> mens
+boots ---- appended to ----> mens
+athletic & outdoor ---- appended to ----> boots
+hiking boots ---- appended to ----> athletic & outdoor
+rain boots ---- appended to ----> athletic & outdoor
+Bogs Men's Classic Ultra Mid Waterproof Boot ---- appended to ----> rain boots
+sandals ---- appended to ----> mens
+slides ---- appended to ----> sandals
+sports sandals ---- appended to ----> sandals
+slippers ---- appended to ----> mens
+outdoor soles ---- appended to ----> slippers
+moccasins ---- appended to ----> slippers
+womens ALREADY IN MAP!!!!! 
+womens ---- appended to ----> shoes
+athletic ALREADY IN MAP!!!!! 
+athletic ---- appended to ----> womens
+boating ---- appended to ----> athletic
+rowing ---- appended to ----> athletic
+cycling ---- appended to ----> athletic
+running ALREADY IN MAP!!!!! 
+running ---- appended to ----> athletic
+golf ---- appended to ----> athletic
+skateboarding ---- appended to ----> athletic
+skate shoes ---- appended to ----> athletic
+boots ALREADY IN MAP!!!!! 
+boots ---- appended to ----> womens
+flat ---- appended to ----> boots
+pull-on ---- appended to ----> boots
+water-proof ---- appended to ----> boots
+zip ---- appended to ----> boots
+boat shoes ALREADY IN MAP!!!!! 
+boat shoes ---- appended to ----> womens
+fashion sneakers ---- appended to ----> womens
+mary janes ---- appended to ----> fashion sneakers
+sling-back ---- appended to ----> fashion sneakers
+slip-on ---- appended to ----> fashion sneakers
+sandals ALREADY IN MAP!!!!! 
+sandals ---- appended to ----> womens
+platform ---- appended to ----> sandals
+wedges ---- appended to ----> sandals
+BANDOLINO HAPPYME WEDGE SANDAL LIGHT NATURAL SYNTHETIC WOMENS SIZE 7.5 M ---- appended to ----> wedges
+electronics ---- appended to ----> ROOT
+accessories & supplies ---- appended to ----> electronics
+audio & video accessories ---- appended to ----> accessories & supplies
+antennas ---- appended to ----> audio & video accessories
+radio antennas ---- appended to ----> antennas
+tv antennas ---- appended to ----> antennas
+Sewell Direct SW-29480 HDTV Antenna ---- appended to ----> tv antennas
+blank media ---- appended to ----> audio & video accessories
+CD-R disc ---- appended to ----> blank media
+DVD-R disc ---- appended to ----> blank media
+Minidiscs ---- appended to ----> blank media
+Data Cartridges ---- appended to ----> blank media
+plugs & adapters ---- appended to ----> audio & video accessories
+speaker accessories ---- appended to ----> audio & video accessories
+speaker cables ---- appended to ----> speaker accessories
+speaker mounts ---- appended to ----> speaker accessories
+speaker stands ---- appended to ----> speaker accessories
+SANUS SYSTEMS BF-31B Wood Speaker Stands ---- appended to ----> speaker stands
+microphones ---- appended to ----> accessories & supplies
+wireless microphones ---- appended to ----> microphones
+handheld microphones ---- appended to ----> wireless microphones
+headset microphones ---- appended to ----> wireless microphones
+dynamic microphones ---- appended to ----> microphones
+instrument ---- appended to ----> dynamic microphones
+vocal ---- appended to ----> dynamic microphones
+multipurpose ---- appended to ----> dynamic microphones
+telephone accessories ---- appended to ----> accessories & supplies
+caller ID displays ---- appended to ----> telephone accessories
+batteries ---- appended to ----> telephone accessories
+phone cards ---- appended to ----> telephone accessories
+computers & accessories ---- appended to ----> electronics
+printers ---- appended to ----> computers & accessories
+inkjet ---- appended to ----> printers
+laser ---- appended to ----> printers
+all-in-one ---- appended to ----> printers
+video projectors ---- appended to ----> computers & accessories
+DLP projectors ---- appended to ----> video projectors
+LCD projectors ---- appended to ----> video projectors
+scanners ---- appended to ----> computers & accessories
+networking products ---- appended to ----> computers & accessories
+hubs ---- appended to ----> networking products
+modems ---- appended to ----> networking products
+access points ---- appended to ----> networking products
+routers ---- appended to ----> networking products
+switches ---- appended to ----> networking products
+mice & keyboards ---- appended to ----> computers & accessories
+mice ---- appended to ----> mice & keyboards
+laser mice ---- appended to ----> mice
+optical mice ---- appended to ----> mice
+Logitech B100 Optical USB Mouse ---- appended to ----> optical mice
+notebook mice ---- appended to ----> mice
+presentation pointers ---- appended to ----> mice & keyboards
+laser pointers ---- appended to ----> presentation pointers
+presentation remotes ---- appended to ----> presentation pointers
+televisions & video ---- appended to ----> electronics
+disc players & recorders ---- appended to ----> televisions & video
+blu-ray disc players ---- appended to ----> disc players & recorders
+DVD players ---- appended to ----> disc players & recorders
+portable DVD players ---- appended to ----> disc players & recorders
+Televisions ---- appended to ----> televisions & video
+TVs ---- appended to ----> Televisions
+TV-DVD combinations ---- appended to ----> Televisions
+photo & camera ---- appended to ----> electronics
+camcorders ---- appended to ----> photo & camera
+high definition ---- appended to ----> camcorders
+flash memory ---- appended to ----> camcorders
+digital DVD ---- appended to ----> camcorders
+digital cameras ---- appended to ----> photo & camera
+digital SLRs ---- appended to ----> digital cameras
+point & shoot digital cameras ---- appended to ----> digital cameras
+lenses ---- appended to ----> photo & camera
+camcorder lenses ---- appended to ----> lenses
+37mm 0.3x Baby Death Fisheye Lens for Video Camcorder ---- appended to ----> camcorder lenses
+point & shoot camera lenses ---- appended to ----> lenses
+SLR camera lenses ---- appended to ----> lenses
+digital SLR lenses ---- appended to ----> SLR camera lenses
+film SLR lenses ---- appended to ----> SLR camera lenses
+binoculars, telescopes & optics ---- appended to ----> photo & camera
+binoculars ---- appended to ----> binoculars, telescopes & optics
+microscopes ---- appended to ----> binoculars, telescopes & optics
+compound microscopes ---- appended to ----> microscopes
+stereo microscopes ---- appended to ----> microscopes
+telescopes ---- appended to ----> binoculars, telescopes & optics
+reflectors ---- appended to ----> telescopes
+Orion SkyScanner 100mm TableTop Reflector Telescope ---- appended to ----> reflectors
+refractors ---- appended to ----> telescopes
+GPS & navigation ---- appended to ----> electronics
+GPS mapping software ---- appended to ----> GPS & navigation
+handheld GPS ---- appended to ----> GPS & navigation
+vehicle GPS ---- appended to ----> GPS & navigation
+in-dash navigation ---- appended to ----> vehicle GPS
+motorcycle GPS ---- appended to ----> vehicle GPS
+sports & outdoors GPS ---- appended to ----> GPS & navigation
+hiking GPS units ---- appended to ----> sports & outdoors GPS
+cycling GPS units ---- appended to ----> sports & outdoors GPS
+running GPS units ---- appended to ----> sports & outdoors GPS
+<<<<<<<<<<<<<<< PRINTING PREORDER >>>>>>>>>>>>>>>
+Results outside: [<__main__.TreeNode object at 0x1005b20d0>, <__main__.TreeNode object at 0x1005b2110>, <__main__.TreeNode object at 0x1005b2150>, <__main__.TreeNode object at 0x1005b2190>]
+FINAL CANDIDATES: flat, id=None
+FINAL CANDIDATES: pull-on, id=None
+FINAL CANDIDATES: water-proof, id=None
+FINAL CANDIDATES: zip, id=None

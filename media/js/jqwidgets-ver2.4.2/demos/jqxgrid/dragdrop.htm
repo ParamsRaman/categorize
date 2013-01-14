@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>This example shows how to setup a one way drag and drop from a Grid to another Grid.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.columnsresize.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxlistbox.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdropdownlist.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdragdrop.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="generatedata.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+
+            var source =
+            {
+                localdata: generatedata(10),
+                datatype: "array"
+            };
+
+            var dataAdapter = new $.jqx.dataAdapter(source);
+
+            // create data grids.
+            $("#grid1").jqxGrid(
+            {
+                width: 400,
+                source: dataAdapter,
+                theme: theme,
+                autoheight: true,
+                selectionmode: 'singlecell',
+                columns: [
+                  { text: 'First Name', dataField: 'firstname', width: 100 },
+                  { text: 'Last Name', dataField: 'lastname', width: 100 },
+                  { text: 'Product', dataField: 'productname', width: 200 }
+                ]
+            });
+
+            $("#grid2").jqxGrid(
+            {
+                width: 400,
+                theme: theme,
+                selectionmode: 'singlecell',
+                autoheight: true,
+                source: { totalrecords: 10, unboundmode: true, datafields:
+                [
+                    { name: 'firstname' },
+                    { name: 'lastname' },
+                    { name: 'productname' }
+                ]
+                },
+                columns: [
+                  { text: 'First Name', dataField: 'firstname', width: 100 },
+                  { text: 'Last Name', dataField: 'lastname', width: 100 },
+                  { text: 'Product', dataField: 'productname', width: 200 }
+                ]
+ 
+            });
+
+            // select all grid cells.
+            var gridCells = $('#grid1').find('.jqx-grid-cell');
+
+            // initialize the jqxDragDrop plug-in. Set its drop target to the second Grid.
+            gridCells.jqxDragDrop({ appendTo: 'body', theme: theme, dragZIndex: 99999,
+                dropAction: 'none',
+                initFeedback: function (feedback) {
+                    feedback.height(25);
+                },
+                dropTarget: $('#grid2'), revert: true
+            });
+            // disable revert when the dragged cell is over the second Grid.
+            gridCells.bind('dropTargetEnter', function () {
+                gridCells.jqxDragDrop({ revert: false });
+            });
+            // enable revert when the dragged cell is outside the second Grid.
+            gridCells.bind('dropTargetLeave', function () {
+                gridCells.jqxDragDrop({ revert: true });
+            });
+            // initialize the dragged object.
+            gridCells.bind('dragStart', function (event) {
+                var value = $(this).text();
+                var cell = $("#grid1").jqxGrid('getcellatposition', event.args.pageX, event.args.pageY);
+                $(this).jqxDragDrop('data', {
+                    value: value
+                });
+            });
+            // set the new cell value when the dragged cell is dropped over the second Grid.      
+            gridCells.bind('dragEnd', function (event) {
+                var value = $(this).text();
+                var cell = $("#grid2").jqxGrid('getcellatposition', event.args.pageX, event.args.pageY);
+                if (cell != null) {
+                    $("#grid2").jqxGrid('setcellvalue', cell.row, cell.column, value);
+                }
+            });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div id="grid1"></div>
+        <div style="margin-top: 20px; float: left;" id="grid2"></div>
+    </div>
+</body>
+</html>

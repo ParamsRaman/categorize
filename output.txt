@@ -1,0 +1,1306 @@
+Bottle server starting up (using WSGIRefServer())...
+Listening on http://localhost:8080/
+Use Ctrl-C to quit.
+
+subtree - clothing ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>])
+subtree - accessories ([]) -----APPENDED TO---->tax node - clothing ([<app.views.TreeNode object at 0x101138590>])
+subtree - scarves ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x101138610>])
+subtree - woollen scarves ([]) -----APPENDED TO---->tax node - scarves ([<app.views.TreeNode object at 0x101138690>])
+subtree - silk scarves ([]) -----APPENDED TO---->tax node - scarves ([<app.views.TreeNode object at 0x101138690>, <app.views.TreeNode object at 0x1011386d0>])
+subtree - knit scarves ([]) -----APPENDED TO---->tax node - scarves ([<app.views.TreeNode object at 0x101138690>, <app.views.TreeNode object at 0x1011386d0>, <app.views.TreeNode object at 0x101138710>])
+subtree - LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins ([]) -----APPENDED TO---->tax node - knit scarves ([<app.views.TreeNode object at 0x101138790>])
+subtree - luggage, bags &amp; travel ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x101138610>, <app.views.TreeNode object at 0x101138650>])
+subtree - bags & backpacks ([]) -----APPENDED TO---->tax node - luggage, bags &amp; travel ([<app.views.TreeNode object at 0x1011387d0>])
+subtree - gym bags ([]) -----APPENDED TO---->tax node - bags & backpacks ([<app.views.TreeNode object at 0x101138850>])
+subtree - school backpack ([]) -----APPENDED TO---->tax node - bags & backpacks ([<app.views.TreeNode object at 0x101138850>, <app.views.TreeNode object at 0x101138890>])
+subtree - hiking bag ([]) -----APPENDED TO---->tax node - bags & backpacks ([<app.views.TreeNode object at 0x101138850>, <app.views.TreeNode object at 0x101138890>, <app.views.TreeNode object at 0x1011388d0>])
+subtree - luggage ([]) -----APPENDED TO---->tax node - luggage, bags &amp; travel ([<app.views.TreeNode object at 0x1011387d0>, <app.views.TreeNode object at 0x101138810>])
+subtree - carry on ([]) -----APPENDED TO---->tax node - luggage ([<app.views.TreeNode object at 0x101138950>])
+subtree - rolling luggage ([]) -----APPENDED TO---->tax node - luggage ([<app.views.TreeNode object at 0x101138950>, <app.views.TreeNode object at 0x101138990>])
+subtree - travel accessories ([]) -----APPENDED TO---->tax node - luggage, bags &amp; travel ([<app.views.TreeNode object at 0x1011387d0>, <app.views.TreeNode object at 0x101138810>, <app.views.TreeNode object at 0x101138910>])
+subtree - luggage tags ([]) -----APPENDED TO---->tax node - travel accessories ([<app.views.TreeNode object at 0x101138a10>])
+subtree - Samsonite Luggage 2 Pack Vinyl ID Tag ([]) -----APPENDED TO---->tax node - luggage tags ([<app.views.TreeNode object at 0x101138a90>])
+subtree - shoe bags ([]) -----APPENDED TO---->tax node - travel accessories ([<app.views.TreeNode object at 0x101138a10>, <app.views.TreeNode object at 0x101138a50>])
+subtree - mens ([]) -----APPENDED TO---->tax node - clothing ([<app.views.TreeNode object at 0x101138590>, <app.views.TreeNode object at 0x1011385d0>])
+subtree - shirts & polos ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011389d0>])
+subtree - turtle necks ([]) -----APPENDED TO---->tax node - shirts & polos ([<app.views.TreeNode object at 0x101138b10>])
+subtree - formals ([]) -----APPENDED TO---->tax node - shirts & polos ([<app.views.TreeNode object at 0x101138b10>, <app.views.TreeNode object at 0x101138b50>])
+subtree - sports casuals ([]) -----APPENDED TO---->tax node - shirts & polos ([<app.views.TreeNode object at 0x101138b10>, <app.views.TreeNode object at 0x101138b50>, <app.views.TreeNode object at 0x101138b90>])
+subtree - sleepwear & robes ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011389d0>, <app.views.TreeNode object at 0x101138ad0>])
+subtree - pajamas ([]) -----APPENDED TO---->tax node - sleepwear & robes ([<app.views.TreeNode object at 0x101138c10>])
+subtree - pajama tops ([]) -----APPENDED TO---->tax node - pajamas ([<app.views.TreeNode object at 0x101138c90>])
+subtree - pajama bottoms ([]) -----APPENDED TO---->tax node - pajamas ([<app.views.TreeNode object at 0x101138c90>, <app.views.TreeNode object at 0x101138cd0>])
+subtree - robes ([]) -----APPENDED TO---->tax node - sleepwear & robes ([<app.views.TreeNode object at 0x101138c10>, <app.views.TreeNode object at 0x101138c50>])
+subtree - cotton robes ([]) -----APPENDED TO---->tax node - robes ([<app.views.TreeNode object at 0x101138d50>])
+subtree - satin robes ([]) -----APPENDED TO---->tax node - robes ([<app.views.TreeNode object at 0x101138d50>, <app.views.TreeNode object at 0x101138d90>])
+subtree - Intimo Men's Classic Satin Robe ([]) -----APPENDED TO---->tax node - satin robes ([<app.views.TreeNode object at 0x101138e10>])
+subtree - socks ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011389d0>, <app.views.TreeNode object at 0x101138ad0>, <app.views.TreeNode object at 0x101138bd0>])
+subtree - dress socks ([]) -----APPENDED TO---->tax node - socks ([<app.views.TreeNode object at 0x101138dd0>])
+subtree - sports socks ([]) -----APPENDED TO---->tax node - socks ([<app.views.TreeNode object at 0x101138dd0>, <app.views.TreeNode object at 0x101138e50>])
+subtree - womens ([]) -----APPENDED TO---->tax node - clothing ([<app.views.TreeNode object at 0x101138590>, <app.views.TreeNode object at 0x1011385d0>, <app.views.TreeNode object at 0x101138750>])
+subtree - cold weather ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x101138e90>])
+subtree - ear muffs ([]) -----APPENDED TO---->tax node - cold weather ([<app.views.TreeNode object at 0x101138f10>])
+subtree - 180s Women's Tahoe Ear Warmer ([]) -----APPENDED TO---->tax node - ear muffs ([<app.views.TreeNode object at 0x101138f90>])
+subtree - gloves ([]) -----APPENDED TO---->tax node - cold weather ([<app.views.TreeNode object at 0x101138f10>, <app.views.TreeNode object at 0x101138f50>])
+subtree - Seirus Innovation Men's Hyperlite All Weather Glove ([]) -----APPENDED TO---->tax node - gloves ([<app.views.TreeNode object at 0x10113b050>])
+subtree - scarves ([]) -----APPENDED TO---->tax node - cold weather ([<app.views.TreeNode object at 0x101138f10>, <app.views.TreeNode object at 0x101138f50>, <app.views.TreeNode object at 0x101138fd0>])
+subtree - coats & jackets ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x101138e90>, <app.views.TreeNode object at 0x101138ed0>])
+subtree - woollen jacket ([]) -----APPENDED TO---->tax node - coats & jackets ([<app.views.TreeNode object at 0x10113b0d0>])
+subtree - leather jacket ([]) -----APPENDED TO---->tax node - coats & jackets ([<app.views.TreeNode object at 0x10113b0d0>, <app.views.TreeNode object at 0x10113b110>])
+subtree - dresses ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x101138e90>, <app.views.TreeNode object at 0x101138ed0>, <app.views.TreeNode object at 0x10113b090>])
+subtree - formals ([]) -----APPENDED TO---->tax node - dresses ([<app.views.TreeNode object at 0x10113b190>])
+subtree - sundresses ([]) -----APPENDED TO---->tax node - dresses ([<app.views.TreeNode object at 0x10113b190>, <app.views.TreeNode object at 0x10113b1d0>])
+subtree - Ecko Juniors Sundress Dress - Style ERF06075 ([]) -----APPENDED TO---->tax node - sundresses ([<app.views.TreeNode object at 0x10113b250>])
+subtree - tank ([]) -----APPENDED TO---->tax node - dresses ([<app.views.TreeNode object at 0x10113b190>, <app.views.TreeNode object at 0x10113b1d0>, <app.views.TreeNode object at 0x10113b210>])
+subtree - home ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>])
+subtree - kitchen & dining ([]) -----APPENDED TO---->tax node - home ([<app.views.TreeNode object at 0x10113b150>])
+subtree - bakeware ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10113b2d0>])
+subtree - bakers & casseroles ([]) -----APPENDED TO---->tax node - bakeware ([<app.views.TreeNode object at 0x10113b350>])
+subtree - casseroles ([]) -----APPENDED TO---->tax node - bakers & casseroles ([<app.views.TreeNode object at 0x10113b3d0>])
+subtree - bakers ([]) -----APPENDED TO---->tax node - bakers & casseroles ([<app.views.TreeNode object at 0x10113b3d0>, <app.views.TreeNode object at 0x10113b410>])
+subtree - baking tools & accessories ([]) -----APPENDED TO---->tax node - bakeware ([<app.views.TreeNode object at 0x10113b350>, <app.views.TreeNode object at 0x10113b390>])
+subtree - beaters ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10113b490>])
+subtree - baking cups ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10113b490>, <app.views.TreeNode object at 0x10113b4d0>])
+subtree - cookie cutters ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10113b490>, <app.views.TreeNode object at 0x10113b4d0>, <app.views.TreeNode object at 0x10113b510>])
+subtree - mixing bowls ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10113b490>, <app.views.TreeNode object at 0x10113b4d0>, <app.views.TreeNode object at 0x10113b510>, <app.views.TreeNode object at 0x10113b550>])
+subtree - bar tools & glasses ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10113b2d0>, <app.views.TreeNode object at 0x10113b310>])
+subtree - glassware & stemware ([]) -----APPENDED TO---->tax node - bar tools & glasses ([<app.views.TreeNode object at 0x10113b590>])
+subtree - beer mugs ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10113b610>])
+subtree - juice glasses ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10113b610>, <app.views.TreeNode object at 0x10113b650>])
+subtree - shot glasses ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10113b610>, <app.views.TreeNode object at 0x10113b650>, <app.views.TreeNode object at 0x10113b690>])
+subtree - Kikkerland Drunk Shot Glasses, Set of 4 ([]) -----APPENDED TO---->tax node - shot glasses ([<app.views.TreeNode object at 0x10113b710>])
+subtree - tumblers ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10113b610>, <app.views.TreeNode object at 0x10113b650>, <app.views.TreeNode object at 0x10113b690>, <app.views.TreeNode object at 0x10113b6d0>])
+subtree - wine glasses ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10113b610>, <app.views.TreeNode object at 0x10113b650>, <app.views.TreeNode object at 0x10113b690>, <app.views.TreeNode object at 0x10113b6d0>, <app.views.TreeNode object at 0x10113b750>])
+subtree - wine goblets ([]) -----APPENDED TO---->tax node - wine glasses ([<app.views.TreeNode object at 0x10113b7d0>])
+subtree - tasting sets ([]) -----APPENDED TO---->tax node - wine glasses ([<app.views.TreeNode object at 0x10113b7d0>, <app.views.TreeNode object at 0x10113b810>])
+subtree - corkscrews & openers ([]) -----APPENDED TO---->tax node - bar tools & glasses ([<app.views.TreeNode object at 0x10113b590>, <app.views.TreeNode object at 0x10113b5d0>])
+subtree - champagne openers ([]) -----APPENDED TO---->tax node - corkscrews & openers ([<app.views.TreeNode object at 0x10113b850>])
+subtree - pump corkscrews ([]) -----APPENDED TO---->tax node - corkscrews & openers ([<app.views.TreeNode object at 0x10113b850>, <app.views.TreeNode object at 0x10113b890>])
+subtree - screwpull levers ([]) -----APPENDED TO---->tax node - corkscrews & openers ([<app.views.TreeNode object at 0x10113b850>, <app.views.TreeNode object at 0x10113b890>, <app.views.TreeNode object at 0x10113b8d0>])
+subtree - cookware ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10113b2d0>, <app.views.TreeNode object at 0x10113b310>, <app.views.TreeNode object at 0x10113b450>])
+subtree - pressure cookers ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10113b910>])
+subtree - roasting pans ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10113b910>, <app.views.TreeNode object at 0x10113b950>])
+subtree - lids ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10113b910>, <app.views.TreeNode object at 0x10113b950>, <app.views.TreeNode object at 0x10113b990>])
+subtree - tea kettles ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10113b910>, <app.views.TreeNode object at 0x10113b950>, <app.views.TreeNode object at 0x10113b990>, <app.views.TreeNode object at 0x10113b9d0>])
+subtree - steamers ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10113b910>, <app.views.TreeNode object at 0x10113b950>, <app.views.TreeNode object at 0x10113b990>, <app.views.TreeNode object at 0x10113b9d0>, <app.views.TreeNode object at 0x10113ba10>])
+subtree - dining room furniture ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10113b2d0>, <app.views.TreeNode object at 0x10113b310>, <app.views.TreeNode object at 0x10113b450>, <app.views.TreeNode object at 0x10113b790>])
+subtree - dining chair ([]) -----APPENDED TO---->tax node - dining room furniture ([<app.views.TreeNode object at 0x10113ba90>])
+subtree - extendable tables ([]) -----APPENDED TO---->tax node - dining room furniture ([<app.views.TreeNode object at 0x10113ba90>, <app.views.TreeNode object at 0x10113bad0>])
+subtree - kitchen knives & cutlery ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10113b2d0>, <app.views.TreeNode object at 0x10113b310>, <app.views.TreeNode object at 0x10113b450>, <app.views.TreeNode object at 0x10113b790>, <app.views.TreeNode object at 0x10113ba50>])
+subtree - cake knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10113bb50>])
+subtree - chef's knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10113bb50>, <app.views.TreeNode object at 0x10113bb90>])
+subtree - cutting boards ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10113bb50>, <app.views.TreeNode object at 0x10113bb90>, <app.views.TreeNode object at 0x10113bbd0>])
+subtree - Totally Bamboo 20-7930 3-Piece Cutting Board Set ([]) -----APPENDED TO---->tax node - cutting boards ([<app.views.TreeNode object at 0x10113bc50>])
+subtree - electric knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10113bb50>, <app.views.TreeNode object at 0x10113bb90>, <app.views.TreeNode object at 0x10113bbd0>, <app.views.TreeNode object at 0x10113bc10>])
+subtree - knife sharpeners ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10113bb50>, <app.views.TreeNode object at 0x10113bb90>, <app.views.TreeNode object at 0x10113bbd0>, <app.views.TreeNode object at 0x10113bc10>, <app.views.TreeNode object at 0x10113bc90>])
+subtree - specialty knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10113bb50>, <app.views.TreeNode object at 0x10113bb90>, <app.views.TreeNode object at 0x10113bbd0>, <app.views.TreeNode object at 0x10113bc10>, <app.views.TreeNode object at 0x10113bc90>, <app.views.TreeNode object at 0x10113bcd0>])
+subtree - mincing knives ([]) -----APPENDED TO---->tax node - specialty knives ([<app.views.TreeNode object at 0x10113bd50>])
+subtree - seafood knives ([]) -----APPENDED TO---->tax node - specialty knives ([<app.views.TreeNode object at 0x10113bd50>, <app.views.TreeNode object at 0x10113bd90>])
+subtree - food knives ([]) -----APPENDED TO---->tax node - specialty knives ([<app.views.TreeNode object at 0x10113bd50>, <app.views.TreeNode object at 0x10113bd90>, <app.views.TreeNode object at 0x10113bdd0>])
+subtree - home appliances ([]) -----APPENDED TO---->tax node - home ([<app.views.TreeNode object at 0x10113b150>, <app.views.TreeNode object at 0x10113b290>])
+subtree - air conditioners & fans ([]) -----APPENDED TO---->tax node - home appliances ([<app.views.TreeNode object at 0x10113bd10>])
+subtree - ceiling fans & accessories ([]) -----APPENDED TO---->tax node - air conditioners & fans ([<app.views.TreeNode object at 0x10113be50>])
+subtree - ceiling fans ([]) -----APPENDED TO---->tax node - ceiling fans & accessories ([<app.views.TreeNode object at 0x10113bed0>])
+subtree - accessories ([]) -----APPENDED TO---->tax node - ceiling fans & accessories ([<app.views.TreeNode object at 0x10113bed0>, <app.views.TreeNode object at 0x10113bf10>])
+subtree - down rods ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10113bf90>])
+subtree - remote control ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10113bf90>, <app.views.TreeNode object at 0x10113bfd0>])
+subtree - Heath Zenith SL-6135 Basic Solutions Indoor Remote Control ([]) -----APPENDED TO---->tax node - remote control ([<app.views.TreeNode object at 0x10113e090>])
+subtree - household fans ([]) -----APPENDED TO---->tax node - air conditioners & fans ([<app.views.TreeNode object at 0x10113be50>, <app.views.TreeNode object at 0x10113be90>])
+subtree - pedestal fans ([]) -----APPENDED TO---->tax node - household fans ([<app.views.TreeNode object at 0x10113e050>])
+subtree - table fans ([]) -----APPENDED TO---->tax node - household fans ([<app.views.TreeNode object at 0x10113e050>, <app.views.TreeNode object at 0x10113e0d0>])
+subtree - window fans ([]) -----APPENDED TO---->tax node - household fans ([<app.views.TreeNode object at 0x10113e050>, <app.views.TreeNode object at 0x10113e0d0>, <app.views.TreeNode object at 0x10113e110>])
+subtree - large appliances ([]) -----APPENDED TO---->tax node - home appliances ([<app.views.TreeNode object at 0x10113bd10>, <app.views.TreeNode object at 0x10113be10>])
+subtree - cooktops ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10113e150>])
+subtree - dishwashers ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10113e150>, <app.views.TreeNode object at 0x10113e190>])
+subtree - convertible dishwashers ([]) -----APPENDED TO---->tax node - dishwashers ([<app.views.TreeNode object at 0x10113e210>])
+subtree - portable dishwashers ([]) -----APPENDED TO---->tax node - dishwashers ([<app.views.TreeNode object at 0x10113e210>, <app.views.TreeNode object at 0x10113e250>])
+subtree - food waste disposers ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10113e150>, <app.views.TreeNode object at 0x10113e190>, <app.views.TreeNode object at 0x10113e1d0>])
+subtree - refrigerators ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10113e150>, <app.views.TreeNode object at 0x10113e190>, <app.views.TreeNode object at 0x10113e1d0>, <app.views.TreeNode object at 0x10113e290>])
+subtree - freeze-on-top refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x10113e310>])
+subtree - freeze-on-bottom refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x10113e310>, <app.views.TreeNode object at 0x10113e350>])
+subtree - side-by-side refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x10113e310>, <app.views.TreeNode object at 0x10113e350>, <app.views.TreeNode object at 0x10113e390>])
+subtree - freezerless refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x10113e310>, <app.views.TreeNode object at 0x10113e350>, <app.views.TreeNode object at 0x10113e390>, <app.views.TreeNode object at 0x10113e3d0>])
+subtree - washers & dryers ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10113e150>, <app.views.TreeNode object at 0x10113e190>, <app.views.TreeNode object at 0x10113e1d0>, <app.views.TreeNode object at 0x10113e290>, <app.views.TreeNode object at 0x10113e2d0>])
+subtree - clothes dryers ([]) -----APPENDED TO---->tax node - washers & dryers ([<app.views.TreeNode object at 0x10113e450>])
+subtree - clothes washers ([]) -----APPENDED TO---->tax node - washers & dryers ([<app.views.TreeNode object at 0x10113e450>, <app.views.TreeNode object at 0x10113e490>])
+subtree - combination washers & dryers ([]) -----APPENDED TO---->tax node - washers & dryers ([<app.views.TreeNode object at 0x10113e450>, <app.views.TreeNode object at 0x10113e490>, <app.views.TreeNode object at 0x10113e4d0>])
+subtree - small appliances ([]) -----APPENDED TO---->tax node - home appliances ([<app.views.TreeNode object at 0x10113bd10>, <app.views.TreeNode object at 0x10113be10>, <app.views.TreeNode object at 0x10113bf50>])
+subtree - blenders ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x10113e510>])
+subtree - countertop blenders ([]) -----APPENDED TO---->tax node - blenders ([<app.views.TreeNode object at 0x10113e590>])
+subtree - hand blenders ([]) -----APPENDED TO---->tax node - blenders ([<app.views.TreeNode object at 0x10113e590>, <app.views.TreeNode object at 0x10113e5d0>])
+subtree - coffee tea & espresso appliances ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x10113e510>, <app.views.TreeNode object at 0x10113e550>])
+subtree - beverage warmers ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x10113e650>])
+subtree - coffee grinders ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x10113e650>, <app.views.TreeNode object at 0x10113e690>])
+subtree - espresso machines ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x10113e650>, <app.views.TreeNode object at 0x10113e690>, <app.views.TreeNode object at 0x10113e6d0>])
+subtree - manual espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x10113e750>])
+subtree - semi-automatic espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x10113e750>, <app.views.TreeNode object at 0x10113e790>])
+subtree - super-automatic espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x10113e750>, <app.views.TreeNode object at 0x10113e790>, <app.views.TreeNode object at 0x10113e7d0>])
+subtree - steam espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x10113e750>, <app.views.TreeNode object at 0x10113e790>, <app.views.TreeNode object at 0x10113e7d0>, <app.views.TreeNode object at 0x10113e810>])
+subtree - milk steamers ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x10113e650>, <app.views.TreeNode object at 0x10113e690>, <app.views.TreeNode object at 0x10113e6d0>, <app.views.TreeNode object at 0x10113e710>])
+subtree - milk frothers ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x10113e650>, <app.views.TreeNode object at 0x10113e690>, <app.views.TreeNode object at 0x10113e6d0>, <app.views.TreeNode object at 0x10113e710>, <app.views.TreeNode object at 0x10113e850>])
+subtree - electric cookware ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x10113e510>, <app.views.TreeNode object at 0x10113e550>, <app.views.TreeNode object at 0x10113e610>])
+subtree - can openers ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x10113e8d0>])
+subtree - cookers ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x10113e8d0>, <app.views.TreeNode object at 0x10113e910>])
+subtree - countertop burners ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x10113e8d0>, <app.views.TreeNode object at 0x10113e910>, <app.views.TreeNode object at 0x10113e950>])
+subtree - kettles ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x10113e8d0>, <app.views.TreeNode object at 0x10113e910>, <app.views.TreeNode object at 0x10113e950>, <app.views.TreeNode object at 0x10113e990>])
+subtree - mixers ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x10113e510>, <app.views.TreeNode object at 0x10113e550>, <app.views.TreeNode object at 0x10113e610>, <app.views.TreeNode object at 0x10113e890>])
+subtree - hand mixers ([]) -----APPENDED TO---->tax node - mixers ([<app.views.TreeNode object at 0x10113ea10>])
+subtree - stand mixers ([]) -----APPENDED TO---->tax node - mixers ([<app.views.TreeNode object at 0x10113ea10>, <app.views.TreeNode object at 0x10113ea50>])
+subtree - vacuum cleaning & storage ([]) -----APPENDED TO---->tax node - home ([<app.views.TreeNode object at 0x10113b150>, <app.views.TreeNode object at 0x10113b290>, <app.views.TreeNode object at 0x10113bb10>])
+subtree - air purifiers ([]) -----APPENDED TO---->tax node - vacuum cleaning & storage ([<app.views.TreeNode object at 0x10113e9d0>])
+subtree - air freshners ([]) -----APPENDED TO---->tax node - air purifiers ([<app.views.TreeNode object at 0x10113ead0>])
+subtree - electric air freshners ([]) -----APPENDED TO---->tax node - air freshners ([<app.views.TreeNode object at 0x10113eb50>])
+subtree - air sprays ([]) -----APPENDED TO---->tax node - air freshners ([<app.views.TreeNode object at 0x10113eb50>, <app.views.TreeNode object at 0x10113eb90>])
+subtree - solid and liquid freshners ([]) -----APPENDED TO---->tax node - air freshners ([<app.views.TreeNode object at 0x10113eb50>, <app.views.TreeNode object at 0x10113eb90>, <app.views.TreeNode object at 0x10113ebd0>])
+subtree - cleaning supplies ([]) -----APPENDED TO---->tax node - vacuum cleaning & storage ([<app.views.TreeNode object at 0x10113e9d0>, <app.views.TreeNode object at 0x10113ea90>])
+subtree - brushes ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x10113ec10>])
+subtree - dusting ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x10113ec10>, <app.views.TreeNode object at 0x10113ec50>])
+subtree - dust clothes ([]) -----APPENDED TO---->tax node - dusting ([<app.views.TreeNode object at 0x10113ecd0>])
+subtree - dust mops ([]) -----APPENDED TO---->tax node - dusting ([<app.views.TreeNode object at 0x10113ecd0>, <app.views.TreeNode object at 0x10113ed10>])
+subtree - feather dusters ([]) -----APPENDED TO---->tax node - dusting ([<app.views.TreeNode object at 0x10113ecd0>, <app.views.TreeNode object at 0x10113ed10>, <app.views.TreeNode object at 0x10113ed50>])
+subtree - moping ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x10113ec10>, <app.views.TreeNode object at 0x10113ec50>, <app.views.TreeNode object at 0x10113ec90>])
+subtree - buckets ([]) -----APPENDED TO---->tax node - moping ([<app.views.TreeNode object at 0x10113edd0>])
+subtree - wet mops ([]) -----APPENDED TO---->tax node - moping ([<app.views.TreeNode object at 0x10113edd0>, <app.views.TreeNode object at 0x10113ee10>])
+subtree - accessories ([]) -----APPENDED TO---->tax node - moping ([<app.views.TreeNode object at 0x10113edd0>, <app.views.TreeNode object at 0x10113ee10>, <app.views.TreeNode object at 0x10113ee50>])
+subtree - mop handles ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10113eed0>])
+subtree - Rubbermaid FGH12500 Invader Side Gate Wet Mop Gray Aluminum Handle with Large Yellow Plastic Head, 54" Length ([]) -----APPENDED TO---->tax node - mop handles ([<app.views.TreeNode object at 0x10113ef50>])
+subtree - mop handles & sponges ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10113eed0>, <app.views.TreeNode object at 0x10113ef10>])
+subtree - paper towels ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x10113ec10>, <app.views.TreeNode object at 0x10113ec50>, <app.views.TreeNode object at 0x10113ec90>, <app.views.TreeNode object at 0x10113ed90>])
+subtree - toys & games ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>])
+subtree - sports & outdoor ([]) -----APPENDED TO---->tax node - toys & games ([<app.views.TreeNode object at 0x10113eb10>])
+subtree - pools & water ([]) -----APPENDED TO---->tax node - sports & outdoor ([<app.views.TreeNode object at 0x10113ef90>])
+subtree - baby floats ([]) -----APPENDED TO---->tax node - pools & water ([<app.views.TreeNode object at 0x1011e0050>])
+subtree - kiddie pools ([]) -----APPENDED TO---->tax node - pools & water ([<app.views.TreeNode object at 0x1011e0050>, <app.views.TreeNode object at 0x1011e0090>])
+subtree - pool toys ([]) -----APPENDED TO---->tax node - pools & water ([<app.views.TreeNode object at 0x1011e0050>, <app.views.TreeNode object at 0x1011e0090>, <app.views.TreeNode object at 0x1011e00d0>])
+subtree - sports ([]) -----APPENDED TO---->tax node - sports & outdoor ([<app.views.TreeNode object at 0x10113ef90>, <app.views.TreeNode object at 0x10113efd0>])
+subtree - baseball & softball ([]) -----APPENDED TO---->tax node - sports ([<app.views.TreeNode object at 0x1011e0150>])
+subtree - baseball bats ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1011e01d0>])
+subtree - aluminium ([]) -----APPENDED TO---->tax node - baseball bats ([<app.views.TreeNode object at 0x1011e0250>])
+subtree - wood ([]) -----APPENDED TO---->tax node - baseball bats ([<app.views.TreeNode object at 0x1011e0250>, <app.views.TreeNode object at 0x1011e0290>])
+subtree - baseballs ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1011e01d0>, <app.views.TreeNode object at 0x1011e0210>])
+subtree - batting gloves ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1011e01d0>, <app.views.TreeNode object at 0x1011e0210>, <app.views.TreeNode object at 0x1011e02d0>])
+subtree - helmets ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1011e01d0>, <app.views.TreeNode object at 0x1011e0210>, <app.views.TreeNode object at 0x1011e02d0>, <app.views.TreeNode object at 0x1011e0310>])
+subtree - basketball ([]) -----APPENDED TO---->tax node - sports ([<app.views.TreeNode object at 0x1011e0150>, <app.views.TreeNode object at 0x1011e0190>])
+subtree - basketballs ([]) -----APPENDED TO---->tax node - basketball ([<app.views.TreeNode object at 0x1011e0390>])
+subtree - backboards ([]) -----APPENDED TO---->tax node - basketball ([<app.views.TreeNode object at 0x1011e0390>, <app.views.TreeNode object at 0x1011e03d0>])
+subtree - boxing ([]) -----APPENDED TO---->tax node - sports ([<app.views.TreeNode object at 0x1011e0150>, <app.views.TreeNode object at 0x1011e0190>, <app.views.TreeNode object at 0x1011e0350>])
+subtree - punching bags ([]) -----APPENDED TO---->tax node - boxing ([<app.views.TreeNode object at 0x1011e0450>])
+subtree - boxing gloves ([]) -----APPENDED TO---->tax node - boxing ([<app.views.TreeNode object at 0x1011e0450>, <app.views.TreeNode object at 0x1011e0490>])
+subtree - party supplies ([]) -----APPENDED TO---->tax node - toys & games ([<app.views.TreeNode object at 0x10113eb10>, <app.views.TreeNode object at 0x10113ee90>])
+subtree - gift wrapping supplies ([]) -----APPENDED TO---->tax node - party supplies ([<app.views.TreeNode object at 0x1011e0410>])
+subtree - gift bags ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1011e0510>])
+subtree - gift wrap ribbons ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1011e0510>, <app.views.TreeNode object at 0x1011e0550>])
+subtree - gift wrap paper ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1011e0510>, <app.views.TreeNode object at 0x1011e0550>, <app.views.TreeNode object at 0x1011e0590>])
+subtree - wrapping tissue ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1011e0510>, <app.views.TreeNode object at 0x1011e0550>, <app.views.TreeNode object at 0x1011e0590>, <app.views.TreeNode object at 0x1011e05d0>])
+subtree - Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA ([]) -----APPENDED TO---->tax node - wrapping tissue ([<app.views.TreeNode object at 0x1011e0650>])
+subtree - decorations ([]) -----APPENDED TO---->tax node - party supplies ([<app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e04d0>])
+subtree - balloons ([]) -----APPENDED TO---->tax node - decorations ([<app.views.TreeNode object at 0x1011e0690>])
+subtree - banners ([]) -----APPENDED TO---->tax node - decorations ([<app.views.TreeNode object at 0x1011e0690>, <app.views.TreeNode object at 0x1011e06d0>])
+subtree - confetti ([]) -----APPENDED TO---->tax node - decorations ([<app.views.TreeNode object at 0x1011e0690>, <app.views.TreeNode object at 0x1011e06d0>, <app.views.TreeNode object at 0x1011e0710>])
+subtree - Happy Birthday Confetti ([]) -----APPENDED TO---->tax node - confetti ([<app.views.TreeNode object at 0x1011e0790>])
+subtree - stuffed animals & plush ([]) -----APPENDED TO---->tax node - toys & games ([<app.views.TreeNode object at 0x10113eb10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0110>])
+subtree - teddy bears ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1011e0750>])
+subtree - plush puppets ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1011e0750>, <app.views.TreeNode object at 0x1011e07d0>])
+subtree - animals ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1011e0750>, <app.views.TreeNode object at 0x1011e07d0>, <app.views.TreeNode object at 0x1011e0810>])
+subtree - plush backpacks & purses ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1011e0750>, <app.views.TreeNode object at 0x1011e07d0>, <app.views.TreeNode object at 0x1011e0810>, <app.views.TreeNode object at 0x1011e0850>])
+subtree - plush backpacks ([]) -----APPENDED TO---->tax node - plush backpacks & purses ([<app.views.TreeNode object at 0x1011e08d0>])
+subtree - plush purses ([]) -----APPENDED TO---->tax node - plush backpacks & purses ([<app.views.TreeNode object at 0x1011e08d0>, <app.views.TreeNode object at 0x1011e0910>])
+subtree - shoes ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>])
+subtree - shoe care & cleaning ([]) -----APPENDED TO---->tax node - shoes ([<app.views.TreeNode object at 0x1011e0890>])
+subtree - polishes ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1011e0990>])
+subtree - shoe brushes ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1011e0990>, <app.views.TreeNode object at 0x1011e09d0>])
+subtree - shoe dryers ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1011e0990>, <app.views.TreeNode object at 0x1011e09d0>, <app.views.TreeNode object at 0x1011e0a10>])
+subtree - shoe care kits & sets ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1011e0990>, <app.views.TreeNode object at 0x1011e09d0>, <app.views.TreeNode object at 0x1011e0a10>, <app.views.TreeNode object at 0x1011e0a50>])
+subtree - mens ([]) -----APPENDED TO---->tax node - shoes ([<app.views.TreeNode object at 0x1011e0890>, <app.views.TreeNode object at 0x1011e0950>])
+subtree - athletic ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011e0ad0>])
+subtree - running ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e0b50>])
+subtree - track & field ([]) -----APPENDED TO---->tax node - running ([<app.views.TreeNode object at 0x1011e0bd0>])
+subtree - ASICS Men's Japan Thunder 3 Track and Field Shoe ([]) -----APPENDED TO---->tax node - track & field ([<app.views.TreeNode object at 0x1011e0c50>])
+subtree - spikes ([]) -----APPENDED TO---->tax node - running ([<app.views.TreeNode object at 0x1011e0bd0>, <app.views.TreeNode object at 0x1011e0c10>])
+subtree - trail ([]) -----APPENDED TO---->tax node - running ([<app.views.TreeNode object at 0x1011e0bd0>, <app.views.TreeNode object at 0x1011e0c10>, <app.views.TreeNode object at 0x1011e0c90>])
+subtree - volleyball ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e0b50>, <app.views.TreeNode object at 0x1011e0b90>])
+subtree - tennis ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e0b50>, <app.views.TreeNode object at 0x1011e0b90>, <app.views.TreeNode object at 0x1011e0cd0>])
+subtree - boat shoes ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011e0ad0>, <app.views.TreeNode object at 0x1011e0b10>])
+subtree - boots ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011e0ad0>, <app.views.TreeNode object at 0x1011e0b10>, <app.views.TreeNode object at 0x1011e0d10>])
+subtree - athletic & outdoor ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1011e0d90>])
+subtree - hiking boots ([]) -----APPENDED TO---->tax node - athletic & outdoor ([<app.views.TreeNode object at 0x1011e0e10>])
+subtree - rain boots ([]) -----APPENDED TO---->tax node - athletic & outdoor ([<app.views.TreeNode object at 0x1011e0e10>, <app.views.TreeNode object at 0x1011e0e50>])
+subtree - Bogs Men's Classic Ultra Mid Waterproof Boot ([]) -----APPENDED TO---->tax node - rain boots ([<app.views.TreeNode object at 0x1011e0ed0>])
+subtree - sandals ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011e0ad0>, <app.views.TreeNode object at 0x1011e0b10>, <app.views.TreeNode object at 0x1011e0d10>, <app.views.TreeNode object at 0x1011e0d50>])
+subtree - slides ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1011e0e90>])
+subtree - sports sandals ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1011e0e90>, <app.views.TreeNode object at 0x1011e0f10>])
+subtree - slippers ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1011e0ad0>, <app.views.TreeNode object at 0x1011e0b10>, <app.views.TreeNode object at 0x1011e0d10>, <app.views.TreeNode object at 0x1011e0d50>, <app.views.TreeNode object at 0x1011e0dd0>])
+subtree - outdoor soles ([]) -----APPENDED TO---->tax node - slippers ([<app.views.TreeNode object at 0x1011e0f90>])
+subtree - moccasins ([]) -----APPENDED TO---->tax node - slippers ([<app.views.TreeNode object at 0x1011e0f90>, <app.views.TreeNode object at 0x1011e0fd0>])
+subtree - womens ([]) -----APPENDED TO---->tax node - shoes ([<app.views.TreeNode object at 0x1011e0890>, <app.views.TreeNode object at 0x1011e0950>, <app.views.TreeNode object at 0x1011e0a90>])
+subtree - athletic ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1011e2050>])
+subtree - boating ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>])
+subtree - rowing ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>, <app.views.TreeNode object at 0x1011e2110>])
+subtree - cycling ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>, <app.views.TreeNode object at 0x1011e2110>, <app.views.TreeNode object at 0x1011e2150>])
+subtree - running ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>, <app.views.TreeNode object at 0x1011e2110>, <app.views.TreeNode object at 0x1011e2150>, <app.views.TreeNode object at 0x1011e2190>])
+subtree - golf ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>, <app.views.TreeNode object at 0x1011e2110>, <app.views.TreeNode object at 0x1011e2150>, <app.views.TreeNode object at 0x1011e2190>, <app.views.TreeNode object at 0x1011e21d0>])
+subtree - skateboarding ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>, <app.views.TreeNode object at 0x1011e2110>, <app.views.TreeNode object at 0x1011e2150>, <app.views.TreeNode object at 0x1011e2190>, <app.views.TreeNode object at 0x1011e21d0>, <app.views.TreeNode object at 0x1011e2210>])
+subtree - skate shoes ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1011e20d0>, <app.views.TreeNode object at 0x1011e2110>, <app.views.TreeNode object at 0x1011e2150>, <app.views.TreeNode object at 0x1011e2190>, <app.views.TreeNode object at 0x1011e21d0>, <app.views.TreeNode object at 0x1011e2210>, <app.views.TreeNode object at 0x1011e2250>])
+subtree - boots ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1011e2050>, <app.views.TreeNode object at 0x1011e2090>])
+subtree - flat ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1011e22d0>])
+subtree - pull-on ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1011e22d0>, <app.views.TreeNode object at 0x1011e2310>])
+subtree - water-proof ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1011e22d0>, <app.views.TreeNode object at 0x1011e2310>, <app.views.TreeNode object at 0x1011e2350>])
+subtree - zip ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1011e22d0>, <app.views.TreeNode object at 0x1011e2310>, <app.views.TreeNode object at 0x1011e2350>, <app.views.TreeNode object at 0x1011e2390>])
+subtree - boat shoes ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1011e2050>, <app.views.TreeNode object at 0x1011e2090>, <app.views.TreeNode object at 0x1011e2290>])
+subtree - fashion sneakers ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1011e2050>, <app.views.TreeNode object at 0x1011e2090>, <app.views.TreeNode object at 0x1011e2290>, <app.views.TreeNode object at 0x1011e23d0>])
+subtree - mary janes ([]) -----APPENDED TO---->tax node - fashion sneakers ([<app.views.TreeNode object at 0x1011e2450>])
+subtree - sling-back ([]) -----APPENDED TO---->tax node - fashion sneakers ([<app.views.TreeNode object at 0x1011e2450>, <app.views.TreeNode object at 0x1011e2490>])
+subtree - slip-on ([]) -----APPENDED TO---->tax node - fashion sneakers ([<app.views.TreeNode object at 0x1011e2450>, <app.views.TreeNode object at 0x1011e2490>, <app.views.TreeNode object at 0x1011e24d0>])
+subtree - sandals ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1011e2050>, <app.views.TreeNode object at 0x1011e2090>, <app.views.TreeNode object at 0x1011e2290>, <app.views.TreeNode object at 0x1011e23d0>, <app.views.TreeNode object at 0x1011e2410>])
+subtree - platform ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1011e2550>])
+subtree - wedges ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1011e2550>, <app.views.TreeNode object at 0x1011e2590>])
+subtree - BANDOLINO HAPPYME WEDGE SANDAL LIGHT NATURAL SYNTHETIC WOMENS SIZE 7.5 M ([]) -----APPENDED TO---->tax node - wedges ([<app.views.TreeNode object at 0x1011e2610>])
+subtree - electronics ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>, <app.views.TreeNode object at 0x1011e0610>])
+subtree - accessories & supplies ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1011e2510>])
+subtree - audio & video accessories ([]) -----APPENDED TO---->tax node - accessories & supplies ([<app.views.TreeNode object at 0x1011e2650>])
+subtree - antennas ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1011e26d0>])
+subtree - radio antennas ([]) -----APPENDED TO---->tax node - antennas ([<app.views.TreeNode object at 0x1011e2750>])
+subtree - tv antennas ([]) -----APPENDED TO---->tax node - antennas ([<app.views.TreeNode object at 0x1011e2750>, <app.views.TreeNode object at 0x1011e2790>])
+subtree - Sewell Direct SW-29480 HDTV Antenna ([]) -----APPENDED TO---->tax node - tv antennas ([<app.views.TreeNode object at 0x1011e2810>])
+subtree - blank media ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1011e26d0>, <app.views.TreeNode object at 0x1011e2710>])
+subtree - CD-R disc ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1011e2850>])
+subtree - DVD-R disc ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1011e2850>, <app.views.TreeNode object at 0x1011e2890>])
+subtree - Minidiscs ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1011e2850>, <app.views.TreeNode object at 0x1011e2890>, <app.views.TreeNode object at 0x1011e28d0>])
+subtree - Data Cartridges ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1011e2850>, <app.views.TreeNode object at 0x1011e2890>, <app.views.TreeNode object at 0x1011e28d0>, <app.views.TreeNode object at 0x1011e2910>])
+subtree - plugs & adapters ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1011e26d0>, <app.views.TreeNode object at 0x1011e2710>, <app.views.TreeNode object at 0x1011e27d0>])
+subtree - speaker accessories ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1011e26d0>, <app.views.TreeNode object at 0x1011e2710>, <app.views.TreeNode object at 0x1011e27d0>, <app.views.TreeNode object at 0x1011e2950>])
+subtree - speaker cables ([]) -----APPENDED TO---->tax node - speaker accessories ([<app.views.TreeNode object at 0x1011e29d0>])
+subtree - speaker mounts ([]) -----APPENDED TO---->tax node - speaker accessories ([<app.views.TreeNode object at 0x1011e29d0>, <app.views.TreeNode object at 0x1011e2a10>])
+subtree - speaker stands ([]) -----APPENDED TO---->tax node - speaker accessories ([<app.views.TreeNode object at 0x1011e29d0>, <app.views.TreeNode object at 0x1011e2a10>, <app.views.TreeNode object at 0x1011e2a50>])
+subtree - SANUS SYSTEMS BF-31B Wood Speaker Stands ([]) -----APPENDED TO---->tax node - speaker stands ([<app.views.TreeNode object at 0x1011e2ad0>])
+subtree - microphones ([]) -----APPENDED TO---->tax node - accessories & supplies ([<app.views.TreeNode object at 0x1011e2650>, <app.views.TreeNode object at 0x1011e2690>])
+subtree - wireless microphones ([]) -----APPENDED TO---->tax node - microphones ([<app.views.TreeNode object at 0x1011e2a90>])
+subtree - handheld microphones ([]) -----APPENDED TO---->tax node - wireless microphones ([<app.views.TreeNode object at 0x1011e2b50>])
+subtree - headset microphones ([]) -----APPENDED TO---->tax node - wireless microphones ([<app.views.TreeNode object at 0x1011e2b50>, <app.views.TreeNode object at 0x1011e2b90>])
+subtree - dynamic microphones ([]) -----APPENDED TO---->tax node - microphones ([<app.views.TreeNode object at 0x1011e2a90>, <app.views.TreeNode object at 0x1011e2b10>])
+subtree - instrument ([]) -----APPENDED TO---->tax node - dynamic microphones ([<app.views.TreeNode object at 0x1011e2c10>])
+subtree - vocal ([]) -----APPENDED TO---->tax node - dynamic microphones ([<app.views.TreeNode object at 0x1011e2c10>, <app.views.TreeNode object at 0x1011e2c50>])
+subtree - multipurpose ([]) -----APPENDED TO---->tax node - dynamic microphones ([<app.views.TreeNode object at 0x1011e2c10>, <app.views.TreeNode object at 0x1011e2c50>, <app.views.TreeNode object at 0x1011e2c90>])
+subtree - telephone accessories ([]) -----APPENDED TO---->tax node - accessories & supplies ([<app.views.TreeNode object at 0x1011e2650>, <app.views.TreeNode object at 0x1011e2690>, <app.views.TreeNode object at 0x1011e2990>])
+subtree - caller ID displays ([]) -----APPENDED TO---->tax node - telephone accessories ([<app.views.TreeNode object at 0x1011e2cd0>])
+subtree - batteries ([]) -----APPENDED TO---->tax node - telephone accessories ([<app.views.TreeNode object at 0x1011e2cd0>, <app.views.TreeNode object at 0x1011e2d10>])
+subtree - phone cards ([]) -----APPENDED TO---->tax node - telephone accessories ([<app.views.TreeNode object at 0x1011e2cd0>, <app.views.TreeNode object at 0x1011e2d10>, <app.views.TreeNode object at 0x1011e2d50>])
+subtree - computers & accessories ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1011e2510>, <app.views.TreeNode object at 0x1011e25d0>])
+subtree - printers ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1011e2d90>])
+subtree - inkjet ([]) -----APPENDED TO---->tax node - printers ([<app.views.TreeNode object at 0x1011e2e10>])
+subtree - laser ([]) -----APPENDED TO---->tax node - printers ([<app.views.TreeNode object at 0x1011e2e10>, <app.views.TreeNode object at 0x1011e2e50>])
+subtree - all-in-one ([]) -----APPENDED TO---->tax node - printers ([<app.views.TreeNode object at 0x1011e2e10>, <app.views.TreeNode object at 0x1011e2e50>, <app.views.TreeNode object at 0x1011e2e90>])
+subtree - video projectors ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1011e2d90>, <app.views.TreeNode object at 0x1011e2dd0>])
+subtree - DLP projectors ([]) -----APPENDED TO---->tax node - video projectors ([<app.views.TreeNode object at 0x1011e2f10>])
+subtree - LCD projectors ([]) -----APPENDED TO---->tax node - video projectors ([<app.views.TreeNode object at 0x1011e2f10>, <app.views.TreeNode object at 0x1011e2f50>])
+subtree - scanners ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1011e2d90>, <app.views.TreeNode object at 0x1011e2dd0>, <app.views.TreeNode object at 0x1011e2ed0>])
+subtree - networking products ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1011e2d90>, <app.views.TreeNode object at 0x1011e2dd0>, <app.views.TreeNode object at 0x1011e2ed0>, <app.views.TreeNode object at 0x1011e2f90>])
+subtree - hubs ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1011e4050>])
+subtree - modems ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1011e4050>, <app.views.TreeNode object at 0x1011e4090>])
+subtree - access points ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1011e4050>, <app.views.TreeNode object at 0x1011e4090>, <app.views.TreeNode object at 0x1011e40d0>])
+subtree - routers ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1011e4050>, <app.views.TreeNode object at 0x1011e4090>, <app.views.TreeNode object at 0x1011e40d0>, <app.views.TreeNode object at 0x1011e4110>])
+subtree - switches ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1011e4050>, <app.views.TreeNode object at 0x1011e4090>, <app.views.TreeNode object at 0x1011e40d0>, <app.views.TreeNode object at 0x1011e4110>, <app.views.TreeNode object at 0x1011e4150>])
+subtree - mice & keyboards ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1011e2d90>, <app.views.TreeNode object at 0x1011e2dd0>, <app.views.TreeNode object at 0x1011e2ed0>, <app.views.TreeNode object at 0x1011e2f90>, <app.views.TreeNode object at 0x1011e2fd0>])
+subtree - mice ([]) -----APPENDED TO---->tax node - mice & keyboards ([<app.views.TreeNode object at 0x1011e41d0>])
+subtree - laser mice ([]) -----APPENDED TO---->tax node - mice ([<app.views.TreeNode object at 0x1011e4250>])
+subtree - optical mice ([]) -----APPENDED TO---->tax node - mice ([<app.views.TreeNode object at 0x1011e4250>, <app.views.TreeNode object at 0x1011e4290>])
+subtree - Logitech B100 Optical USB Mouse ([]) -----APPENDED TO---->tax node - optical mice ([<app.views.TreeNode object at 0x1011e4310>])
+subtree - notebook mice ([]) -----APPENDED TO---->tax node - mice ([<app.views.TreeNode object at 0x1011e4250>, <app.views.TreeNode object at 0x1011e4290>, <app.views.TreeNode object at 0x1011e42d0>])
+subtree - presentation pointers ([]) -----APPENDED TO---->tax node - mice & keyboards ([<app.views.TreeNode object at 0x1011e41d0>, <app.views.TreeNode object at 0x1011e4210>])
+subtree - laser pointers ([]) -----APPENDED TO---->tax node - presentation pointers ([<app.views.TreeNode object at 0x1011e4390>])
+subtree - presentation remotes ([]) -----APPENDED TO---->tax node - presentation pointers ([<app.views.TreeNode object at 0x1011e4390>, <app.views.TreeNode object at 0x1011e43d0>])
+subtree - televisions & video ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1011e2510>, <app.views.TreeNode object at 0x1011e25d0>, <app.views.TreeNode object at 0x1011e2bd0>])
+subtree - disc players & recorders ([]) -----APPENDED TO---->tax node - televisions & video ([<app.views.TreeNode object at 0x1011e4350>])
+subtree - blu-ray disc players ([]) -----APPENDED TO---->tax node - disc players & recorders ([<app.views.TreeNode object at 0x1011e4450>])
+subtree - DVD players ([]) -----APPENDED TO---->tax node - disc players & recorders ([<app.views.TreeNode object at 0x1011e4450>, <app.views.TreeNode object at 0x1011e4490>])
+subtree - portable DVD players ([]) -----APPENDED TO---->tax node - disc players & recorders ([<app.views.TreeNode object at 0x1011e4450>, <app.views.TreeNode object at 0x1011e4490>, <app.views.TreeNode object at 0x1011e44d0>])
+subtree - Televisions ([]) -----APPENDED TO---->tax node - televisions & video ([<app.views.TreeNode object at 0x1011e4350>, <app.views.TreeNode object at 0x1011e4410>])
+subtree - TVs ([]) -----APPENDED TO---->tax node - Televisions ([<app.views.TreeNode object at 0x1011e4550>])
+subtree - TV-DVD combinations ([]) -----APPENDED TO---->tax node - Televisions ([<app.views.TreeNode object at 0x1011e4550>, <app.views.TreeNode object at 0x1011e4590>])
+subtree - photo & camera ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1011e2510>, <app.views.TreeNode object at 0x1011e25d0>, <app.views.TreeNode object at 0x1011e2bd0>, <app.views.TreeNode object at 0x1011e4190>])
+subtree - camcorders ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1011e45d0>])
+subtree - high definition ([]) -----APPENDED TO---->tax node - camcorders ([<app.views.TreeNode object at 0x1011e4650>])
+subtree - flash memory ([]) -----APPENDED TO---->tax node - camcorders ([<app.views.TreeNode object at 0x1011e4650>, <app.views.TreeNode object at 0x1011e4690>])
+subtree - digital DVD ([]) -----APPENDED TO---->tax node - camcorders ([<app.views.TreeNode object at 0x1011e4650>, <app.views.TreeNode object at 0x1011e4690>, <app.views.TreeNode object at 0x1011e46d0>])
+subtree - digital cameras ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1011e45d0>, <app.views.TreeNode object at 0x1011e4610>])
+subtree - digital SLRs ([]) -----APPENDED TO---->tax node - digital cameras ([<app.views.TreeNode object at 0x1011e4750>])
+subtree - point & shoot digital cameras ([]) -----APPENDED TO---->tax node - digital cameras ([<app.views.TreeNode object at 0x1011e4750>, <app.views.TreeNode object at 0x1011e4790>])
+subtree - lenses ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1011e45d0>, <app.views.TreeNode object at 0x1011e4610>, <app.views.TreeNode object at 0x1011e4710>])
+subtree - camcorder lenses ([]) -----APPENDED TO---->tax node - lenses ([<app.views.TreeNode object at 0x1011e4810>])
+subtree - 37mm 0.3x Baby Death Fisheye Lens for Video Camcorder ([]) -----APPENDED TO---->tax node - camcorder lenses ([<app.views.TreeNode object at 0x1011e4890>])
+subtree - point & shoot camera lenses ([]) -----APPENDED TO---->tax node - lenses ([<app.views.TreeNode object at 0x1011e4810>, <app.views.TreeNode object at 0x1011e4850>])
+subtree - SLR camera lenses ([]) -----APPENDED TO---->tax node - lenses ([<app.views.TreeNode object at 0x1011e4810>, <app.views.TreeNode object at 0x1011e4850>, <app.views.TreeNode object at 0x1011e48d0>])
+subtree - digital SLR lenses ([]) -----APPENDED TO---->tax node - SLR camera lenses ([<app.views.TreeNode object at 0x1011e4950>])
+subtree - film SLR lenses ([]) -----APPENDED TO---->tax node - SLR camera lenses ([<app.views.TreeNode object at 0x1011e4950>, <app.views.TreeNode object at 0x1011e4990>])
+subtree - binoculars, telescopes & optics ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1011e45d0>, <app.views.TreeNode object at 0x1011e4610>, <app.views.TreeNode object at 0x1011e4710>, <app.views.TreeNode object at 0x1011e47d0>])
+subtree - binoculars ([]) -----APPENDED TO---->tax node - binoculars, telescopes & optics ([<app.views.TreeNode object at 0x1011e49d0>])
+subtree - microscopes ([]) -----APPENDED TO---->tax node - binoculars, telescopes & optics ([<app.views.TreeNode object at 0x1011e49d0>, <app.views.TreeNode object at 0x1011e4a10>])
+subtree - compound microscopes ([]) -----APPENDED TO---->tax node - microscopes ([<app.views.TreeNode object at 0x1011e4a90>])
+subtree - stereo microscopes ([]) -----APPENDED TO---->tax node - microscopes ([<app.views.TreeNode object at 0x1011e4a90>, <app.views.TreeNode object at 0x1011e4ad0>])
+subtree - telescopes ([]) -----APPENDED TO---->tax node - binoculars, telescopes & optics ([<app.views.TreeNode object at 0x1011e49d0>, <app.views.TreeNode object at 0x1011e4a10>, <app.views.TreeNode object at 0x1011e4a50>])
+subtree - reflectors ([]) -----APPENDED TO---->tax node - telescopes ([<app.views.TreeNode object at 0x1011e4b50>])
+subtree - Orion SkyScanner 100mm TableTop Reflector Telescope ([]) -----APPENDED TO---->tax node - reflectors ([<app.views.TreeNode object at 0x1011e4bd0>])
+subtree - refractors ([]) -----APPENDED TO---->tax node - telescopes ([<app.views.TreeNode object at 0x1011e4b50>, <app.views.TreeNode object at 0x1011e4b90>])
+subtree - GPS & navigation ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1011e2510>, <app.views.TreeNode object at 0x1011e25d0>, <app.views.TreeNode object at 0x1011e2bd0>, <app.views.TreeNode object at 0x1011e4190>, <app.views.TreeNode object at 0x1011e4510>])
+subtree - GPS mapping software ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1011e4b10>])
+subtree - handheld GPS ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1011e4b10>, <app.views.TreeNode object at 0x1011e4c10>])
+subtree - vehicle GPS ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1011e4b10>, <app.views.TreeNode object at 0x1011e4c10>, <app.views.TreeNode object at 0x1011e4c50>])
+subtree - in-dash navigation ([]) -----APPENDED TO---->tax node - vehicle GPS ([<app.views.TreeNode object at 0x1011e4cd0>])
+subtree - motorcycle GPS ([]) -----APPENDED TO---->tax node - vehicle GPS ([<app.views.TreeNode object at 0x1011e4cd0>, <app.views.TreeNode object at 0x1011e4d10>])
+subtree - sports & outdoors GPS ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1011e4b10>, <app.views.TreeNode object at 0x1011e4c10>, <app.views.TreeNode object at 0x1011e4c50>, <app.views.TreeNode object at 0x1011e4c90>])
+subtree - hiking GPS units ([]) -----APPENDED TO---->tax node - sports & outdoors GPS ([<app.views.TreeNode object at 0x1011e4d90>])
+subtree - cycling GPS units ([]) -----APPENDED TO---->tax node - sports & outdoors GPS ([<app.views.TreeNode object at 0x1011e4d90>, <app.views.TreeNode object at 0x1011e4dd0>])
+subtree - running GPS units ([]) -----APPENDED TO---->tax node - sports & outdoors GPS ([<app.views.TreeNode object at 0x1011e4d90>, <app.views.TreeNode object at 0x1011e4dd0>, <app.views.TreeNode object at 0x1011e4e10>])
+# of Rows in Tasks Distribution Table: 146
+Tasks Distribution Table Not Empty
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x10077d450>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e05d0>, <app.views.TreeNode object at 0x1011e0650>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: clothing
+OPTIONS: home
+OPTIONS: shoes
+OPTIONS: electronics
+OPTIONS: toys & games
+2)['toys & games']
+3)['toys & games', 'clothing']
+4)['toys & games', 'clothing', 'home']
+5)['toys & games', 'clothing', 'home', 'None']
+Choices for positive buckets: toys & games||clothing||home||None
+Updating Tasks Distribution Table: 13.0.1
+POST data: ['selected_choice', 'choices']
+POST data for selected_choice: None
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x10077d450>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e05d0>, <app.views.TreeNode object at 0x1011e0650>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: clothing
+OPTIONS: electronics
+OPTIONS: shoes
+OPTIONS: toys & games
+OPTIONS: home
+2)['toys & games']
+3)['toys & games', 'clothing']
+4)['toys & games', 'clothing', 'electronics']
+5)['toys & games', 'clothing', 'electronics', 'None']
+Choices for positive buckets: toys & games||clothing||electronics||None
+Updating Tasks Distribution Table: 13.0.1
+POST data: ['selected_choice', 'choices']
+POST data for selected_choice: None
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x10077d450>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e05d0>, <app.views.TreeNode object at 0x1011e0650>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: toys & games
+OPTIONS: home
+OPTIONS: electronics
+OPTIONS: shoes
+OPTIONS: clothing
+2)['toys & games']
+3)['toys & games', 'home']
+4)['toys & games', 'home', 'electronics']
+5)['toys & games', 'home', 'electronics', 'None']
+Choices for positive buckets: toys & games||home||electronics||None
+Updating Tasks Distribution Table: 13.0.1
+POST data: ['selected_choice', 'choices']
+POST data for selected_choice: None
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x10077d450>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e05d0>, <app.views.TreeNode object at 0x1011e0650>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: home
+OPTIONS: toys & games
+OPTIONS: electronics
+OPTIONS: shoes
+OPTIONS: clothing
+2)['toys & games']
+3)['toys & games', 'home']
+4)['toys & games', 'home', 'electronics']
+5)['toys & games', 'home', 'electronics', 'None']
+Choices for positive buckets: toys & games||home||electronics||None
+Updating Tasks Distribution Table: 13.0.1
+POST data: ['selected_choice', 'choices']
+POST data for selected_choice: None
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x10077d450>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e05d0>, <app.views.TreeNode object at 0x1011e0650>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: shoes
+OPTIONS: electronics
+OPTIONS: clothing
+OPTIONS: toys & games
+OPTIONS: home
+2)['toys & games']
+3)['toys & games', 'shoes']
+4)['toys & games', 'shoes', 'electronics']
+5)['toys & games', 'shoes', 'electronics', 'None']
+Choices for positive buckets: toys & games||shoes||electronics||None
+Updating Tasks Distribution Table: 13.0.1
+POST data: ['selected_choice', 'choices']
+POST data for selected_choice: None
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x10077d450>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113ee90>, <app.views.TreeNode object at 0x1011e0410>, <app.views.TreeNode object at 0x1011e05d0>, <app.views.TreeNode object at 0x1011e0650>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: home
+OPTIONS: clothing
+OPTIONS: shoes
+OPTIONS: electronics
+OPTIONS: toys & games
+2)['toys & games']
+3)['toys & games', 'home']
+4)['toys & games', 'home', 'clothing']
+5)['toys & games', 'home', 'clothing', 'None']
+Choices for positive buckets: toys & games||home||clothing||None
+Updating Tasks Distribution Table: 13.0.1
+332 ALREADY IN MAP!!!!! 
+subtree - clothing ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>, <app.views.TreeNode object at 0x1011e0610>, <app.views.TreeNode object at 0x10129c3d0>])
+333 ALREADY IN MAP!!!!! 
+subtree - accessories ([]) -----APPENDED TO---->tax node - clothing ([<app.views.TreeNode object at 0x10129c450>])
+334 ALREADY IN MAP!!!!! 
+subtree - scarves ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10129c4d0>])
+335 ALREADY IN MAP!!!!! 
+subtree - woollen scarves ([]) -----APPENDED TO---->tax node - scarves ([<app.views.TreeNode object at 0x10129c550>])
+336 ALREADY IN MAP!!!!! 
+subtree - silk scarves ([]) -----APPENDED TO---->tax node - scarves ([<app.views.TreeNode object at 0x10129c550>, <app.views.TreeNode object at 0x10129c590>])
+337 ALREADY IN MAP!!!!! 
+subtree - knit scarves ([]) -----APPENDED TO---->tax node - scarves ([<app.views.TreeNode object at 0x10129c550>, <app.views.TreeNode object at 0x10129c590>, <app.views.TreeNode object at 0x10129c5d0>])
+18 ALREADY IN MAP!!!!! 
+subtree - LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins ([]) -----APPENDED TO---->tax node - knit scarves ([<app.views.TreeNode object at 0x10129c650>])
+338 ALREADY IN MAP!!!!! 
+subtree - luggage, bags &amp; travel ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10129c4d0>, <app.views.TreeNode object at 0x10129c510>])
+339 ALREADY IN MAP!!!!! 
+subtree - bags & backpacks ([]) -----APPENDED TO---->tax node - luggage, bags &amp; travel ([<app.views.TreeNode object at 0x10129c690>])
+340 ALREADY IN MAP!!!!! 
+subtree - gym bags ([]) -----APPENDED TO---->tax node - bags & backpacks ([<app.views.TreeNode object at 0x10129c710>])
+341 ALREADY IN MAP!!!!! 
+subtree - school backpack ([]) -----APPENDED TO---->tax node - bags & backpacks ([<app.views.TreeNode object at 0x10129c710>, <app.views.TreeNode object at 0x10129c750>])
+342 ALREADY IN MAP!!!!! 
+subtree - hiking bag ([]) -----APPENDED TO---->tax node - bags & backpacks ([<app.views.TreeNode object at 0x10129c710>, <app.views.TreeNode object at 0x10129c750>, <app.views.TreeNode object at 0x10129c790>])
+343 ALREADY IN MAP!!!!! 
+subtree - luggage ([]) -----APPENDED TO---->tax node - luggage, bags &amp; travel ([<app.views.TreeNode object at 0x10129c690>, <app.views.TreeNode object at 0x10129c6d0>])
+344 ALREADY IN MAP!!!!! 
+subtree - carry on ([]) -----APPENDED TO---->tax node - luggage ([<app.views.TreeNode object at 0x10129c810>])
+345 ALREADY IN MAP!!!!! 
+subtree - rolling luggage ([]) -----APPENDED TO---->tax node - luggage ([<app.views.TreeNode object at 0x10129c810>, <app.views.TreeNode object at 0x10129c850>])
+346 ALREADY IN MAP!!!!! 
+subtree - travel accessories ([]) -----APPENDED TO---->tax node - luggage, bags &amp; travel ([<app.views.TreeNode object at 0x10129c690>, <app.views.TreeNode object at 0x10129c6d0>, <app.views.TreeNode object at 0x10129c7d0>])
+347 ALREADY IN MAP!!!!! 
+subtree - luggage tags ([]) -----APPENDED TO---->tax node - travel accessories ([<app.views.TreeNode object at 0x10129c8d0>])
+1 ALREADY IN MAP!!!!! 
+subtree - Samsonite Luggage 2 Pack Vinyl ID Tag ([]) -----APPENDED TO---->tax node - luggage tags ([<app.views.TreeNode object at 0x10129c950>])
+348 ALREADY IN MAP!!!!! 
+subtree - shoe bags ([]) -----APPENDED TO---->tax node - travel accessories ([<app.views.TreeNode object at 0x10129c8d0>, <app.views.TreeNode object at 0x10129c910>])
+349 ALREADY IN MAP!!!!! 
+subtree - mens ([]) -----APPENDED TO---->tax node - clothing ([<app.views.TreeNode object at 0x10129c450>, <app.views.TreeNode object at 0x10129c490>])
+350 ALREADY IN MAP!!!!! 
+subtree - shirts & polos ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x10129c890>])
+21 ALREADY IN MAP!!!!! 
+subtree - turtle necks ([]) -----APPENDED TO---->tax node - shirts & polos ([<app.views.TreeNode object at 0x10129c9d0>])
+22 ALREADY IN MAP!!!!! 
+subtree - formals ([]) -----APPENDED TO---->tax node - shirts & polos ([<app.views.TreeNode object at 0x10129c9d0>, <app.views.TreeNode object at 0x10129ca10>])
+23 ALREADY IN MAP!!!!! 
+subtree - sports casuals ([]) -----APPENDED TO---->tax node - shirts & polos ([<app.views.TreeNode object at 0x10129c9d0>, <app.views.TreeNode object at 0x10129ca10>, <app.views.TreeNode object at 0x10129ca50>])
+24 ALREADY IN MAP!!!!! 
+subtree - sleepwear & robes ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x10129c890>, <app.views.TreeNode object at 0x10129c990>])
+25 ALREADY IN MAP!!!!! 
+subtree - pajamas ([]) -----APPENDED TO---->tax node - sleepwear & robes ([<app.views.TreeNode object at 0x10129cad0>])
+26 ALREADY IN MAP!!!!! 
+subtree - pajama tops ([]) -----APPENDED TO---->tax node - pajamas ([<app.views.TreeNode object at 0x10129cb50>])
+27 ALREADY IN MAP!!!!! 
+subtree - pajama bottoms ([]) -----APPENDED TO---->tax node - pajamas ([<app.views.TreeNode object at 0x10129cb50>, <app.views.TreeNode object at 0x10129cb90>])
+28 ALREADY IN MAP!!!!! 
+subtree - robes ([]) -----APPENDED TO---->tax node - sleepwear & robes ([<app.views.TreeNode object at 0x10129cad0>, <app.views.TreeNode object at 0x10129cb10>])
+29 ALREADY IN MAP!!!!! 
+subtree - cotton robes ([]) -----APPENDED TO---->tax node - robes ([<app.views.TreeNode object at 0x10129cc10>])
+30 ALREADY IN MAP!!!!! 
+subtree - satin robes ([]) -----APPENDED TO---->tax node - robes ([<app.views.TreeNode object at 0x10129cc10>, <app.views.TreeNode object at 0x10129cc50>])
+4 ALREADY IN MAP!!!!! 
+subtree - Intimo Men's Classic Satin Robe ([]) -----APPENDED TO---->tax node - satin robes ([<app.views.TreeNode object at 0x10129ccd0>])
+31 ALREADY IN MAP!!!!! 
+subtree - socks ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x10129c890>, <app.views.TreeNode object at 0x10129c990>, <app.views.TreeNode object at 0x10129ca90>])
+32 ALREADY IN MAP!!!!! 
+subtree - dress socks ([]) -----APPENDED TO---->tax node - socks ([<app.views.TreeNode object at 0x10129cc90>])
+33 ALREADY IN MAP!!!!! 
+subtree - sports socks ([]) -----APPENDED TO---->tax node - socks ([<app.views.TreeNode object at 0x10129cc90>, <app.views.TreeNode object at 0x10129cd10>])
+34 ALREADY IN MAP!!!!! 
+subtree - womens ([]) -----APPENDED TO---->tax node - clothing ([<app.views.TreeNode object at 0x10129c450>, <app.views.TreeNode object at 0x10129c490>, <app.views.TreeNode object at 0x10129c610>])
+35 ALREADY IN MAP!!!!! 
+subtree - cold weather ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x10129cd50>])
+36 ALREADY IN MAP!!!!! 
+subtree - ear muffs ([]) -----APPENDED TO---->tax node - cold weather ([<app.views.TreeNode object at 0x10129cdd0>])
+3 ALREADY IN MAP!!!!! 
+subtree - 180s Women's Tahoe Ear Warmer ([]) -----APPENDED TO---->tax node - ear muffs ([<app.views.TreeNode object at 0x10129ce50>])
+37 ALREADY IN MAP!!!!! 
+subtree - gloves ([]) -----APPENDED TO---->tax node - cold weather ([<app.views.TreeNode object at 0x10129cdd0>, <app.views.TreeNode object at 0x10129ce10>])
+2 ALREADY IN MAP!!!!! 
+subtree - Seirus Innovation Men's Hyperlite All Weather Glove ([]) -----APPENDED TO---->tax node - gloves ([<app.views.TreeNode object at 0x10129ced0>])
+38 ALREADY IN MAP!!!!! 
+subtree - scarves ([]) -----APPENDED TO---->tax node - cold weather ([<app.views.TreeNode object at 0x10129cdd0>, <app.views.TreeNode object at 0x10129ce10>, <app.views.TreeNode object at 0x10129ce90>])
+39 ALREADY IN MAP!!!!! 
+subtree - coats & jackets ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x10129cd50>, <app.views.TreeNode object at 0x10129cd90>])
+40 ALREADY IN MAP!!!!! 
+subtree - woollen jacket ([]) -----APPENDED TO---->tax node - coats & jackets ([<app.views.TreeNode object at 0x10129cf50>])
+41 ALREADY IN MAP!!!!! 
+subtree - leather jacket ([]) -----APPENDED TO---->tax node - coats & jackets ([<app.views.TreeNode object at 0x10129cf50>, <app.views.TreeNode object at 0x10129cf90>])
+42 ALREADY IN MAP!!!!! 
+subtree - dresses ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x10129cd50>, <app.views.TreeNode object at 0x10129cd90>, <app.views.TreeNode object at 0x10129cf10>])
+43 ALREADY IN MAP!!!!! 
+subtree - formals ([]) -----APPENDED TO---->tax node - dresses ([<app.views.TreeNode object at 0x10129e050>])
+44 ALREADY IN MAP!!!!! 
+subtree - sundresses ([]) -----APPENDED TO---->tax node - dresses ([<app.views.TreeNode object at 0x10129e050>, <app.views.TreeNode object at 0x10129e090>])
+19 ALREADY IN MAP!!!!! 
+subtree - Ecko Juniors Sundress Dress - Style ERF06075 ([]) -----APPENDED TO---->tax node - sundresses ([<app.views.TreeNode object at 0x10129e110>])
+45 ALREADY IN MAP!!!!! 
+subtree - tank ([]) -----APPENDED TO---->tax node - dresses ([<app.views.TreeNode object at 0x10129e050>, <app.views.TreeNode object at 0x10129e090>, <app.views.TreeNode object at 0x10129e0d0>])
+46 ALREADY IN MAP!!!!! 
+subtree - home ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>, <app.views.TreeNode object at 0x1011e0610>, <app.views.TreeNode object at 0x10129c3d0>, <app.views.TreeNode object at 0x10129c410>])
+47 ALREADY IN MAP!!!!! 
+subtree - kitchen & dining ([]) -----APPENDED TO---->tax node - home ([<app.views.TreeNode object at 0x10129cfd0>])
+48 ALREADY IN MAP!!!!! 
+subtree - bakeware ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10129e190>])
+49 ALREADY IN MAP!!!!! 
+subtree - bakers & casseroles ([]) -----APPENDED TO---->tax node - bakeware ([<app.views.TreeNode object at 0x10129e210>])
+50 ALREADY IN MAP!!!!! 
+subtree - casseroles ([]) -----APPENDED TO---->tax node - bakers & casseroles ([<app.views.TreeNode object at 0x10129e290>])
+51 ALREADY IN MAP!!!!! 
+subtree - bakers ([]) -----APPENDED TO---->tax node - bakers & casseroles ([<app.views.TreeNode object at 0x10129e290>, <app.views.TreeNode object at 0x10129e2d0>])
+52 ALREADY IN MAP!!!!! 
+subtree - baking tools & accessories ([]) -----APPENDED TO---->tax node - bakeware ([<app.views.TreeNode object at 0x10129e210>, <app.views.TreeNode object at 0x10129e250>])
+53 ALREADY IN MAP!!!!! 
+subtree - beaters ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10129e350>])
+54 ALREADY IN MAP!!!!! 
+subtree - baking cups ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10129e350>, <app.views.TreeNode object at 0x10129e390>])
+55 ALREADY IN MAP!!!!! 
+subtree - cookie cutters ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10129e350>, <app.views.TreeNode object at 0x10129e390>, <app.views.TreeNode object at 0x10129e3d0>])
+56 ALREADY IN MAP!!!!! 
+subtree - mixing bowls ([]) -----APPENDED TO---->tax node - baking tools & accessories ([<app.views.TreeNode object at 0x10129e350>, <app.views.TreeNode object at 0x10129e390>, <app.views.TreeNode object at 0x10129e3d0>, <app.views.TreeNode object at 0x10129e410>])
+57 ALREADY IN MAP!!!!! 
+subtree - bar tools & glasses ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10129e190>, <app.views.TreeNode object at 0x10129e1d0>])
+58 ALREADY IN MAP!!!!! 
+subtree - glassware & stemware ([]) -----APPENDED TO---->tax node - bar tools & glasses ([<app.views.TreeNode object at 0x10129e450>])
+59 ALREADY IN MAP!!!!! 
+subtree - beer mugs ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10129e4d0>])
+60 ALREADY IN MAP!!!!! 
+subtree - juice glasses ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10129e4d0>, <app.views.TreeNode object at 0x10129e510>])
+61 ALREADY IN MAP!!!!! 
+subtree - shot glasses ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10129e4d0>, <app.views.TreeNode object at 0x10129e510>, <app.views.TreeNode object at 0x10129e550>])
+17 ALREADY IN MAP!!!!! 
+subtree - Kikkerland Drunk Shot Glasses, Set of 4 ([]) -----APPENDED TO---->tax node - shot glasses ([<app.views.TreeNode object at 0x10129e5d0>])
+62 ALREADY IN MAP!!!!! 
+subtree - tumblers ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10129e4d0>, <app.views.TreeNode object at 0x10129e510>, <app.views.TreeNode object at 0x10129e550>, <app.views.TreeNode object at 0x10129e590>])
+63 ALREADY IN MAP!!!!! 
+subtree - wine glasses ([]) -----APPENDED TO---->tax node - glassware & stemware ([<app.views.TreeNode object at 0x10129e4d0>, <app.views.TreeNode object at 0x10129e510>, <app.views.TreeNode object at 0x10129e550>, <app.views.TreeNode object at 0x10129e590>, <app.views.TreeNode object at 0x10129e610>])
+64 ALREADY IN MAP!!!!! 
+subtree - wine goblets ([]) -----APPENDED TO---->tax node - wine glasses ([<app.views.TreeNode object at 0x10129e690>])
+65 ALREADY IN MAP!!!!! 
+subtree - tasting sets ([]) -----APPENDED TO---->tax node - wine glasses ([<app.views.TreeNode object at 0x10129e690>, <app.views.TreeNode object at 0x10129e6d0>])
+66 ALREADY IN MAP!!!!! 
+subtree - corkscrews & openers ([]) -----APPENDED TO---->tax node - bar tools & glasses ([<app.views.TreeNode object at 0x10129e450>, <app.views.TreeNode object at 0x10129e490>])
+67 ALREADY IN MAP!!!!! 
+subtree - champagne openers ([]) -----APPENDED TO---->tax node - corkscrews & openers ([<app.views.TreeNode object at 0x10129e710>])
+68 ALREADY IN MAP!!!!! 
+subtree - pump corkscrews ([]) -----APPENDED TO---->tax node - corkscrews & openers ([<app.views.TreeNode object at 0x10129e710>, <app.views.TreeNode object at 0x10129e750>])
+69 ALREADY IN MAP!!!!! 
+subtree - screwpull levers ([]) -----APPENDED TO---->tax node - corkscrews & openers ([<app.views.TreeNode object at 0x10129e710>, <app.views.TreeNode object at 0x10129e750>, <app.views.TreeNode object at 0x10129e790>])
+70 ALREADY IN MAP!!!!! 
+subtree - cookware ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10129e190>, <app.views.TreeNode object at 0x10129e1d0>, <app.views.TreeNode object at 0x10129e310>])
+71 ALREADY IN MAP!!!!! 
+subtree - pressure cookers ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10129e7d0>])
+72 ALREADY IN MAP!!!!! 
+subtree - roasting pans ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10129e7d0>, <app.views.TreeNode object at 0x10129e810>])
+73 ALREADY IN MAP!!!!! 
+subtree - lids ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10129e7d0>, <app.views.TreeNode object at 0x10129e810>, <app.views.TreeNode object at 0x10129e850>])
+74 ALREADY IN MAP!!!!! 
+subtree - tea kettles ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10129e7d0>, <app.views.TreeNode object at 0x10129e810>, <app.views.TreeNode object at 0x10129e850>, <app.views.TreeNode object at 0x10129e890>])
+75 ALREADY IN MAP!!!!! 
+subtree - steamers ([]) -----APPENDED TO---->tax node - cookware ([<app.views.TreeNode object at 0x10129e7d0>, <app.views.TreeNode object at 0x10129e810>, <app.views.TreeNode object at 0x10129e850>, <app.views.TreeNode object at 0x10129e890>, <app.views.TreeNode object at 0x10129e8d0>])
+76 ALREADY IN MAP!!!!! 
+subtree - dining room furniture ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10129e190>, <app.views.TreeNode object at 0x10129e1d0>, <app.views.TreeNode object at 0x10129e310>, <app.views.TreeNode object at 0x10129e650>])
+77 ALREADY IN MAP!!!!! 
+subtree - dining chair ([]) -----APPENDED TO---->tax node - dining room furniture ([<app.views.TreeNode object at 0x10129e950>])
+78 ALREADY IN MAP!!!!! 
+subtree - extendable tables ([]) -----APPENDED TO---->tax node - dining room furniture ([<app.views.TreeNode object at 0x10129e950>, <app.views.TreeNode object at 0x10129e990>])
+79 ALREADY IN MAP!!!!! 
+subtree - kitchen knives & cutlery ([]) -----APPENDED TO---->tax node - kitchen & dining ([<app.views.TreeNode object at 0x10129e190>, <app.views.TreeNode object at 0x10129e1d0>, <app.views.TreeNode object at 0x10129e310>, <app.views.TreeNode object at 0x10129e650>, <app.views.TreeNode object at 0x10129e910>])
+80 ALREADY IN MAP!!!!! 
+subtree - cake knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10129ea10>])
+81 ALREADY IN MAP!!!!! 
+subtree - chef's knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10129ea10>, <app.views.TreeNode object at 0x10129ea50>])
+82 ALREADY IN MAP!!!!! 
+subtree - cutting boards ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10129ea10>, <app.views.TreeNode object at 0x10129ea50>, <app.views.TreeNode object at 0x10129ea90>])
+16 ALREADY IN MAP!!!!! 
+subtree - Totally Bamboo 20-7930 3-Piece Cutting Board Set ([]) -----APPENDED TO---->tax node - cutting boards ([<app.views.TreeNode object at 0x10129eb10>])
+83 ALREADY IN MAP!!!!! 
+subtree - electric knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10129ea10>, <app.views.TreeNode object at 0x10129ea50>, <app.views.TreeNode object at 0x10129ea90>, <app.views.TreeNode object at 0x10129ead0>])
+84 ALREADY IN MAP!!!!! 
+subtree - knife sharpeners ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10129ea10>, <app.views.TreeNode object at 0x10129ea50>, <app.views.TreeNode object at 0x10129ea90>, <app.views.TreeNode object at 0x10129ead0>, <app.views.TreeNode object at 0x10129eb50>])
+85 ALREADY IN MAP!!!!! 
+subtree - specialty knives ([]) -----APPENDED TO---->tax node - kitchen knives & cutlery ([<app.views.TreeNode object at 0x10129ea10>, <app.views.TreeNode object at 0x10129ea50>, <app.views.TreeNode object at 0x10129ea90>, <app.views.TreeNode object at 0x10129ead0>, <app.views.TreeNode object at 0x10129eb50>, <app.views.TreeNode object at 0x10129eb90>])
+86 ALREADY IN MAP!!!!! 
+subtree - mincing knives ([]) -----APPENDED TO---->tax node - specialty knives ([<app.views.TreeNode object at 0x10129ec10>])
+87 ALREADY IN MAP!!!!! 
+subtree - seafood knives ([]) -----APPENDED TO---->tax node - specialty knives ([<app.views.TreeNode object at 0x10129ec10>, <app.views.TreeNode object at 0x10129ec50>])
+88 ALREADY IN MAP!!!!! 
+subtree - food knives ([]) -----APPENDED TO---->tax node - specialty knives ([<app.views.TreeNode object at 0x10129ec10>, <app.views.TreeNode object at 0x10129ec50>, <app.views.TreeNode object at 0x10129ec90>])
+89 ALREADY IN MAP!!!!! 
+subtree - home appliances ([]) -----APPENDED TO---->tax node - home ([<app.views.TreeNode object at 0x10129cfd0>, <app.views.TreeNode object at 0x10129e150>])
+90 ALREADY IN MAP!!!!! 
+subtree - air conditioners & fans ([]) -----APPENDED TO---->tax node - home appliances ([<app.views.TreeNode object at 0x10129ebd0>])
+91 ALREADY IN MAP!!!!! 
+subtree - ceiling fans & accessories ([]) -----APPENDED TO---->tax node - air conditioners & fans ([<app.views.TreeNode object at 0x10129ed10>])
+92 ALREADY IN MAP!!!!! 
+subtree - ceiling fans ([]) -----APPENDED TO---->tax node - ceiling fans & accessories ([<app.views.TreeNode object at 0x10129ed90>])
+93 ALREADY IN MAP!!!!! 
+subtree - accessories ([]) -----APPENDED TO---->tax node - ceiling fans & accessories ([<app.views.TreeNode object at 0x10129ed90>, <app.views.TreeNode object at 0x10129edd0>])
+94 ALREADY IN MAP!!!!! 
+subtree - down rods ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10129ee50>])
+95 ALREADY IN MAP!!!!! 
+subtree - remote control ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x10129ee50>, <app.views.TreeNode object at 0x10129ee90>])
+15 ALREADY IN MAP!!!!! 
+subtree - Heath Zenith SL-6135 Basic Solutions Indoor Remote Control ([]) -----APPENDED TO---->tax node - remote control ([<app.views.TreeNode object at 0x10129ef10>])
+96 ALREADY IN MAP!!!!! 
+subtree - household fans ([]) -----APPENDED TO---->tax node - air conditioners & fans ([<app.views.TreeNode object at 0x10129ed10>, <app.views.TreeNode object at 0x10129ed50>])
+97 ALREADY IN MAP!!!!! 
+subtree - pedestal fans ([]) -----APPENDED TO---->tax node - household fans ([<app.views.TreeNode object at 0x10129eed0>])
+98 ALREADY IN MAP!!!!! 
+subtree - table fans ([]) -----APPENDED TO---->tax node - household fans ([<app.views.TreeNode object at 0x10129eed0>, <app.views.TreeNode object at 0x10129ef50>])
+99 ALREADY IN MAP!!!!! 
+subtree - window fans ([]) -----APPENDED TO---->tax node - household fans ([<app.views.TreeNode object at 0x10129eed0>, <app.views.TreeNode object at 0x10129ef50>, <app.views.TreeNode object at 0x10129ef90>])
+100 ALREADY IN MAP!!!!! 
+subtree - large appliances ([]) -----APPENDED TO---->tax node - home appliances ([<app.views.TreeNode object at 0x10129ebd0>, <app.views.TreeNode object at 0x10129ecd0>])
+101 ALREADY IN MAP!!!!! 
+subtree - cooktops ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10129efd0>])
+102 ALREADY IN MAP!!!!! 
+subtree - dishwashers ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10129efd0>, <app.views.TreeNode object at 0x1012a0050>])
+103 ALREADY IN MAP!!!!! 
+subtree - convertible dishwashers ([]) -----APPENDED TO---->tax node - dishwashers ([<app.views.TreeNode object at 0x1012a00d0>])
+104 ALREADY IN MAP!!!!! 
+subtree - portable dishwashers ([]) -----APPENDED TO---->tax node - dishwashers ([<app.views.TreeNode object at 0x1012a00d0>, <app.views.TreeNode object at 0x1012a0110>])
+105 ALREADY IN MAP!!!!! 
+subtree - food waste disposers ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10129efd0>, <app.views.TreeNode object at 0x1012a0050>, <app.views.TreeNode object at 0x1012a0090>])
+106 ALREADY IN MAP!!!!! 
+subtree - refrigerators ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10129efd0>, <app.views.TreeNode object at 0x1012a0050>, <app.views.TreeNode object at 0x1012a0090>, <app.views.TreeNode object at 0x1012a0150>])
+107 ALREADY IN MAP!!!!! 
+subtree - freeze-on-top refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x1012a01d0>])
+108 ALREADY IN MAP!!!!! 
+subtree - freeze-on-bottom refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x1012a01d0>, <app.views.TreeNode object at 0x1012a0210>])
+109 ALREADY IN MAP!!!!! 
+subtree - side-by-side refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x1012a01d0>, <app.views.TreeNode object at 0x1012a0210>, <app.views.TreeNode object at 0x1012a0250>])
+110 ALREADY IN MAP!!!!! 
+subtree - freezerless refrigerators ([]) -----APPENDED TO---->tax node - refrigerators ([<app.views.TreeNode object at 0x1012a01d0>, <app.views.TreeNode object at 0x1012a0210>, <app.views.TreeNode object at 0x1012a0250>, <app.views.TreeNode object at 0x1012a0290>])
+111 ALREADY IN MAP!!!!! 
+subtree - washers & dryers ([]) -----APPENDED TO---->tax node - large appliances ([<app.views.TreeNode object at 0x10129efd0>, <app.views.TreeNode object at 0x1012a0050>, <app.views.TreeNode object at 0x1012a0090>, <app.views.TreeNode object at 0x1012a0150>, <app.views.TreeNode object at 0x1012a0190>])
+112 ALREADY IN MAP!!!!! 
+subtree - clothes dryers ([]) -----APPENDED TO---->tax node - washers & dryers ([<app.views.TreeNode object at 0x1012a0310>])
+113 ALREADY IN MAP!!!!! 
+subtree - clothes washers ([]) -----APPENDED TO---->tax node - washers & dryers ([<app.views.TreeNode object at 0x1012a0310>, <app.views.TreeNode object at 0x1012a0350>])
+114 ALREADY IN MAP!!!!! 
+subtree - combination washers & dryers ([]) -----APPENDED TO---->tax node - washers & dryers ([<app.views.TreeNode object at 0x1012a0310>, <app.views.TreeNode object at 0x1012a0350>, <app.views.TreeNode object at 0x1012a0390>])
+115 ALREADY IN MAP!!!!! 
+subtree - small appliances ([]) -----APPENDED TO---->tax node - home appliances ([<app.views.TreeNode object at 0x10129ebd0>, <app.views.TreeNode object at 0x10129ecd0>, <app.views.TreeNode object at 0x10129ee10>])
+116 ALREADY IN MAP!!!!! 
+subtree - blenders ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x1012a03d0>])
+117 ALREADY IN MAP!!!!! 
+subtree - countertop blenders ([]) -----APPENDED TO---->tax node - blenders ([<app.views.TreeNode object at 0x1012a0450>])
+118 ALREADY IN MAP!!!!! 
+subtree - hand blenders ([]) -----APPENDED TO---->tax node - blenders ([<app.views.TreeNode object at 0x1012a0450>, <app.views.TreeNode object at 0x1012a0490>])
+119 ALREADY IN MAP!!!!! 
+subtree - coffee tea & espresso appliances ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x1012a03d0>, <app.views.TreeNode object at 0x1012a0410>])
+120 ALREADY IN MAP!!!!! 
+subtree - beverage warmers ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x1012a0510>])
+121 ALREADY IN MAP!!!!! 
+subtree - coffee grinders ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x1012a0510>, <app.views.TreeNode object at 0x1012a0550>])
+122 ALREADY IN MAP!!!!! 
+subtree - espresso machines ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x1012a0510>, <app.views.TreeNode object at 0x1012a0550>, <app.views.TreeNode object at 0x1012a0590>])
+123 ALREADY IN MAP!!!!! 
+subtree - manual espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x1012a0610>])
+124 ALREADY IN MAP!!!!! 
+subtree - semi-automatic espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x1012a0610>, <app.views.TreeNode object at 0x1012a0650>])
+125 ALREADY IN MAP!!!!! 
+subtree - super-automatic espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x1012a0610>, <app.views.TreeNode object at 0x1012a0650>, <app.views.TreeNode object at 0x1012a0690>])
+126 ALREADY IN MAP!!!!! 
+subtree - steam espresso machines ([]) -----APPENDED TO---->tax node - espresso machines ([<app.views.TreeNode object at 0x1012a0610>, <app.views.TreeNode object at 0x1012a0650>, <app.views.TreeNode object at 0x1012a0690>, <app.views.TreeNode object at 0x1012a06d0>])
+127 ALREADY IN MAP!!!!! 
+subtree - milk steamers ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x1012a0510>, <app.views.TreeNode object at 0x1012a0550>, <app.views.TreeNode object at 0x1012a0590>, <app.views.TreeNode object at 0x1012a05d0>])
+128 ALREADY IN MAP!!!!! 
+subtree - milk frothers ([]) -----APPENDED TO---->tax node - coffee tea & espresso appliances ([<app.views.TreeNode object at 0x1012a0510>, <app.views.TreeNode object at 0x1012a0550>, <app.views.TreeNode object at 0x1012a0590>, <app.views.TreeNode object at 0x1012a05d0>, <app.views.TreeNode object at 0x1012a0710>])
+129 ALREADY IN MAP!!!!! 
+subtree - electric cookware ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x1012a03d0>, <app.views.TreeNode object at 0x1012a0410>, <app.views.TreeNode object at 0x1012a04d0>])
+130 ALREADY IN MAP!!!!! 
+subtree - can openers ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x1012a0790>])
+131 ALREADY IN MAP!!!!! 
+subtree - cookers ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x1012a0790>, <app.views.TreeNode object at 0x1012a07d0>])
+132 ALREADY IN MAP!!!!! 
+subtree - countertop burners ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x1012a0790>, <app.views.TreeNode object at 0x1012a07d0>, <app.views.TreeNode object at 0x1012a0810>])
+133 ALREADY IN MAP!!!!! 
+subtree - kettles ([]) -----APPENDED TO---->tax node - electric cookware ([<app.views.TreeNode object at 0x1012a0790>, <app.views.TreeNode object at 0x1012a07d0>, <app.views.TreeNode object at 0x1012a0810>, <app.views.TreeNode object at 0x1012a0850>])
+134 ALREADY IN MAP!!!!! 
+subtree - mixers ([]) -----APPENDED TO---->tax node - small appliances ([<app.views.TreeNode object at 0x1012a03d0>, <app.views.TreeNode object at 0x1012a0410>, <app.views.TreeNode object at 0x1012a04d0>, <app.views.TreeNode object at 0x1012a0750>])
+135 ALREADY IN MAP!!!!! 
+subtree - hand mixers ([]) -----APPENDED TO---->tax node - mixers ([<app.views.TreeNode object at 0x1012a08d0>])
+136 ALREADY IN MAP!!!!! 
+subtree - stand mixers ([]) -----APPENDED TO---->tax node - mixers ([<app.views.TreeNode object at 0x1012a08d0>, <app.views.TreeNode object at 0x1012a0910>])
+137 ALREADY IN MAP!!!!! 
+subtree - vacuum cleaning & storage ([]) -----APPENDED TO---->tax node - home ([<app.views.TreeNode object at 0x10129cfd0>, <app.views.TreeNode object at 0x10129e150>, <app.views.TreeNode object at 0x10129e9d0>])
+138 ALREADY IN MAP!!!!! 
+subtree - air purifiers ([]) -----APPENDED TO---->tax node - vacuum cleaning & storage ([<app.views.TreeNode object at 0x1012a0890>])
+139 ALREADY IN MAP!!!!! 
+subtree - air freshners ([]) -----APPENDED TO---->tax node - air purifiers ([<app.views.TreeNode object at 0x1012a0990>])
+140 ALREADY IN MAP!!!!! 
+subtree - electric air freshners ([]) -----APPENDED TO---->tax node - air freshners ([<app.views.TreeNode object at 0x1012a0a10>])
+141 ALREADY IN MAP!!!!! 
+subtree - air sprays ([]) -----APPENDED TO---->tax node - air freshners ([<app.views.TreeNode object at 0x1012a0a10>, <app.views.TreeNode object at 0x1012a0a50>])
+142 ALREADY IN MAP!!!!! 
+subtree - solid and liquid freshners ([]) -----APPENDED TO---->tax node - air freshners ([<app.views.TreeNode object at 0x1012a0a10>, <app.views.TreeNode object at 0x1012a0a50>, <app.views.TreeNode object at 0x1012a0a90>])
+143 ALREADY IN MAP!!!!! 
+subtree - cleaning supplies ([]) -----APPENDED TO---->tax node - vacuum cleaning & storage ([<app.views.TreeNode object at 0x1012a0890>, <app.views.TreeNode object at 0x1012a0950>])
+144 ALREADY IN MAP!!!!! 
+subtree - brushes ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x1012a0ad0>])
+145 ALREADY IN MAP!!!!! 
+subtree - dusting ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x1012a0ad0>, <app.views.TreeNode object at 0x1012a0b10>])
+146 ALREADY IN MAP!!!!! 
+subtree - dust clothes ([]) -----APPENDED TO---->tax node - dusting ([<app.views.TreeNode object at 0x1012a0b90>])
+147 ALREADY IN MAP!!!!! 
+subtree - dust mops ([]) -----APPENDED TO---->tax node - dusting ([<app.views.TreeNode object at 0x1012a0b90>, <app.views.TreeNode object at 0x1012a0bd0>])
+148 ALREADY IN MAP!!!!! 
+subtree - feather dusters ([]) -----APPENDED TO---->tax node - dusting ([<app.views.TreeNode object at 0x1012a0b90>, <app.views.TreeNode object at 0x1012a0bd0>, <app.views.TreeNode object at 0x1012a0c10>])
+149 ALREADY IN MAP!!!!! 
+subtree - moping ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x1012a0ad0>, <app.views.TreeNode object at 0x1012a0b10>, <app.views.TreeNode object at 0x1012a0b50>])
+150 ALREADY IN MAP!!!!! 
+subtree - buckets ([]) -----APPENDED TO---->tax node - moping ([<app.views.TreeNode object at 0x1012a0c90>])
+151 ALREADY IN MAP!!!!! 
+subtree - wet mops ([]) -----APPENDED TO---->tax node - moping ([<app.views.TreeNode object at 0x1012a0c90>, <app.views.TreeNode object at 0x1012a0cd0>])
+152 ALREADY IN MAP!!!!! 
+subtree - accessories ([]) -----APPENDED TO---->tax node - moping ([<app.views.TreeNode object at 0x1012a0c90>, <app.views.TreeNode object at 0x1012a0cd0>, <app.views.TreeNode object at 0x1012a0d10>])
+153 ALREADY IN MAP!!!!! 
+subtree - mop handles ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x1012a0d90>])
+12 ALREADY IN MAP!!!!! 
+subtree - Rubbermaid FGH12500 Invader Side Gate Wet Mop Gray Aluminum Handle with Large Yellow Plastic Head, 54" Length ([]) -----APPENDED TO---->tax node - mop handles ([<app.views.TreeNode object at 0x1012a0e10>])
+154 ALREADY IN MAP!!!!! 
+subtree - mop handles & sponges ([]) -----APPENDED TO---->tax node - accessories ([<app.views.TreeNode object at 0x1012a0d90>, <app.views.TreeNode object at 0x1012a0dd0>])
+155 ALREADY IN MAP!!!!! 
+subtree - paper towels ([]) -----APPENDED TO---->tax node - cleaning supplies ([<app.views.TreeNode object at 0x1012a0ad0>, <app.views.TreeNode object at 0x1012a0b10>, <app.views.TreeNode object at 0x1012a0b50>, <app.views.TreeNode object at 0x1012a0c50>])
+156 ALREADY IN MAP!!!!! 
+subtree - toys & games ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>, <app.views.TreeNode object at 0x1011e0610>, <app.views.TreeNode object at 0x10129c3d0>, <app.views.TreeNode object at 0x10129c410>, <app.views.TreeNode object at 0x10129cbd0>])
+157 ALREADY IN MAP!!!!! 
+subtree - sports & outdoor ([]) -----APPENDED TO---->tax node - toys & games ([<app.views.TreeNode object at 0x1012a09d0>])
+158 ALREADY IN MAP!!!!! 
+subtree - pools & water ([]) -----APPENDED TO---->tax node - sports & outdoor ([<app.views.TreeNode object at 0x1012a0e50>])
+159 ALREADY IN MAP!!!!! 
+subtree - baby floats ([]) -----APPENDED TO---->tax node - pools & water ([<app.views.TreeNode object at 0x1012a0ed0>])
+160 ALREADY IN MAP!!!!! 
+subtree - kiddie pools ([]) -----APPENDED TO---->tax node - pools & water ([<app.views.TreeNode object at 0x1012a0ed0>, <app.views.TreeNode object at 0x1012a0f10>])
+161 ALREADY IN MAP!!!!! 
+subtree - pool toys ([]) -----APPENDED TO---->tax node - pools & water ([<app.views.TreeNode object at 0x1012a0ed0>, <app.views.TreeNode object at 0x1012a0f10>, <app.views.TreeNode object at 0x1012a0f50>])
+162 ALREADY IN MAP!!!!! 
+subtree - sports ([]) -----APPENDED TO---->tax node - sports & outdoor ([<app.views.TreeNode object at 0x1012a0e50>, <app.views.TreeNode object at 0x1012a0e90>])
+163 ALREADY IN MAP!!!!! 
+subtree - baseball & softball ([]) -----APPENDED TO---->tax node - sports ([<app.views.TreeNode object at 0x1012a0fd0>])
+164 ALREADY IN MAP!!!!! 
+subtree - baseball bats ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1012a2090>])
+165 ALREADY IN MAP!!!!! 
+subtree - aluminium ([]) -----APPENDED TO---->tax node - baseball bats ([<app.views.TreeNode object at 0x1012a2110>])
+166 ALREADY IN MAP!!!!! 
+subtree - wood ([]) -----APPENDED TO---->tax node - baseball bats ([<app.views.TreeNode object at 0x1012a2110>, <app.views.TreeNode object at 0x1012a2150>])
+167 ALREADY IN MAP!!!!! 
+subtree - baseballs ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1012a2090>, <app.views.TreeNode object at 0x1012a20d0>])
+168 ALREADY IN MAP!!!!! 
+subtree - batting gloves ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1012a2090>, <app.views.TreeNode object at 0x1012a20d0>, <app.views.TreeNode object at 0x1012a2190>])
+169 ALREADY IN MAP!!!!! 
+subtree - helmets ([]) -----APPENDED TO---->tax node - baseball & softball ([<app.views.TreeNode object at 0x1012a2090>, <app.views.TreeNode object at 0x1012a20d0>, <app.views.TreeNode object at 0x1012a2190>, <app.views.TreeNode object at 0x1012a21d0>])
+170 ALREADY IN MAP!!!!! 
+subtree - basketball ([]) -----APPENDED TO---->tax node - sports ([<app.views.TreeNode object at 0x1012a0fd0>, <app.views.TreeNode object at 0x1012a2050>])
+171 ALREADY IN MAP!!!!! 
+subtree - basketballs ([]) -----APPENDED TO---->tax node - basketball ([<app.views.TreeNode object at 0x1012a2250>])
+172 ALREADY IN MAP!!!!! 
+subtree - backboards ([]) -----APPENDED TO---->tax node - basketball ([<app.views.TreeNode object at 0x1012a2250>, <app.views.TreeNode object at 0x1012a2290>])
+173 ALREADY IN MAP!!!!! 
+subtree - boxing ([]) -----APPENDED TO---->tax node - sports ([<app.views.TreeNode object at 0x1012a0fd0>, <app.views.TreeNode object at 0x1012a2050>, <app.views.TreeNode object at 0x1012a2210>])
+174 ALREADY IN MAP!!!!! 
+subtree - punching bags ([]) -----APPENDED TO---->tax node - boxing ([<app.views.TreeNode object at 0x1012a2310>])
+175 ALREADY IN MAP!!!!! 
+subtree - boxing gloves ([]) -----APPENDED TO---->tax node - boxing ([<app.views.TreeNode object at 0x1012a2310>, <app.views.TreeNode object at 0x1012a2350>])
+176 ALREADY IN MAP!!!!! 
+subtree - party supplies ([]) -----APPENDED TO---->tax node - toys & games ([<app.views.TreeNode object at 0x1012a09d0>, <app.views.TreeNode object at 0x1012a0d50>])
+177 ALREADY IN MAP!!!!! 
+subtree - gift wrapping supplies ([]) -----APPENDED TO---->tax node - party supplies ([<app.views.TreeNode object at 0x1012a22d0>])
+178 ALREADY IN MAP!!!!! 
+subtree - gift bags ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1012a23d0>])
+179 ALREADY IN MAP!!!!! 
+subtree - gift wrap ribbons ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1012a23d0>, <app.views.TreeNode object at 0x1012a2410>])
+180 ALREADY IN MAP!!!!! 
+subtree - gift wrap paper ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1012a23d0>, <app.views.TreeNode object at 0x1012a2410>, <app.views.TreeNode object at 0x1012a2450>])
+181 ALREADY IN MAP!!!!! 
+subtree - wrapping tissue ([]) -----APPENDED TO---->tax node - gift wrapping supplies ([<app.views.TreeNode object at 0x1012a23d0>, <app.views.TreeNode object at 0x1012a2410>, <app.views.TreeNode object at 0x1012a2450>, <app.views.TreeNode object at 0x1012a2490>])
+13 ALREADY IN MAP!!!!! 
+subtree - Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA ([]) -----APPENDED TO---->tax node - wrapping tissue ([<app.views.TreeNode object at 0x1012a2510>])
+182 ALREADY IN MAP!!!!! 
+subtree - decorations ([]) -----APPENDED TO---->tax node - party supplies ([<app.views.TreeNode object at 0x1012a22d0>, <app.views.TreeNode object at 0x1012a2390>])
+183 ALREADY IN MAP!!!!! 
+subtree - balloons ([]) -----APPENDED TO---->tax node - decorations ([<app.views.TreeNode object at 0x1012a2550>])
+184 ALREADY IN MAP!!!!! 
+subtree - banners ([]) -----APPENDED TO---->tax node - decorations ([<app.views.TreeNode object at 0x1012a2550>, <app.views.TreeNode object at 0x1012a2590>])
+185 ALREADY IN MAP!!!!! 
+subtree - confetti ([]) -----APPENDED TO---->tax node - decorations ([<app.views.TreeNode object at 0x1012a2550>, <app.views.TreeNode object at 0x1012a2590>, <app.views.TreeNode object at 0x1012a25d0>])
+14 ALREADY IN MAP!!!!! 
+subtree - Happy Birthday Confetti ([]) -----APPENDED TO---->tax node - confetti ([<app.views.TreeNode object at 0x1012a2650>])
+186 ALREADY IN MAP!!!!! 
+subtree - stuffed animals & plush ([]) -----APPENDED TO---->tax node - toys & games ([<app.views.TreeNode object at 0x1012a09d0>, <app.views.TreeNode object at 0x1012a0d50>, <app.views.TreeNode object at 0x1012a0f90>])
+187 ALREADY IN MAP!!!!! 
+subtree - teddy bears ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1012a2610>])
+188 ALREADY IN MAP!!!!! 
+subtree - plush puppets ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1012a2610>, <app.views.TreeNode object at 0x1012a2690>])
+189 ALREADY IN MAP!!!!! 
+subtree - animals ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1012a2610>, <app.views.TreeNode object at 0x1012a2690>, <app.views.TreeNode object at 0x1012a26d0>])
+190 ALREADY IN MAP!!!!! 
+subtree - plush backpacks & purses ([]) -----APPENDED TO---->tax node - stuffed animals & plush ([<app.views.TreeNode object at 0x1012a2610>, <app.views.TreeNode object at 0x1012a2690>, <app.views.TreeNode object at 0x1012a26d0>, <app.views.TreeNode object at 0x1012a2710>])
+191 ALREADY IN MAP!!!!! 
+subtree - plush backpacks ([]) -----APPENDED TO---->tax node - plush backpacks & purses ([<app.views.TreeNode object at 0x1012a2790>])
+192 ALREADY IN MAP!!!!! 
+subtree - plush purses ([]) -----APPENDED TO---->tax node - plush backpacks & purses ([<app.views.TreeNode object at 0x1012a2790>, <app.views.TreeNode object at 0x1012a27d0>])
+193 ALREADY IN MAP!!!!! 
+subtree - shoes ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>, <app.views.TreeNode object at 0x1011e0610>, <app.views.TreeNode object at 0x10129c3d0>, <app.views.TreeNode object at 0x10129c410>, <app.views.TreeNode object at 0x10129cbd0>, <app.views.TreeNode object at 0x1012a02d0>])
+194 ALREADY IN MAP!!!!! 
+subtree - shoe care & cleaning ([]) -----APPENDED TO---->tax node - shoes ([<app.views.TreeNode object at 0x1012a2750>])
+195 ALREADY IN MAP!!!!! 
+subtree - polishes ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1012a2850>])
+196 ALREADY IN MAP!!!!! 
+subtree - shoe brushes ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1012a2850>, <app.views.TreeNode object at 0x1012a2890>])
+197 ALREADY IN MAP!!!!! 
+subtree - shoe dryers ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1012a2850>, <app.views.TreeNode object at 0x1012a2890>, <app.views.TreeNode object at 0x1012a28d0>])
+198 ALREADY IN MAP!!!!! 
+subtree - shoe care kits & sets ([]) -----APPENDED TO---->tax node - shoe care & cleaning ([<app.views.TreeNode object at 0x1012a2850>, <app.views.TreeNode object at 0x1012a2890>, <app.views.TreeNode object at 0x1012a28d0>, <app.views.TreeNode object at 0x1012a2910>])
+199 ALREADY IN MAP!!!!! 
+subtree - mens ([]) -----APPENDED TO---->tax node - shoes ([<app.views.TreeNode object at 0x1012a2750>, <app.views.TreeNode object at 0x1012a2810>])
+200 ALREADY IN MAP!!!!! 
+subtree - athletic ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1012a2990>])
+201 ALREADY IN MAP!!!!! 
+subtree - running ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2a10>])
+202 ALREADY IN MAP!!!!! 
+subtree - track & field ([]) -----APPENDED TO---->tax node - running ([<app.views.TreeNode object at 0x1012a2a90>])
+10 ALREADY IN MAP!!!!! 
+subtree - ASICS Men's Japan Thunder 3 Track and Field Shoe ([]) -----APPENDED TO---->tax node - track & field ([<app.views.TreeNode object at 0x1012a2b10>])
+203 ALREADY IN MAP!!!!! 
+subtree - spikes ([]) -----APPENDED TO---->tax node - running ([<app.views.TreeNode object at 0x1012a2a90>, <app.views.TreeNode object at 0x1012a2ad0>])
+204 ALREADY IN MAP!!!!! 
+subtree - trail ([]) -----APPENDED TO---->tax node - running ([<app.views.TreeNode object at 0x1012a2a90>, <app.views.TreeNode object at 0x1012a2ad0>, <app.views.TreeNode object at 0x1012a2b50>])
+205 ALREADY IN MAP!!!!! 
+subtree - volleyball ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2a10>, <app.views.TreeNode object at 0x1012a2a50>])
+206 ALREADY IN MAP!!!!! 
+subtree - tennis ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2a10>, <app.views.TreeNode object at 0x1012a2a50>, <app.views.TreeNode object at 0x1012a2b90>])
+207 ALREADY IN MAP!!!!! 
+subtree - boat shoes ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1012a2990>, <app.views.TreeNode object at 0x1012a29d0>])
+208 ALREADY IN MAP!!!!! 
+subtree - boots ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1012a2990>, <app.views.TreeNode object at 0x1012a29d0>, <app.views.TreeNode object at 0x1012a2bd0>])
+209 ALREADY IN MAP!!!!! 
+subtree - athletic & outdoor ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1012a2c50>])
+210 ALREADY IN MAP!!!!! 
+subtree - hiking boots ([]) -----APPENDED TO---->tax node - athletic & outdoor ([<app.views.TreeNode object at 0x1012a2cd0>])
+211 ALREADY IN MAP!!!!! 
+subtree - rain boots ([]) -----APPENDED TO---->tax node - athletic & outdoor ([<app.views.TreeNode object at 0x1012a2cd0>, <app.views.TreeNode object at 0x1012a2d10>])
+9 ALREADY IN MAP!!!!! 
+subtree - Bogs Men's Classic Ultra Mid Waterproof Boot ([]) -----APPENDED TO---->tax node - rain boots ([<app.views.TreeNode object at 0x1012a2d90>])
+212 ALREADY IN MAP!!!!! 
+subtree - sandals ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1012a2990>, <app.views.TreeNode object at 0x1012a29d0>, <app.views.TreeNode object at 0x1012a2bd0>, <app.views.TreeNode object at 0x1012a2c10>])
+213 ALREADY IN MAP!!!!! 
+subtree - slides ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1012a2d50>])
+214 ALREADY IN MAP!!!!! 
+subtree - sports sandals ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1012a2d50>, <app.views.TreeNode object at 0x1012a2dd0>])
+215 ALREADY IN MAP!!!!! 
+subtree - slippers ([]) -----APPENDED TO---->tax node - mens ([<app.views.TreeNode object at 0x1012a2990>, <app.views.TreeNode object at 0x1012a29d0>, <app.views.TreeNode object at 0x1012a2bd0>, <app.views.TreeNode object at 0x1012a2c10>, <app.views.TreeNode object at 0x1012a2c90>])
+216 ALREADY IN MAP!!!!! 
+subtree - outdoor soles ([]) -----APPENDED TO---->tax node - slippers ([<app.views.TreeNode object at 0x1012a2e50>])
+217 ALREADY IN MAP!!!!! 
+subtree - moccasins ([]) -----APPENDED TO---->tax node - slippers ([<app.views.TreeNode object at 0x1012a2e50>, <app.views.TreeNode object at 0x1012a2e90>])
+218 ALREADY IN MAP!!!!! 
+subtree - womens ([]) -----APPENDED TO---->tax node - shoes ([<app.views.TreeNode object at 0x1012a2750>, <app.views.TreeNode object at 0x1012a2810>, <app.views.TreeNode object at 0x1012a2950>])
+219 ALREADY IN MAP!!!!! 
+subtree - athletic ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1012a2ed0>])
+220 ALREADY IN MAP!!!!! 
+subtree - boating ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>])
+221 ALREADY IN MAP!!!!! 
+subtree - rowing ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>, <app.views.TreeNode object at 0x1012a2f90>])
+222 ALREADY IN MAP!!!!! 
+subtree - cycling ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>, <app.views.TreeNode object at 0x1012a2f90>, <app.views.TreeNode object at 0x1012a2fd0>])
+223 ALREADY IN MAP!!!!! 
+subtree - running ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>, <app.views.TreeNode object at 0x1012a2f90>, <app.views.TreeNode object at 0x1012a2fd0>, <app.views.TreeNode object at 0x1012a4050>])
+224 ALREADY IN MAP!!!!! 
+subtree - golf ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>, <app.views.TreeNode object at 0x1012a2f90>, <app.views.TreeNode object at 0x1012a2fd0>, <app.views.TreeNode object at 0x1012a4050>, <app.views.TreeNode object at 0x1012a4090>])
+225 ALREADY IN MAP!!!!! 
+subtree - skateboarding ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>, <app.views.TreeNode object at 0x1012a2f90>, <app.views.TreeNode object at 0x1012a2fd0>, <app.views.TreeNode object at 0x1012a4050>, <app.views.TreeNode object at 0x1012a4090>, <app.views.TreeNode object at 0x1012a40d0>])
+226 ALREADY IN MAP!!!!! 
+subtree - skate shoes ([]) -----APPENDED TO---->tax node - athletic ([<app.views.TreeNode object at 0x1012a2f50>, <app.views.TreeNode object at 0x1012a2f90>, <app.views.TreeNode object at 0x1012a2fd0>, <app.views.TreeNode object at 0x1012a4050>, <app.views.TreeNode object at 0x1012a4090>, <app.views.TreeNode object at 0x1012a40d0>, <app.views.TreeNode object at 0x1012a4110>])
+227 ALREADY IN MAP!!!!! 
+subtree - boots ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1012a2ed0>, <app.views.TreeNode object at 0x1012a2f10>])
+228 ALREADY IN MAP!!!!! 
+subtree - flat ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1012a4190>])
+229 ALREADY IN MAP!!!!! 
+subtree - pull-on ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1012a4190>, <app.views.TreeNode object at 0x1012a41d0>])
+230 ALREADY IN MAP!!!!! 
+subtree - water-proof ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1012a4190>, <app.views.TreeNode object at 0x1012a41d0>, <app.views.TreeNode object at 0x1012a4210>])
+231 ALREADY IN MAP!!!!! 
+subtree - zip ([]) -----APPENDED TO---->tax node - boots ([<app.views.TreeNode object at 0x1012a4190>, <app.views.TreeNode object at 0x1012a41d0>, <app.views.TreeNode object at 0x1012a4210>, <app.views.TreeNode object at 0x1012a4250>])
+232 ALREADY IN MAP!!!!! 
+subtree - boat shoes ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1012a2ed0>, <app.views.TreeNode object at 0x1012a2f10>, <app.views.TreeNode object at 0x1012a4150>])
+233 ALREADY IN MAP!!!!! 
+subtree - fashion sneakers ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1012a2ed0>, <app.views.TreeNode object at 0x1012a2f10>, <app.views.TreeNode object at 0x1012a4150>, <app.views.TreeNode object at 0x1012a4290>])
+234 ALREADY IN MAP!!!!! 
+subtree - mary janes ([]) -----APPENDED TO---->tax node - fashion sneakers ([<app.views.TreeNode object at 0x1012a4310>])
+235 ALREADY IN MAP!!!!! 
+subtree - sling-back ([]) -----APPENDED TO---->tax node - fashion sneakers ([<app.views.TreeNode object at 0x1012a4310>, <app.views.TreeNode object at 0x1012a4350>])
+236 ALREADY IN MAP!!!!! 
+subtree - slip-on ([]) -----APPENDED TO---->tax node - fashion sneakers ([<app.views.TreeNode object at 0x1012a4310>, <app.views.TreeNode object at 0x1012a4350>, <app.views.TreeNode object at 0x1012a4390>])
+237 ALREADY IN MAP!!!!! 
+subtree - sandals ([]) -----APPENDED TO---->tax node - womens ([<app.views.TreeNode object at 0x1012a2ed0>, <app.views.TreeNode object at 0x1012a2f10>, <app.views.TreeNode object at 0x1012a4150>, <app.views.TreeNode object at 0x1012a4290>, <app.views.TreeNode object at 0x1012a42d0>])
+238 ALREADY IN MAP!!!!! 
+subtree - platform ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1012a4410>])
+239 ALREADY IN MAP!!!!! 
+subtree - wedges ([]) -----APPENDED TO---->tax node - sandals ([<app.views.TreeNode object at 0x1012a4410>, <app.views.TreeNode object at 0x1012a4450>])
+11 ALREADY IN MAP!!!!! 
+subtree - BANDOLINO HAPPYME WEDGE SANDAL LIGHT NATURAL SYNTHETIC WOMENS SIZE 7.5 M ([]) -----APPENDED TO---->tax node - wedges ([<app.views.TreeNode object at 0x1012a44d0>])
+240 ALREADY IN MAP!!!!! 
+subtree - electronics ([]) -----APPENDED TO---->tax node - ROOT ([<app.views.TreeNode object at 0x101138510>, <app.views.TreeNode object at 0x101138550>, <app.views.TreeNode object at 0x101138d10>, <app.views.TreeNode object at 0x10113e410>, <app.views.TreeNode object at 0x1011e0610>, <app.views.TreeNode object at 0x10129c3d0>, <app.views.TreeNode object at 0x10129c410>, <app.views.TreeNode object at 0x10129cbd0>, <app.views.TreeNode object at 0x1012a02d0>, <app.views.TreeNode object at 0x1012a24d0>])
+241 ALREADY IN MAP!!!!! 
+subtree - accessories & supplies ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1012a43d0>])
+242 ALREADY IN MAP!!!!! 
+subtree - audio & video accessories ([]) -----APPENDED TO---->tax node - accessories & supplies ([<app.views.TreeNode object at 0x1012a4510>])
+243 ALREADY IN MAP!!!!! 
+subtree - antennas ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1012a4590>])
+244 ALREADY IN MAP!!!!! 
+subtree - radio antennas ([]) -----APPENDED TO---->tax node - antennas ([<app.views.TreeNode object at 0x1012a4610>])
+245 ALREADY IN MAP!!!!! 
+subtree - tv antennas ([]) -----APPENDED TO---->tax node - antennas ([<app.views.TreeNode object at 0x1012a4610>, <app.views.TreeNode object at 0x1012a4650>])
+5 ALREADY IN MAP!!!!! 
+subtree - Sewell Direct SW-29480 HDTV Antenna ([]) -----APPENDED TO---->tax node - tv antennas ([<app.views.TreeNode object at 0x1012a46d0>])
+246 ALREADY IN MAP!!!!! 
+subtree - blank media ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1012a4590>, <app.views.TreeNode object at 0x1012a45d0>])
+247 ALREADY IN MAP!!!!! 
+subtree - CD-R disc ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1012a4710>])
+248 ALREADY IN MAP!!!!! 
+subtree - DVD-R disc ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1012a4710>, <app.views.TreeNode object at 0x1012a4750>])
+249 ALREADY IN MAP!!!!! 
+subtree - Minidiscs ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1012a4710>, <app.views.TreeNode object at 0x1012a4750>, <app.views.TreeNode object at 0x1012a4790>])
+250 ALREADY IN MAP!!!!! 
+subtree - Data Cartridges ([]) -----APPENDED TO---->tax node - blank media ([<app.views.TreeNode object at 0x1012a4710>, <app.views.TreeNode object at 0x1012a4750>, <app.views.TreeNode object at 0x1012a4790>, <app.views.TreeNode object at 0x1012a47d0>])
+251 ALREADY IN MAP!!!!! 
+subtree - plugs & adapters ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1012a4590>, <app.views.TreeNode object at 0x1012a45d0>, <app.views.TreeNode object at 0x1012a4690>])
+252 ALREADY IN MAP!!!!! 
+subtree - speaker accessories ([]) -----APPENDED TO---->tax node - audio & video accessories ([<app.views.TreeNode object at 0x1012a4590>, <app.views.TreeNode object at 0x1012a45d0>, <app.views.TreeNode object at 0x1012a4690>, <app.views.TreeNode object at 0x1012a4810>])
+253 ALREADY IN MAP!!!!! 
+subtree - speaker cables ([]) -----APPENDED TO---->tax node - speaker accessories ([<app.views.TreeNode object at 0x1012a4890>])
+254 ALREADY IN MAP!!!!! 
+subtree - speaker mounts ([]) -----APPENDED TO---->tax node - speaker accessories ([<app.views.TreeNode object at 0x1012a4890>, <app.views.TreeNode object at 0x1012a48d0>])
+255 ALREADY IN MAP!!!!! 
+subtree - speaker stands ([]) -----APPENDED TO---->tax node - speaker accessories ([<app.views.TreeNode object at 0x1012a4890>, <app.views.TreeNode object at 0x1012a48d0>, <app.views.TreeNode object at 0x1012a4910>])
+6 ALREADY IN MAP!!!!! 
+subtree - SANUS SYSTEMS BF-31B Wood Speaker Stands ([]) -----APPENDED TO---->tax node - speaker stands ([<app.views.TreeNode object at 0x1012a4990>])
+256 ALREADY IN MAP!!!!! 
+subtree - microphones ([]) -----APPENDED TO---->tax node - accessories & supplies ([<app.views.TreeNode object at 0x1012a4510>, <app.views.TreeNode object at 0x1012a4550>])
+257 ALREADY IN MAP!!!!! 
+subtree - wireless microphones ([]) -----APPENDED TO---->tax node - microphones ([<app.views.TreeNode object at 0x1012a4950>])
+258 ALREADY IN MAP!!!!! 
+subtree - handheld microphones ([]) -----APPENDED TO---->tax node - wireless microphones ([<app.views.TreeNode object at 0x1012a4a10>])
+259 ALREADY IN MAP!!!!! 
+subtree - headset microphones ([]) -----APPENDED TO---->tax node - wireless microphones ([<app.views.TreeNode object at 0x1012a4a10>, <app.views.TreeNode object at 0x1012a4a50>])
+260 ALREADY IN MAP!!!!! 
+subtree - dynamic microphones ([]) -----APPENDED TO---->tax node - microphones ([<app.views.TreeNode object at 0x1012a4950>, <app.views.TreeNode object at 0x1012a49d0>])
+261 ALREADY IN MAP!!!!! 
+subtree - instrument ([]) -----APPENDED TO---->tax node - dynamic microphones ([<app.views.TreeNode object at 0x1012a4ad0>])
+262 ALREADY IN MAP!!!!! 
+subtree - vocal ([]) -----APPENDED TO---->tax node - dynamic microphones ([<app.views.TreeNode object at 0x1012a4ad0>, <app.views.TreeNode object at 0x1012a4b10>])
+263 ALREADY IN MAP!!!!! 
+subtree - multipurpose ([]) -----APPENDED TO---->tax node - dynamic microphones ([<app.views.TreeNode object at 0x1012a4ad0>, <app.views.TreeNode object at 0x1012a4b10>, <app.views.TreeNode object at 0x1012a4b50>])
+264 ALREADY IN MAP!!!!! 
+subtree - telephone accessories ([]) -----APPENDED TO---->tax node - accessories & supplies ([<app.views.TreeNode object at 0x1012a4510>, <app.views.TreeNode object at 0x1012a4550>, <app.views.TreeNode object at 0x1012a4850>])
+265 ALREADY IN MAP!!!!! 
+subtree - caller ID displays ([]) -----APPENDED TO---->tax node - telephone accessories ([<app.views.TreeNode object at 0x1012a4b90>])
+266 ALREADY IN MAP!!!!! 
+subtree - batteries ([]) -----APPENDED TO---->tax node - telephone accessories ([<app.views.TreeNode object at 0x1012a4b90>, <app.views.TreeNode object at 0x1012a4bd0>])
+267 ALREADY IN MAP!!!!! 
+subtree - phone cards ([]) -----APPENDED TO---->tax node - telephone accessories ([<app.views.TreeNode object at 0x1012a4b90>, <app.views.TreeNode object at 0x1012a4bd0>, <app.views.TreeNode object at 0x1012a4c10>])
+268 ALREADY IN MAP!!!!! 
+subtree - computers & accessories ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1012a43d0>, <app.views.TreeNode object at 0x1012a4490>])
+269 ALREADY IN MAP!!!!! 
+subtree - printers ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1012a4c50>])
+270 ALREADY IN MAP!!!!! 
+subtree - inkjet ([]) -----APPENDED TO---->tax node - printers ([<app.views.TreeNode object at 0x1012a4cd0>])
+271 ALREADY IN MAP!!!!! 
+subtree - laser ([]) -----APPENDED TO---->tax node - printers ([<app.views.TreeNode object at 0x1012a4cd0>, <app.views.TreeNode object at 0x1012a4d10>])
+272 ALREADY IN MAP!!!!! 
+subtree - all-in-one ([]) -----APPENDED TO---->tax node - printers ([<app.views.TreeNode object at 0x1012a4cd0>, <app.views.TreeNode object at 0x1012a4d10>, <app.views.TreeNode object at 0x1012a4d50>])
+273 ALREADY IN MAP!!!!! 
+subtree - video projectors ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1012a4c50>, <app.views.TreeNode object at 0x1012a4c90>])
+274 ALREADY IN MAP!!!!! 
+subtree - DLP projectors ([]) -----APPENDED TO---->tax node - video projectors ([<app.views.TreeNode object at 0x1012a4dd0>])
+275 ALREADY IN MAP!!!!! 
+subtree - LCD projectors ([]) -----APPENDED TO---->tax node - video projectors ([<app.views.TreeNode object at 0x1012a4dd0>, <app.views.TreeNode object at 0x1012a4e10>])
+276 ALREADY IN MAP!!!!! 
+subtree - scanners ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1012a4c50>, <app.views.TreeNode object at 0x1012a4c90>, <app.views.TreeNode object at 0x1012a4d90>])
+277 ALREADY IN MAP!!!!! 
+subtree - networking products ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1012a4c50>, <app.views.TreeNode object at 0x1012a4c90>, <app.views.TreeNode object at 0x1012a4d90>, <app.views.TreeNode object at 0x1012a4e50>])
+278 ALREADY IN MAP!!!!! 
+subtree - hubs ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1012a4ed0>])
+279 ALREADY IN MAP!!!!! 
+subtree - modems ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1012a4ed0>, <app.views.TreeNode object at 0x1012a4f10>])
+280 ALREADY IN MAP!!!!! 
+subtree - access points ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1012a4ed0>, <app.views.TreeNode object at 0x1012a4f10>, <app.views.TreeNode object at 0x1012a4f50>])
+281 ALREADY IN MAP!!!!! 
+subtree - routers ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1012a4ed0>, <app.views.TreeNode object at 0x1012a4f10>, <app.views.TreeNode object at 0x1012a4f50>, <app.views.TreeNode object at 0x1012a4f90>])
+282 ALREADY IN MAP!!!!! 
+subtree - switches ([]) -----APPENDED TO---->tax node - networking products ([<app.views.TreeNode object at 0x1012a4ed0>, <app.views.TreeNode object at 0x1012a4f10>, <app.views.TreeNode object at 0x1012a4f50>, <app.views.TreeNode object at 0x1012a4f90>, <app.views.TreeNode object at 0x1012a4fd0>])
+283 ALREADY IN MAP!!!!! 
+subtree - mice & keyboards ([]) -----APPENDED TO---->tax node - computers & accessories ([<app.views.TreeNode object at 0x1012a4c50>, <app.views.TreeNode object at 0x1012a4c90>, <app.views.TreeNode object at 0x1012a4d90>, <app.views.TreeNode object at 0x1012a4e50>, <app.views.TreeNode object at 0x1012a4e90>])
+284 ALREADY IN MAP!!!!! 
+subtree - mice ([]) -----APPENDED TO---->tax node - mice & keyboards ([<app.views.TreeNode object at 0x1012a6090>])
+285 ALREADY IN MAP!!!!! 
+subtree - laser mice ([]) -----APPENDED TO---->tax node - mice ([<app.views.TreeNode object at 0x1012a6110>])
+286 ALREADY IN MAP!!!!! 
+subtree - optical mice ([]) -----APPENDED TO---->tax node - mice ([<app.views.TreeNode object at 0x1012a6110>, <app.views.TreeNode object at 0x1012a6150>])
+7 ALREADY IN MAP!!!!! 
+subtree - Logitech B100 Optical USB Mouse ([]) -----APPENDED TO---->tax node - optical mice ([<app.views.TreeNode object at 0x1012a61d0>])
+287 ALREADY IN MAP!!!!! 
+subtree - notebook mice ([]) -----APPENDED TO---->tax node - mice ([<app.views.TreeNode object at 0x1012a6110>, <app.views.TreeNode object at 0x1012a6150>, <app.views.TreeNode object at 0x1012a6190>])
+288 ALREADY IN MAP!!!!! 
+subtree - presentation pointers ([]) -----APPENDED TO---->tax node - mice & keyboards ([<app.views.TreeNode object at 0x1012a6090>, <app.views.TreeNode object at 0x1012a60d0>])
+289 ALREADY IN MAP!!!!! 
+subtree - laser pointers ([]) -----APPENDED TO---->tax node - presentation pointers ([<app.views.TreeNode object at 0x1012a6250>])
+290 ALREADY IN MAP!!!!! 
+subtree - presentation remotes ([]) -----APPENDED TO---->tax node - presentation pointers ([<app.views.TreeNode object at 0x1012a6250>, <app.views.TreeNode object at 0x1012a6290>])
+291 ALREADY IN MAP!!!!! 
+subtree - televisions & video ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1012a43d0>, <app.views.TreeNode object at 0x1012a4490>, <app.views.TreeNode object at 0x1012a4a90>])
+292 ALREADY IN MAP!!!!! 
+subtree - disc players & recorders ([]) -----APPENDED TO---->tax node - televisions & video ([<app.views.TreeNode object at 0x1012a6210>])
+293 ALREADY IN MAP!!!!! 
+subtree - blu-ray disc players ([]) -----APPENDED TO---->tax node - disc players & recorders ([<app.views.TreeNode object at 0x1012a6310>])
+294 ALREADY IN MAP!!!!! 
+subtree - DVD players ([]) -----APPENDED TO---->tax node - disc players & recorders ([<app.views.TreeNode object at 0x1012a6310>, <app.views.TreeNode object at 0x1012a6350>])
+295 ALREADY IN MAP!!!!! 
+subtree - portable DVD players ([]) -----APPENDED TO---->tax node - disc players & recorders ([<app.views.TreeNode object at 0x1012a6310>, <app.views.TreeNode object at 0x1012a6350>, <app.views.TreeNode object at 0x1012a6390>])
+296 ALREADY IN MAP!!!!! 
+subtree - Televisions ([]) -----APPENDED TO---->tax node - televisions & video ([<app.views.TreeNode object at 0x1012a6210>, <app.views.TreeNode object at 0x1012a62d0>])
+297 ALREADY IN MAP!!!!! 
+subtree - TVs ([]) -----APPENDED TO---->tax node - Televisions ([<app.views.TreeNode object at 0x1012a6410>])
+298 ALREADY IN MAP!!!!! 
+subtree - TV-DVD combinations ([]) -----APPENDED TO---->tax node - Televisions ([<app.views.TreeNode object at 0x1012a6410>, <app.views.TreeNode object at 0x1012a6450>])
+299 ALREADY IN MAP!!!!! 
+subtree - photo & camera ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1012a43d0>, <app.views.TreeNode object at 0x1012a4490>, <app.views.TreeNode object at 0x1012a4a90>, <app.views.TreeNode object at 0x1012a6050>])
+300 ALREADY IN MAP!!!!! 
+subtree - camcorders ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1012a6490>])
+301 ALREADY IN MAP!!!!! 
+subtree - high definition ([]) -----APPENDED TO---->tax node - camcorders ([<app.views.TreeNode object at 0x1012a6510>])
+302 ALREADY IN MAP!!!!! 
+subtree - flash memory ([]) -----APPENDED TO---->tax node - camcorders ([<app.views.TreeNode object at 0x1012a6510>, <app.views.TreeNode object at 0x1012a6550>])
+303 ALREADY IN MAP!!!!! 
+subtree - digital DVD ([]) -----APPENDED TO---->tax node - camcorders ([<app.views.TreeNode object at 0x1012a6510>, <app.views.TreeNode object at 0x1012a6550>, <app.views.TreeNode object at 0x1012a6590>])
+304 ALREADY IN MAP!!!!! 
+subtree - digital cameras ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1012a6490>, <app.views.TreeNode object at 0x1012a64d0>])
+305 ALREADY IN MAP!!!!! 
+subtree - digital SLRs ([]) -----APPENDED TO---->tax node - digital cameras ([<app.views.TreeNode object at 0x1012a6610>])
+306 ALREADY IN MAP!!!!! 
+subtree - point & shoot digital cameras ([]) -----APPENDED TO---->tax node - digital cameras ([<app.views.TreeNode object at 0x1012a6610>, <app.views.TreeNode object at 0x1012a6650>])
+307 ALREADY IN MAP!!!!! 
+subtree - lenses ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1012a6490>, <app.views.TreeNode object at 0x1012a64d0>, <app.views.TreeNode object at 0x1012a65d0>])
+308 ALREADY IN MAP!!!!! 
+subtree - camcorder lenses ([]) -----APPENDED TO---->tax node - lenses ([<app.views.TreeNode object at 0x1012a66d0>])
+20 ALREADY IN MAP!!!!! 
+subtree - 37mm 0.3x Baby Death Fisheye Lens for Video Camcorder ([]) -----APPENDED TO---->tax node - camcorder lenses ([<app.views.TreeNode object at 0x1012a6750>])
+309 ALREADY IN MAP!!!!! 
+subtree - point & shoot camera lenses ([]) -----APPENDED TO---->tax node - lenses ([<app.views.TreeNode object at 0x1012a66d0>, <app.views.TreeNode object at 0x1012a6710>])
+310 ALREADY IN MAP!!!!! 
+subtree - SLR camera lenses ([]) -----APPENDED TO---->tax node - lenses ([<app.views.TreeNode object at 0x1012a66d0>, <app.views.TreeNode object at 0x1012a6710>, <app.views.TreeNode object at 0x1012a6790>])
+311 ALREADY IN MAP!!!!! 
+subtree - digital SLR lenses ([]) -----APPENDED TO---->tax node - SLR camera lenses ([<app.views.TreeNode object at 0x1012a6810>])
+312 ALREADY IN MAP!!!!! 
+subtree - film SLR lenses ([]) -----APPENDED TO---->tax node - SLR camera lenses ([<app.views.TreeNode object at 0x1012a6810>, <app.views.TreeNode object at 0x1012a6850>])
+313 ALREADY IN MAP!!!!! 
+subtree - binoculars, telescopes & optics ([]) -----APPENDED TO---->tax node - photo & camera ([<app.views.TreeNode object at 0x1012a6490>, <app.views.TreeNode object at 0x1012a64d0>, <app.views.TreeNode object at 0x1012a65d0>, <app.views.TreeNode object at 0x1012a6690>])
+314 ALREADY IN MAP!!!!! 
+subtree - binoculars ([]) -----APPENDED TO---->tax node - binoculars, telescopes & optics ([<app.views.TreeNode object at 0x1012a6890>])
+315 ALREADY IN MAP!!!!! 
+subtree - microscopes ([]) -----APPENDED TO---->tax node - binoculars, telescopes & optics ([<app.views.TreeNode object at 0x1012a6890>, <app.views.TreeNode object at 0x1012a68d0>])
+316 ALREADY IN MAP!!!!! 
+subtree - compound microscopes ([]) -----APPENDED TO---->tax node - microscopes ([<app.views.TreeNode object at 0x1012a6950>])
+317 ALREADY IN MAP!!!!! 
+subtree - stereo microscopes ([]) -----APPENDED TO---->tax node - microscopes ([<app.views.TreeNode object at 0x1012a6950>, <app.views.TreeNode object at 0x1012a6990>])
+318 ALREADY IN MAP!!!!! 
+subtree - telescopes ([]) -----APPENDED TO---->tax node - binoculars, telescopes & optics ([<app.views.TreeNode object at 0x1012a6890>, <app.views.TreeNode object at 0x1012a68d0>, <app.views.TreeNode object at 0x1012a6910>])
+319 ALREADY IN MAP!!!!! 
+subtree - reflectors ([]) -----APPENDED TO---->tax node - telescopes ([<app.views.TreeNode object at 0x1012a6a10>])
+8 ALREADY IN MAP!!!!! 
+subtree - Orion SkyScanner 100mm TableTop Reflector Telescope ([]) -----APPENDED TO---->tax node - reflectors ([<app.views.TreeNode object at 0x1012a6a90>])
+320 ALREADY IN MAP!!!!! 
+subtree - refractors ([]) -----APPENDED TO---->tax node - telescopes ([<app.views.TreeNode object at 0x1012a6a10>, <app.views.TreeNode object at 0x1012a6a50>])
+321 ALREADY IN MAP!!!!! 
+subtree - GPS & navigation ([]) -----APPENDED TO---->tax node - electronics ([<app.views.TreeNode object at 0x1012a43d0>, <app.views.TreeNode object at 0x1012a4490>, <app.views.TreeNode object at 0x1012a4a90>, <app.views.TreeNode object at 0x1012a6050>, <app.views.TreeNode object at 0x1012a63d0>])
+322 ALREADY IN MAP!!!!! 
+subtree - GPS mapping software ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1012a69d0>])
+323 ALREADY IN MAP!!!!! 
+subtree - handheld GPS ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1012a69d0>, <app.views.TreeNode object at 0x1012a6ad0>])
+324 ALREADY IN MAP!!!!! 
+subtree - vehicle GPS ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1012a69d0>, <app.views.TreeNode object at 0x1012a6ad0>, <app.views.TreeNode object at 0x1012a6b10>])
+325 ALREADY IN MAP!!!!! 
+subtree - in-dash navigation ([]) -----APPENDED TO---->tax node - vehicle GPS ([<app.views.TreeNode object at 0x1012a6b90>])
+326 ALREADY IN MAP!!!!! 
+subtree - motorcycle GPS ([]) -----APPENDED TO---->tax node - vehicle GPS ([<app.views.TreeNode object at 0x1012a6b90>, <app.views.TreeNode object at 0x1012a6bd0>])
+327 ALREADY IN MAP!!!!! 
+subtree - sports & outdoors GPS ([]) -----APPENDED TO---->tax node - GPS & navigation ([<app.views.TreeNode object at 0x1012a69d0>, <app.views.TreeNode object at 0x1012a6ad0>, <app.views.TreeNode object at 0x1012a6b10>, <app.views.TreeNode object at 0x1012a6b50>])
+328 ALREADY IN MAP!!!!! 
+subtree - hiking GPS units ([]) -----APPENDED TO---->tax node - sports & outdoors GPS ([<app.views.TreeNode object at 0x1012a6c50>])
+329 ALREADY IN MAP!!!!! 
+subtree - cycling GPS units ([]) -----APPENDED TO---->tax node - sports & outdoors GPS ([<app.views.TreeNode object at 0x1012a6c50>, <app.views.TreeNode object at 0x1012a6c90>])
+330 ALREADY IN MAP!!!!! 
+subtree - running GPS units ([]) -----APPENDED TO---->tax node - sports & outdoors GPS ([<app.views.TreeNode object at 0x1012a6c50>, <app.views.TreeNode object at 0x1012a6c90>, <app.views.TreeNode object at 0x1012a6cd0>])
+# of Rows in Tasks Distribution Table: 146
+Tasks Distribution Table Not Empty
+Retrieving next combination from Tasks Distribution Table: 5.2.2
+Random item: 13
+Random item name: Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+Random item id: 13
+Depth: 1
+ROOT
+toys & games
+party supplies
+gift wrapping supplies
+wrapping tissue
+Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA
+uplist len: [<app.views.TreeNode object at 0x1007e3350>, <app.views.TreeNode object at 0x10129cbd0>, <app.views.TreeNode object at 0x1012a0d50>, <app.views.TreeNode object at 0x1012a22d0>, <app.views.TreeNode object at 0x1012a2490>, <app.views.TreeNode object at 0x1012a2510>]
+Random pos node (finding positive nodes for): ROOT
+<<<<<<<<<<<<<<<<<<< RANDOM +VE QN >>>>>>>>>>>>>>>>>
+ROOT label: ROOT
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+ROOT children: clothing
+ROOT children: home
+ROOT children: toys & games
+ROOT children: shoes
+ROOT children: electronics
+1)[]
+OPTIONS: toys & games
+OPTIONS: shoes
+OPTIONS: shoes
+OPTIONS: home
+OPTIONS: electronics
+OPTIONS: clothing
+OPTIONS: toys & games
+OPTIONS: electronics
+OPTIONS: home
+OPTIONS: clothing
+2)['toys & games', 'toys & games']
+3)['toys & games', 'toys & games', 'shoes']
+4)['toys & games', 'toys & games', 'shoes', 'shoes']
+5)['toys & games', 'toys & games', 'shoes', 'shoes', 'None']
+Choices for positive buckets: toys & games||toys & games||shoes||shoes||None
+Updating Tasks Distribution Table: 13.0.1
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 61199)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('127.0.0.1', 61200)
+----------------------------------------
+Shutting down...

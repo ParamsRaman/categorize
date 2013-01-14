@@ -1,0 +1,1100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Calendar, Month Calendar, DateTimeInput, Date Input, Date Picker, DateTimePicker, Time Picker" />
+    <meta name="description" content="This page represents the help documentation of the jqxDateTimeInput widget." />
+    <title>jqxDateTimeInput API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>value</span>
+                </td>
+                <td>
+                    <span>jqxDateTime</span>
+                </td>
+                <td>
+                    By default, the control displays the Today's date which is set by using the following
+                    syntax: $.jqx._jqxDateTimeInput.getDateTime(new Date());
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%;'>
+                    <div class="documentation-option-description property-content" style="width: 100%;
+                        display: none;">
+                        <p>
+                            Sets the jqxDateTimeInput value.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeInput with the <code>value</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ value: new $.jqx._jqxDateTimeInput.getDateTime(new Date(2000, 0, 1)) }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>minDate</span>
+                </td>
+                <td>
+                    <span>Date</span>
+                </td>
+                <td>
+                    1900, 1, 1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the jqxDateTimeInput's minumun value.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>minDate</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ minDate: new $.jqx._jqxDateTimeInput.getDateTime(new Date(2000, 0, 1)) });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>maxDate</span>
+                </td>
+                <td>
+                    <span>Date</span>
+                </td>
+                <td>
+                    2100, 1, 1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the jqxDateTimeInput's maximum value.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>maxDate</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ maxDate: new $.jqx._jqxDateTimeInput.getDateTime(new Date(2013, 0, 1)) });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>formatString</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    dd/MM/yyyy
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets ot sets the date time input format of the date. Possible values:
+                           // short date pattern 
+                            "d" - "M/d/yyyy", 
+                            // long date pattern 
+                            "D" - "dddd, MMMM dd, yyyy", 
+                            // short time pattern 
+                            "t" - "h:mm tt", 
+                            // long time pattern 
+                            "T" - "h:mm:ss tt", 
+                            // long date, short time pattern 
+                            "f" - "dddd, MMMM dd, yyyy h:mm tt", 
+                            // long date, long time pattern 
+                            "F" - "dddd, MMMM dd, yyyy h:mm:ss tt", 
+                            // month/day pattern 
+                            "M" - "MMMM dd", 
+                            // month/year pattern 
+                            "Y" - "yyyy MMMM", 
+                            // S is a sortable format that does not vary by culture 
+                            "S" - "yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss" 
+                            <br />
+                            "d"-the day of the month;<br />
+                            "dd"-the day of the month;
+                            <br />
+                            "ddd"-the abbreviated name of the day of the week;<br />
+                            "dddd"- the full name of the day of the week;<br />
+                            "h"-the hour, using a 12-hour clock from 1 to 12;
+                            <br />
+                            "hh"-the hour, using a 12-hour clock from 01 to 12;
+                            <br />
+                            "H"-the hour, using a 24-hour clock from 0 to 23;<br />
+                            "HH"- the hour, using a 24-hour clock from 00 to 23;
+                            <br />
+                            "m"-the minute, from 0 through 59;<br />
+                            "mm"-the minutes,from 00 though59;<br />
+                            "M"- the month, from 1 through 12;<br />
+                            "MM"- the month, from 01 through 12;<br />
+                            "MMM"-the abbreviated name of the month;<br />
+                            "MMMM"-the full name of the month;<br />
+                            "s"-the second, from 0 through 59;
+                            <br />
+                            "ss"-the second, from 00 through 59;
+                            <br />
+                            "t"- the first character of the AM/PM designator;<br />
+                            "tt"-the AM/PM designator;
+                            <br />
+                            "y"- the year, from 0 to 99;
+                            <br />
+                            "yy"- the year, from 00 to 99;
+                            <br />
+                            "yyy"-the year, with a minimum of three digits;
+                            <br />
+                            "yyyy"-the year as a four-digit number;
+                            <br />
+                            "yyyyy"-the year as a four-digit number.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>formatString</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ formatString: "dd"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the width of the jqxDateTimeInput widget.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ width: '250px', height: '25px'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the height of the jqxDateTimeInput widget.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ width: '250px', height: '25px'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>firstDayOfWeek</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets which day to display in the first day column. By default the calendar displays
+                            'Sunday' as first day.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>firstDayOfWeek</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxDateTimeInput').jqxDateTimeInput({ firstDayOfWeek: 1 });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>showWeekNumbers</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value whether the week`s numbers are displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>showWeekNumbers</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxDateTimeInput').jqxDateTimeInput({ showWeekNumbers: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>textAlign</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    left
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the position of the text.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>textAlign</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ textAlign: "left"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>readonly</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>readonly</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ readonly: true});</code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>showFooter</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the dropdown calendar's footer is displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>showFooter</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxDateTimeInput({ showFooter: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span45'>selectionMode</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'default'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the dropdown calendar's selection mode. The possible values are: 'none', 'default' and 'range'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>selectionMode</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxDateTimeInput({ selectionMode: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span46'>todayString</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'Today'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the 'Today' string displayed in the dropdown Calendar when the 'showFooter' property is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>todayString</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxDateTimeInput({ todayString: 'Today' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span47'>clearString</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'Clear'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the 'Clear' string displayed when the 'showFooter' property is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>clearString</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxDateTimeInput({ clearString: 'Clear' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>culture</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    default
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the jqxDateTimeInput's culture. The culture settings are contained within a
+                            file with the language code appended to the name, e.g. jquery.glob.de-DE.js for
+                            German. To set the culture, you need to include the jquery.glob.de-DE.js and set
+                            the culture property to the culture's name, e.g. 'de-DE'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>culture</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({culture: 'en-US' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>showDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Specifies the animation duration of the popup calendar when it is going to be displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>showDelay</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ showDelay: 200 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>hideDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Specifies the animation duration of the popup calendar when it is going to be hidden.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a DateTimeinput with the <code>hideDelay</code> property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ hideDelay: 200 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>closeCalendarAfterSelection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets whether or not the popup calendar must be closed after selection.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>closeCalendarAfterSelection</code>
+                            property specified.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ closeCalendarAfterSelection:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>enableBrowserBoundsDetection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>enableBrowserBoundsDetection</code>
+                            property specified. When this property is set to true, the popup calendar may open
+                            above the input, if there's not enough space below the DateTimeInput.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ enableBrowserBoundsDetection: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>dropDownHorizontalAlignment</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'left'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Sets the DropDown's alignment. Possible values: 'left' and 'right'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ dropDownHorizontalAlignment: 'right'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+    <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span29'>openDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the delay of the 'open' animation.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the openDelay property
+                        </p>
+                        <pre><code>
+$('#jqxDateTimeInput').jqxDateTimeInput({openDelay: 200});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+      <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span30'>closeDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the delay of the 'close' animation.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the closeDelay property
+                        </p>
+                        <pre><code>
+$('#jqxDateTimeInput').jqxDateTimeInput({closeDelay: 200});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+     <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span22'>animationType</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'slide'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the type of the animation. Possible values: 'fade', 'slide' and 'none'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the animationType property
+                        </p>
+                        <pre><code>
+$('#jqxDateTimeInput').jqxDateTimeInput({animationType: 'none'});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>enableAbsoluteSelection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxDateTimeInput with the <code>enableAbsoluteSelection</code> property
+                            specified. This setting enables the user to select only one symbol at a time when
+                            typing into the text input field.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput({ enableAbsoluteSelection: true });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>valuechanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the value is changed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the valuechanged event by type: jqxDateTimeInput.
+                        </p>
+                        <pre><code>$('#DateTimeInput').bind('valuechanged', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>textchanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the text is changed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the textchanged event by type: jqxDateTimeInput.
+                        </p>
+                        <pre><code>$('#DateTimeInput').bind('textchanged', function (event) { // Some code here.}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>open</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        This event is triggered when the popup calendar is opened.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the open event by type: jqxDateTimeInput.
+                        </p>
+                        <pre><code>$('#DateTimeInput').bind('open', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>close</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        This event is triggered when the popup calendar is closed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the close event by type: jqxDateTimeInput.
+                        </p>
+                        <pre><code>$('#DateTimeInput').bind('close', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>setMinDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setMinDate method is called, the user sets the minimum date to which it
+                            is possible to navigate.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setMinDate method.
+                        </p>
+                        <pre><code>$('#DateTimeInput ').jqxDateTimeInput('setMinDate', new Date(2008, 0, 1));
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span38'>getMinDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the getMinDate method is called, the user gets the minimum navigation date.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getMinDate method.
+                        </p>
+                        <pre><code>var minDate = $('#DateTimeInput').jqxDateTimeInput('getMinDate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span39'>setMaxDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%;'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setMaxDate method is called, the user sets the maximum date to which it
+                            is possible to navigate.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setMaxDate method.
+                        </p>
+                        <pre><code>$('#DateTimeInput ').jqxDateTimeInput('setMaxDate', new Date(2013, 0, 1));
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span40'>getMaxDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%;'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setMaxDate method is called, the user gets the maximum navigation date.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getMaxDate method.
+                        </p>
+                        <pre><code>var getMaxDate= $('#DateTimeInput').jqxDateTimeInput('getMaxDate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span41'>setDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setDate method is called, the user sets the date.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setDate method.
+                        </p>
+                        <pre><code>$('#DateTimeInput ').jqxDateTimeInput('setDate', new Date(2008, 0, 1)); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span42'>getDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the getDate method is called, the user gets the current date.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getDate method.
+                        </p>
+                        <pre><code>var getDate= $('#DateTimeInput').jqxDateTimeInput('getDate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>close</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            After calling this method, the popup calendar will be hidden.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the close method.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput('close'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>open</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            After calling this method, the popup calendar will be displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the open method.
+                        </p>
+                        <pre><code>$('#DateTimeInput').jqxDateTimeInput('open'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span43'>setRange</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the selection range when the selectionMode is set to 'range'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getDate method.
+                        </p>
+                        <pre><code>
+var date1 = new Date();
+date1.setFullYear(2012, 7, 7);
+
+var date2 = new Date();
+date2.setFullYear(2012, 7, 15);
+$("#Calendar").jqxCalendar('setRange', date1, date2);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span44'>getRange</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the selection range when the selectionMode is set to 'range'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getDate method.
+                        </p>
+                        <pre><code>
+var range = $("#Calendar").jqxCalendar('getRange');
+var from = range.from;
+var to = range.to;
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

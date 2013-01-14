@@ -1,0 +1,1779 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Tabs, Tab Control, Tab Strip, Tab View, jqxTabs, jQuery Tabs." />
+    <meta name="description" content="This page represents the help documentation of the jqxTabs widget." />
+    <title>jqxTabs API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets widget's width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({width:"200px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets widget's height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({height:"400px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the jqxTabs widget.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>scrollAnimationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    250
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets the duration of the scroll animation.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>scrollAnimationDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ scrollAnimationDuration: 200 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>enabledHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Enables or disables the tabs hover effect.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>enabledHover</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ enabledHover: false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>collapsible</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Enables or disables the collapsible feature.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>collapsible</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ collapsible: false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>animationType</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    none
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets the animation type of switching tabs. Possible values ['none', 'fade'].</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>animationType</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ animationType: 'fade' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>enableScrollAnimation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets whether the scroll animation is enabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>enableScrollAnimation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ enableScrollAnimation:false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>contentTransitionDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    450
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets the duration of the content's fade animation which occurs when the user selects a tab. This setting has effect 
+                           when the 'animationType' is set to 'fade'.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>contentTransitionDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ contentTransitionDuration:500 }); </code></pre>
+                    </div>
+                </td>
+            </tr>       
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>toggleMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    click
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets user interaction used for switching the different tabs. Possible values ['click', 'dblclick', 'mouseenter', 'none']</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>toggleMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ toggleMode:'mouseenter' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>selectedItem</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets selected tab.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>selectedItem</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ selectedItem: 2 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>position</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    top
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets whether the tabs are positioned at 'top' or 'bottom.. Possible values ['top', 'bottom'].</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>position</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ position:"bottom" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>selectionTracker</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets whether the selection tracker is enabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>selectionTracker</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ selectionTracker:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>scrollable</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets whether the scrolling is enabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>scrollable</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ scrollable:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>scrollPosition</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    both
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Gets or sets the position of the scroll arrows. Possible values ['left', 'right', 'both'].</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>scrollPosition</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ scrollPosition:'right'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>scrollStep</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    70
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Gets or sets the scrolling step.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>scrollStep</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ scrollStep:80}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>autoHeight</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Gets or sets whether the jqxTabs header's height will be equal to the item with max height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>autoHeight</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ autoHeight: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>showCloseButtons</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets whether a close button is displayed in each tab.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>showCloseButtons</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ showCloseButtons:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>closeButtonSize</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    16
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Gets or sets the close button size.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>closeButtonSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ closeButtonSize:20}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span67'>initTabContent</span>
+                </td>
+                <td>
+                    <span>function</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Callback function that the tab calls when a content panel needs to be initialized.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>initTabContent</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ initTabContent: function(tab)
+                            {
+                                // initialize widgets here depending on the tab's index.
+                            }
+                        }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>keyboardNavigation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Enables or disables the keyboard navigation.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>keyboardNavigation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({ keyboardNavigation: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>reorder</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Enables or disables the reorder feature. When this feature is enabled, the end-user can drag a tab and drop it over another tab. As a result the tabs will be reordered.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>reorder</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({reorder:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>enableDropAnimation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Gets or sets whether the drop animation is enabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>enableDropAnimation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({enableDropAnimation: true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span56'>dropAnimationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    250
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Gets or sets the drop animation duration.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTabs with the <code>dropAnimationDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs({dropAnimationDuration: 350}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>created</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'created' event is triggered when the jqxTabs is created. You should bind to this event before the jqxTabs initialization.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the created event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('created', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>selected</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'selected' event is triggered when the user selects a new tab.   
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the selected event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('selected', function (event) { var selectedTab = event.args.item; }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+              <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>tabclick</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'tabclick' event is triggered when the user click a tab. You can retrieve the clicked tab's index.    
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the tabclick event by type: jqxTabs.
+                        </p>
+                        <pre><code>  $('#jqxTabs').bind('tabclick', function (event) { var clickedItem = event.args.item; }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>add</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'add' event is triggered when a new tab is added to the jqxTabs.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the add event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('add', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>removed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'removed' event is triggered when a tab is removed.  
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the removed event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('removed', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>enable</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'enable' event is triggered when the jqxTabs widget is enabled.    
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the enable event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('enable', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>disable</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'disable' event is triggered when the jqxTabs widget is disabled.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the disable event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('disable', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span30'>selecting</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'selecting' event is triggered when the user selects a tab. This event is cancelable. You can 
+                        cancel the selection by setting the 'event.cancel = true' in the event callback.  
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the selecting event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('selecting', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>unselecting</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'unselecting' event is triggered when the user selects a tab. The last selected tab is going to become unselected. This event is cancelable. You can 
+                        cancel the selection by setting the 'event.cancel = true' in the event callback. 
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unselecting event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('unselecting', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span32'>unselected</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'unselected' event is triggered when the user selects a tab. The last selected tab becomes unselected.   
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unselected event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('unselected', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span33'>dragStart</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'dragStart' event is triggered when the drag operation started.  
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the dragStart event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('dragStart', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span34'>dragEnd</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'dragEnd' event is triggered when the drag operation ended.   
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the dragEnd event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('dragEnd', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span57'>locked</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'locked' event is triggered when the lock operation ended.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the locked event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('locked', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span58'>unlocked</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'unlocked' event is triggered when the unlocked operation ended.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unlocked event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('unlocked', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span59'>collapsed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'collapsed' event is triggered when any tab is collapsed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unlocked event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('collapsed', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span60'>expanded</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        The 'expanded' event is triggered when any tab is expanded.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the expanded event by type: jqxTabs.
+                        </p>
+                        <pre><code>$('#jqxTabs').bind('expanded', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disabling the widget.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('disable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enabling the widget.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('enable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span36'>removeAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Removing tab with indicated index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the removeAt method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('removeAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span38'>removeFirst</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Removing the first tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the removeFirst method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('removeFirst'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span39'>removeLast</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Removing the last tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the removeLast method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('removeLast'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span62'>collapse</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Collapsing the current selected tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the collapse method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('collapse'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span63'>expand</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Expanding the current selected tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the expand method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('expand'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span40'>disableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Disabling tab with indicated index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the disableAt method.
+                        </p>                       
+                        <pre><code>$('#jqxTabs').jqxTabs('disableAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span41'>enableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Enabling tab with indicated index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the enableAt method.
+                        </p>                       
+                        <pre><code>$('#jqxTabs').jqxTabs('enableAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span42'>addAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Adding tab at indicated position.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the addAt method.
+                        </p>                       
+                        <pre><code>$('#jqxTabs').jqxTabs('addAt', 3, tabTitle, tabContent); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span43'>addFirst</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Adding tab at the beginning.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the addFirst method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('addFirst', element); </code></pre>
+                    </div>
+                </td>
+            </tr>  
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span44'>addLast</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Adding tab at the end.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the addLast method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('addLast', element); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span45'>select</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Selecting tab with indicated index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the select method.
+                        </p>                      
+                        <pre><code>$('#jqxTabs').jqxTabs('select', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span46'>length</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Returning the tabs count.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the length method.
+                        </p>
+                        
+                        <pre><code>var length = $('#jqxTabs').jqxTabs('length'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span47'>lockAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Locking tab with specific index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the lockAt method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('lockAt', 2); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span48'>unlockAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Unlocing a tab with specific index
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the unlockAt method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('unlockAt', 2); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span49'>lockAll</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Locing all tabs.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the lockAll method.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs('lockAll'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span50'>unlockAll</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Unlocking all tabs.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the unlockAll method.
+                        </p>                        
+                        <pre><code>$('#jqxTabs').jqxTabs('unlockAll'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>setContentAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Sets the content of a Tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the setContentAt method.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs('setContentAt', i, html); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span66'>getContentAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Gets the content of a Tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the getContentAt method.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs('getContentAt', i, html); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span64'>setTitleAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Sets the title of a Tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the setTitleAt method.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs('setTitleAt', i, text); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span65'>getTitleAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Gets the title of a Tab.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the getTitleAt method.
+                        </p>
+                        <pre><code>var text = $('#jqxTabs').jqxTabs('getTitleAt', i); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span51'>showCloseButtonAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Showing close button at a specific position.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the showCloseButtonAt method.
+                        </p>
+                        <pre><code>$('#jqxTabs').jqxTabs('showCloseButtonAt', 1); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span52'>hideCloseButtonAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Hiding a close button at a specific position.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the hideCloseButtonAt method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('hideCloseButtonAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span53'>hideAllCloseButtons</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Hiding all close buttons.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the hideAllCloseButtons method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('hideAllCloseButtons'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span54'>showAllCloseButtons</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Showing all close buttons.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the showAllCloseButtons method.
+                        </p>
+                        
+                        <pre><code>$('#jqxTabs').jqxTabs('showAllCloseButtons'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span55'>ensureVisible</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>This method is ensuring the visibility of item with indicated index. If the item is currently not visible the method is scrolling to it.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the ensureVisible method.
+                        </p>                        
+                        <pre><code>$('#jqxTabs').jqxTabs('ensureVisible', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span61'>isDisabled</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Return true if the tab is disabled and false if it is not.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the isDisabled method.
+                        </p>                        
+                        <pre><code>$('#jqxTabs').jqxTabs('isDisabled', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

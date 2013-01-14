@@ -1,0 +1,159 @@
+<html>
+<title>Interface 1</title>
+
+<head>
+		<!-- Include the required JavaScript libraries: -->
+	        <script type="text/javascript" src="/js/jqwidgets-ver2.4.2/scripts/jquery-1.8.1.min.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/scripts/gettheme.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxbuttons.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxscrollbar.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxpanel.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxtree.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxcheckbox.js"></script>
+		<script type="text/javascript" src="/js/jqwidgets-ver2.4.2/jqwidgets/jqxlistbox.js"></script>
+		<script type="text/javascript" src="/js/jQuery.awesomeCloud.plugin-abcfb86/jquery.awesomeCloud-0.2.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="/css/main.css" media="screen" />
+		<link rel="stylesheet" href="/js/jqwidgets-ver2.4.2/jqwidgets/styles/jqx.base.css" type="text/css" />
+		
+		<script type="text/javascript">
+		    var counter = 0;
+		    
+            	$(document).ready(function () {
+				// Get object of URL parameters
+				//var allVars = $.getUrlVars();
+
+				// Getting URL var by its nam
+				//var byName = $.getUrlVar('counter');
+				//alert("byName=" + byName);
+	
+	            //counter = $('#counterField').val();
+				//alert(counter);
+	
+                var theme = getTheme();
+				
+				var movies = new Array();
+
+	            // List of products to categorize
+	            movies[0] = { ID: 1, Image: '1.jpg', Title: "Samsonite Luggage 2 Pack Vinyl ID Tag" };
+	            movies[1] = { ID: 2, Image: '2.jpg', Title: "Seirus Innovation Men's Hyperlite All Weather Glove" };
+	            movies[2] = { ID: 3, Image: '3.jpg', Title: "180s Women's Tahoe Ear Warmer" };
+				movies[3] = { ID: 4, Image: '4.jpg', Title: "Intimo Men's Classic Satin Robe" };
+				movies[4] = { ID: 5, Image: '5.jpg', Title: "Sewell Direct SW-29480 HDTV Antenna" };
+				movies[5] = { ID: 6, Image: '6.jpg', Title: "SANUS SYSTEMS BF-31B Wood Speaker Stands" };
+				movies[6] = { ID: 7, Image: '7.jpg', Title: "Logitech B100 Optical USB Mouse" };
+				movies[7] = { ID: 8, Image: '8.jpg', Title: "Orion SkyScanner 100mm TableTop Reflector Telescope" };
+				movies[8] = { ID: 9, Image: '9.jpg', Title: "Bogs Men's Classic Ultra Mid Waterproof Boot" };
+				movies[9] = { ID: 10, Image: '10.jpg', Title: "ASICS Men's Japan Thunder 3 Track and Field Shoe" };
+				movies[10] = { ID: 11, Image: '11.jpg', Title: "BANDOLINO HAPPYME WEDGE SANDAL LIGHT NATURAL SYNTHETIC WOMENS SIZE 7.5 M" };
+				movies[11] = { ID: 12, Image: '12.jpg', Title: "Rubbermaid FGH12500 Invader Side Gate Wet Mop Gray Aluminum Handle with Large Yellow Plastic Head, 54\" Length" };
+				movies[12] = { ID: 13, Image: '13.jpg', Title: "Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA" };
+				movies[13] = { ID: 14, Image: '14.jpg', Title: "Happy Birthday Confetti" };
+				movies[14] = { ID: 15, Image: '15.jpg', Title: "Heath Zenith SL-6135 Basic Solutions Indoor Remote Control" };
+				movies[15] = { ID: 16, Image: '16.jpg', Title: "Totally Bamboo 20-7930 3-Piece Cutting Board Set" };
+				movies[16] = { ID: 17, Image: '17.jpg', Title: "Kikkerland Drunk Shot Glasses, Set of 4" };
+				movies[17] = { ID: 18, Image: '18.jpg', Title: "LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins" };
+				movies[18] = { ID: 19, Image: '19.jpg', Title: "Ecko Juniors Sundress Dress - Style ERF06075" };
+				movies[19] = { ID: 20, Image: '20.jpg', Title: "37mm 0.3x Baby Death Fisheye Lens for Video Camcorder" };
+				movies[20] = { ID: 21, Image: '', Title: "" };
+
+				var innerText = "<img src=\"/images/" + movies[counter]["ID"] + ".jpg\" alt=\"pic1\" border=\"1\" height=\"180px\" width=\"180px\" style=\"vertical-align: middle;\">&nbsp;&nbsp;<span style=\"vertical-align: middle;\">" + movies[counter]["Title"] + "&nbsp;&nbsp;</span>";
+				$(".item").html(innerText);
+				
+				//$('#counterField').val() = ++counter;
+
+                var source = [
+                    "electronics",
+                    "clothing",
+                    "shoes",
+		    "none"
+		        ];
+
+                // Create a jqxListBox
+                $("#listbox").jqxListBox({ source: source, checkboxes: true, width: 400, height: 400, theme: theme });
+                // Check several items.
+                /*$("#listbox").jqxListBox('checkIndex', 0);
+                $("#listbox").jqxListBox('checkIndex', 1);
+                $("#listbox").jqxListBox('checkIndex', 2);
+                $("#listbox").jqxListBox('checkIndex', 5);*/
+
+                $("#listbox").bind('checkChange', function (event) {
+                    var args = event.args;
+                    if (args.checked) {
+                        $("#Events").html("Checked: " + args.label);
+                    }
+                    else {
+                        $("#Events").html("Unchecked: " + args.label);
+                    }
+                });
+            });
+
+			$.extend({
+			  getUrlVars: function(){
+			    var vars = [], hash;
+			    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			    for(var i = 0; i < hashes.length; i++)
+			    {
+			      hash = hashes[i].split('=');
+			      vars.push(hash[0]);
+			      vars[hash[0]] = hash[1];
+			    }
+			    return vars;
+			  },
+			  getUrlVar: function(name){
+			    return $.getUrlVars()[name];
+			  }
+			});
+
+	     function isValid(){
+	         var items = $("#listbox").jqxListBox('getCheckedItems');
+                 var count = items.length;
+		 if(count == 0)
+		 {
+		     alert('Please select atleast one suitable category..');
+		     return false;
+		 }
+		 else
+		 {
+		     // get all items.
+		     //var items = $("#jqxWidget").jqxListBox('getItems');
+		     // get selected indexes.
+		     //var selectedIndexes = $("#jqxWidget").jqxListBox('selectedIndexes');
+		     //var selectedItems = [];
+		     // get selected items.
+		     /*for (var index in selectedIndexes) {
+      		         if (selectedIndexes[index] != -1) {
+			     alert(items[index]);
+        		     selectedItems[index] = items[index];
+                         }
+		     }*/
+		     //alert(selectedItems);
+		     //alert($.inArray("none", selectedItems));
+		     return true;
+		 }
+		 //alert ('Count=' + count);
+	     }
+        </script>
+		
+</head>
+
+<body>
+	<form action='/interface1' onsubmit="return isValid();" method="POST">
+	<div class="box"><div class="qnlabel" style="float: none">Task: {{task_id}} Item: {{item_id}} ItemName: {{item_name}}&nbsp;&nbsp;Select all the categories that apply to the following shopping product:</div>
+    	<div item="item"> NAME: {{item_name}}&nbsp;&nbsp;</div>JLJL
+		<div id="choices">
+			
+			<div id='jqxWidget'>
+	            <div id="listbox"></div>
+	        </div>
+	
+		</div>
+		<div class="buttonbar"><input type="submit" value="Next>"></div>
+		<input type="hidden" name="counterField" id="counterField" value="0" />
+    </div>
+
+        </form>
+</body>
+      
+</html>

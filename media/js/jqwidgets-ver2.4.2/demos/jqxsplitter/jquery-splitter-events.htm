@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery Splitter, Splitter Widget, Splitter, jqxSplitter" />
+    <meta name="description" content="This page demonstrates splitter's events" />
+    <title id='Description'>This demonstration shows how to trigger the jqxSplitter events.
+    </title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            $('#mainSplitter').jqxSplitter({ width: 600, height: 480, theme: theme, panels: [{ size: 200 }, { size: 200 }, { size: 200}] });
+
+            $('#mainSplitter').bind('resize', function (event) {
+                displayEvent(event);
+            });
+            $('#mainSplitter').bind('expanded', function (event) {
+                displayEvent(event);
+            });
+            $('#mainSplitter').bind('collapsed', function (event) {
+                displayEvent(event);
+            });
+
+            function capitaliseFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+
+            function displayEvent(event) {
+                var eventData = capitaliseFirstLetter(event.type);
+                if (event.type === 'resize') {
+                    eventData += ': ' + '{ index: ' + event.args.firstPanel.index + ', size: ' + event.args.firstPanel.size + 'px }, ' +
+                                        '{ index: ' + event.args.secondPanel.index + ', size: ' + event.args.secondPanel.size + 'px }';
+                } else {
+                    eventData += ': ' + 'Index: ' + event.args.index;
+                }
+                $('#events').jqxPanel('prepend', '<div class="item" style="margin-top: 5px;">' + eventData + '</div>');
+                $('#events').jqxPanel('value', 1000);
+            }
+
+            $('#events').jqxPanel({ theme: theme, height: '250px', width: '450px' });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div id="container" style="float: left">
+            <div id="mainSplitter">
+                <div class="splitter-panel" style="background-color:#F5FFF2;"><span style="margin: 5px;">Left</span></div>
+                <div class="splitter-panel" style="background-color:#EBF1FF;"><span style="margin: 5px;">Center</span></div>
+                <div class="splitter-panel" style="background-color:#F5FFF2;"><span style="margin: 5px;">Right</span></div>
+            </div>
+            <br />
+            <div style="font-family: Arial, Verdana; font-size: 13;">
+                Events:</div>
+            <div id="events" style="border-width: 0px;">
+            </div>
+        </div>     
+    </div>
+</body>
+</html>

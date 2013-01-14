@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery Tooltip, Tooltip, Title Popup, jqxTooltip" /> 
+    <meta name="description" content="The jqxTooltip widget displays a popup message. The widget can be used in combination with any html element. You just need to 
+            call the jqxTooltip's 'add' method and pass the html element as parameter." />
+    <title id='Description'>The jqxTooltip widget displays a popup message. The widget can be used in combination with any html element. You just need to 
+            call the jqxTooltip's 'add' method and pass the html element as parameter.  
+        operation.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxtooltip.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Create jqxTooltip
+            var theme = getTheme();
+            $("#jqxTooltip").jqxTooltip({ width: 250, theme: theme });
+            $("#jqxTooltip2").jqxTooltip({ width: 250, theme: theme, location: 'top-left' });
+            $("#jqxTooltip3").jqxTooltip({ width: 250, theme: theme, location: 'right' });
+            $("#jqxTooltip4").jqxTooltip({ width: 250, theme: theme, location: 'relative', horizontalOffset: 25, verticalOffset: 25 });
+            var element = $('#bottomRight');
+            $("#jqxTooltip").jqxTooltip('add', element, 'jqxTooltip');
+            var element2 = $('#topleft');
+            $("#jqxTooltip2").jqxTooltip('add', element2, 'jqxTooltip');
+            var element3 = $('#right');
+            $("#jqxTooltip3").jqxTooltip('add', element3, 'jqxTooltip');
+            var element4 = $('#relative');
+            $("#jqxTooltip4").jqxTooltip('add', element4, 'jqxTooltip');
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget' style='margin-left: 50px; font-family: Verdana Arial; font-size: 13px;
+        width: 400px;'>
+        <div>
+            Move cursor to any gray rectangle below to display a Tooltip:
+        </div>
+        <div style='margin-left: 40px; margin-top: 50px;'>
+            Bottom-Right
+        </div>
+        <div id='bottomRight' style='background: Gray; margin-left: 50px; margin-top: 10px; width: 10px; height: 10px;'>
+        </div>
+        <div style='margin-left: 40px; margin-top: 20px;'>
+            Top-Left
+        </div>
+        <div id='topleft' style='background: Gray; margin-left: 70px; margin-top: 10px; width: 10px; height: 10px;'>
+        </div>
+        <div style='margin-left: 40px; margin-top: 20px;'>
+            Right
+        </div>
+        <div id='right' style='background: Gray; margin-left: 50px; margin-top: 10px; width: 10px; height: 10px;'>
+        </div>
+        <div style='margin-left: 40px; margin-top: 20px;'>
+            Relative
+        </div>
+        <div id='relative' style='background: Gray; margin-left: 50px; margin-top: 10px; width: 10px; height: 10px;'>
+        </div>
+
+        <div id='jqxTooltip'>
+        </div>
+        <div id='jqxTooltip2'>
+        </div>
+        <div id='jqxTooltip3'>
+        </div>
+        <div id='jqxTooltip4'>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,1242 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, List, ListBox, DropDownList, Popup List, DropDown List, Input" />
+    <meta name="description" content="This page represents the help documentation of the jqxComboBox widget." />
+    <title>jqxComboBox API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the jqxComboBox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({ disabled: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxComboBox width.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({ width: '250px', height: '250px' });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxComboBox height.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({ width: '250px', height: '250px' });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>selectedIndex</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    -1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the selected index.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>selectedIndex</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({selectedIndex: 2 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>searchMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    startswith
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the item search mode. When the user types into the edit field, 
+                            the jqxComboBox widget tries to find the searched item using the entered text and the selected search mode. 
+                            Possible Values: 'none, 'contains', 'containsignorecase', 'equals', 'equalsignorecase', 'startswithignorecase', 'startswith', 'endswithignorecase', 'endswith'
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>searchMode</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({searchMode: 'contains' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+                    <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>autocomplete</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the whether the 'autocomplete' feature is enabled or disabled. When this feature is enabled, 
+                            the jqxComboBox displays in the popup listbox, only the items that match the searched text.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>autocomplete</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({autocomplete: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>source</span>
+                </td>
+                <td>
+                    <span>Array</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the items source.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>source</code> property specified.
+                        </p>
+                        <pre><code>var data = [</code></pre>
+                        <pre><code>"Affogato",</code></pre>
+                        <pre><code>"Americano",</code></pre>
+                        <pre><code>"Bicerin"</code></pre>
+                        <pre><code>];</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({source: data});</code></pre>
+                        <br />
+                        Binding using the jqx.dataAdapter(requires jqxdata.js):
+<pre><code>
+// url of the data.
+var url = "../sampledata/customers.txt";
+var parentsLength = $("#jqxWidget").parents().length;
+if (parentsLength > 3) {
+    url = 'demos/sampledata/customers.txt';
+}
+
+// prepare the data. Set the datatype to 'json', 'xml', 'tsv', 'array', 'local' or 'csv.
+var source =
+{
+    datatype: "json",
+    datafields: [
+        { name: 'CompanyName' },
+        { name: 'ContactName' }
+    ],
+    id: 'id',
+    url: url
+};
+// create a new instance of the jqx.dataAdapter.
+var dataAdapter = new $.jqx.dataAdapter(source);
+
+// Create a jqxListBox
+$("#jqxWidget").jqxComboBox({ source: dataAdapter, displayMember: "ContactName", valueMember: "CompanyName", width: 200, height: 250, theme: theme });
+</code></pre>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>displayMember</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the displayMember of the Items. The displayMember specifies the name of an object property to display. The name is contained in the collection specified by the 'source' property.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>displayMember</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({displayMember: 'firstName'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span36'>valueMember</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the valueMember of the Items. The valueMember specifies the name of an object property to set as a 'value' of the list items. The name is contained in the collection specified by the 'source' property.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>valueMember</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({valueMember: 'lastName'});</code></pre>
+                    </div>
+                </td>
+            </tr>  
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>scrollBarSize</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    17
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the scrollbars size.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>scrollBarSize</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({scrollBarSize:25}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>enableHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the hover state.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>enableHover</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({enableHover: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>enableSelection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the selection.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>enableSelection</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({enableSelection:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>  
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span32'>enableBrowserBoundsDetection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the dropdown detects the browser window's bounds and automatically adjusts the dropdown's position.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>enableBrowserBoundsDetection</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({enableBrowserBoundsDetection: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span50'>autoOpen</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the DropDown is automatically opened when the mouse cursor is moved over the widget.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>autoOpen</code> property specified.
+                        </p>
+                        <pre><code>$("#combobox").jqxComboBox({ autoOpen: true });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>dropDownHorizontalAlignment</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'left'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Sets the DropDown's alignment. Possible values: 'left' and 'right'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <pre><code>$('#combobox').jqxComboBox({ dropDownHorizontalAlignment: 'right'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>dropDownHeight</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    200
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the height of the jqxComboBox's ListBox displayed in the widget's DropDown.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>dropDownHeight</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({dropDownHeight: 250}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>dropDownWidth</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    200
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the width of the jqxComboBox's ListBox displayed in the widget's DropDown.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>dropDownWidth</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({dropDownWidth: 250}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>autoDropDownHeight</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the height of the jqxComboBox's ListBox displayed in the widget's DropDown is calculated as a sum of the items heights.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>autoDropDownHeight</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({autoDropDownHeight: true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>itemHeight</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    -1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the height of the jqxComboBox Items. When the itemHeight == - 1,
+                            each item's height is equal to its desired height.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxComboBox with the <code>itemHeight</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox({itemHeight: 25}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+     <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Callback function which is called when an item is rendered. By using the renderer function, you can customize the look of the list items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the renderer property
+                        </p>
+                        <pre><code>
+$('#combobox').jqxComboBox({renderer: function (index, label, value) {
+        var datarecord = data[index];
+        return datarecord.firstname + " " + datarecord.lastname;
+    }
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+   <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span38'>openDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the delay of the 'open' animation.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the openDelay property
+                        </p>
+                        <pre><code>
+$('#combobox').jqxComboBox({openDelay: 200});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+      <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span39'>closeDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the delay of the 'close' animation.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the closeDelay property
+                        </p>
+                        <pre><code>
+$('#combobox').jqxComboBox({closeDelay: 200});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+     <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span42'>animationType</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'slide'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the type of the animation. Possible values: 'fade', 'slide' and 'none'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the animationType property
+                        </p>
+                        <pre><code>
+$('#combobox').jqxComboBox({animationType: 'none'});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>select</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user selects an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the select event by type: jqxComboBox.
+                        </p>
+                        <pre><code>$('#jqxComboBox').bind('select', function (event) { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>unselect</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user unselects an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the unselect event by type: jqxComboBox.
+                        </p>
+                        <pre><code>$('#jqxComboBox').bind('unselect', function (event) { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>change</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user selects an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the change by type: jqxComboBox.
+                        </p>
+                        <pre><code>$('#jqxComboBox').bind('change', function (event) { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>open</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the popup ListBox is opened.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the open by type: jqxComboBox.
+                        </p>
+                        <pre><code>$('#jqxComboBox').bind('open', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>close</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the popup ListBox is closed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the close by type: jqxComboBox.
+                        </p>
+                        <pre><code>$('#jqxComboBox').bind('close', function (event) { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>addItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Adds a new item to the jqxComboBox. Returns 'true', if the new item is added or false if the item is not added.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the addItem method.
+                        </p>
+                        <pre><code>// @param String</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('addItem', 'jQuery' ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>insertAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Inserts a new item to the jqxComboBox.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the insertAt method.
+                        </p>
+                        <pre><code>// @param String</code></pre>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('insertAt', 'jQuery', 1 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>removeAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Removes an item from the jqxComboBox. Index is a number of the item to remove
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the removeAt method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('removeAt', 3 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>disableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disables an item by index. Index is a number.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disableAt method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('disableAt', 8 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>enableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables a disabled item by index. Index is a number.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enableAt method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('enableAt', 3 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>ensureVisible</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Ensures that an item is visible. index is number. When necessary, the jqxComboBox
+                            scrolls to the item to make it visible.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the ensureVisible method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('ensureVisible', 2 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>getItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets item by index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getItem method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>var item = $("#jqxComboBox").jqxComboBox('getItem', 1 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span30'>getItems</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets all items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getItems method.
+                        </p>
+                        <pre><code>var items = $("#jqxComboBox").jqxComboBox('getItems'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span33'>getSelectedItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the selected item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getSelectedItem method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>var item = $("#jqxComboBox").jqxComboBox('getSelectedItem'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span34'>getSelectedIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the index of the selected item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getSelectedIndex method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>var index = $("#jqxComboBox").jqxComboBox('getSelectedIndex'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>selectIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Selects an item by index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the selectIndex method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('selectIndex', 0 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>unselectIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Unselects item by index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the unselectIndex method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('unselectIndex', 5 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>clearSelection</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Clears all selected items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the clearSelection method.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('clearSelection'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span41'>clear</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Clears all items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the clear method.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('clear'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>close</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Hides the popup listbox.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the close method.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox("close" ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>open</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Shows the popup listbox.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the open method.
+                        </p>
+                        <pre><code>$("#jqxComboBox").jqxComboBox('open' ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span51'>loadFromSelect</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Loads list items from a 'select' tag.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'loadFromSelect' method.
+                        </p>
+                        <pre><code>$("#combobox").jqxComboBox('loadFromSelect', 'select');</code></pre>
+                        <br />
+                        'select' is the id of a select tag.
+                        Code Example:
+                         <pre style='margin: 10px;' class='code'>   <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;select style=<span style=" clear: both; padding: 0px; margin: 0px; color: #a24;">'height: 25px; width: 200px; margin-left: 30px;' id='select'</span>&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Affogato<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Americano<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Bicerin<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Breve<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Café Bombón<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Caffé Corretto<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Café Crema<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Caffé Latte<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Caffé macchiato<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Café mélange<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Coffee milk<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Cafe mocha<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Cappuccino<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Carajillo<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Cuban espresso<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Espresso<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>The Flat White<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Frappuccino<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Galao<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Greek frappé coffee<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Iced Coffee﻿<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Indian filter coffee<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Instant coffee<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Irish coffee<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                    <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;option&gt;</span>Liqueur coffee<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/option&gt;</span><div/>                <span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;/select&gt;</span><div/></pre>
+                        
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <br />
+</body>
+</html>

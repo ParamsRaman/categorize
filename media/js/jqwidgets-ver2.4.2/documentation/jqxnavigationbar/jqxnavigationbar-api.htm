@@ -1,0 +1,831 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Navigation Bar, Accordion, Panel Bar, Navigation Widget, Panel, Accordion Bar" />
+    <meta name="description" content="This page represents the help documentation of the jqxNavigationBar widget." />
+    <title>jqxNavigationBar API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>expandAnimationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the expanding animation duration.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a with the <code>expandAnimationDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ expandAnimationDuration: 400 });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>collapseAnimationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the collapsing animation duration.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>collapseAnimationDuration</code> property
+                            specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({collapseAnimationDuration: 400 });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the navigation bar is disabled.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>animationType</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    slide
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the animation type. Possible values ['slide', 'fade', 'none'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>animationType</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({animationType: "none" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>toggleMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    click
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets user interaction used for expanding or collapsing the content. Possible
+                            values ['click', 'dblclick', 'mouseenter', 'none'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>toggleMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ toggleMode: "none" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>expandMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    single
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets navigation bar's expand mode. Possible values ['single', 'multiple',
+                            'toggle', 'none'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>expandMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ expandMode:"none" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>sizeMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets navigation bar's size mode. Possible values ['fitAvailableHeight',
+                            'maxItemHeight', 'auto'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>sizeMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ sizeMode: "auto }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>arrowPosition</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    left
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets header's arrow position. Possible values ['left', 'right'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>arrowPosition</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ arrowPosition: "right" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>showArrow</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether header's arrow is going to be shown.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>showArrow</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ showArrow: false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>expandedIndexes</span>
+                </td>
+                <td>
+                    <span>Array</span>
+                </td>
+                <td>
+                    left
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the expanded items when expandMode is set to 'multiple'.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxNavigationBar with the <code>expandedIndexes</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ expandedIndexes: [0, 1] }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>expandedIndex</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    -1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the expanded index when expandMode is set to 'single'.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a NavigationBar with the <code>expandedIndex</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ expandedIndex: -1 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets expander's height. Possible values - 'auto' and string like this 'Npx'
+                            where N is any Number.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a NavigationBar with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ height:"auto" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets expander's width. Possible values - 'auto' and string like this 'Npx'
+                            where N is any Number.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a NavigationBar with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar({ width: '200px',height: "auto" });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>expandingItem</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a jqxNavigationBar item is going to be expanded.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the expandingItem event by type: jqxNavigationBar.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').bind('expandingItem', function (event) { // Some code here.}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>expandedItem</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a jqxNavigationBar item is expanded.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the expandedItem event by type: jqxNavigationBar.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').bind('expandedItem', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>collapsingItem</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a jqxNavigationBar item is going to be collapsed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the collapsingItem event by type: jqxNavigationBar.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').bind('collapsingItem', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>collapsedItem</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a jqxNavigationBar item is collapsed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the collapsedItem event by type: jqxNavigationBar.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').bind('collapsedItem', function (event) { // Some code here.}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>collapseAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Collapsing item with any index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the collapseAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('collapseAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>expandAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Expanding item with any index.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the expandAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('expandAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>setContentAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Setting content to item with any index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setContentAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('setContentAt', 3, 'Content'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>setHeaderContentAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Setting header content to item with any index
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setHeaderContentAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('setHeaderContentAt', 3, 'Header');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>getHeaderContentAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Getting header content of item with any index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getHeaderContentAt method.
+                        </p>
+                        <pre><code>var header = $('#jqxNavigationBar').jqxNavigationBar('getHeaderContentAt',3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>getContentAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Getting content of item with any index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getContentAt method.
+                        </p>
+                        <pre><code>var content = $('#jqxNavigationBar').jqxNavigationBar('getContentAt', 3);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>disableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disabling item with any index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('disableAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>enableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enabling item with any index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enableAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('enableAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>lockAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Forbidding expand/collapse for item with specific index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the lockAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('lockAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>unlockAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Allowing expand/collapse for item with specific index. This method is useful only
+                            when the item is already locked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the unlockAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('unlockAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>showArrowAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Showing the arrow of expander with specific index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the showArrowAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('showArrowAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>hideArrowAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Hiding the arrow of expander with specific index.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the hideArrowAt method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('hideArrowAt', 3); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method is disabling the navigation bar.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('disable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method is enabling the navigation bar.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        <pre><code>$('#jqxNavigationBar').jqxNavigationBar('enable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

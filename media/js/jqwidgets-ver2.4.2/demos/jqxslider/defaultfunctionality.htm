@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery Slider, Slider Widget, RangeSlider" />
+    <meta name="description" content="jqxSlider represents a flexible jQuery Slider that lets the user select from a range of values by moving a thumb along a track. The widget is completely customizable in terms of appearance and offers numerous configuration options like mouse wheel and keyboard support, smooth or step-based slider and support for range sliders." />
+    <title id='Description'>jqxSlider represents a flexible jQuery Slider that lets the user select from a range of values by moving a thumb along a track. The widget is completely customizable in terms of appearance and offers numerous configuration options like mouse wheel and keyboard support, smooth or step-based slider and support for range sliders.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxslider.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+  
+            var counter = 0;
+            try {
+                $('#redLevel').jqxSlider({ min: 0, max: 255, ticksFrequency: 25.5, value: 0, step: 25.5, theme: theme });
+                $('#greenLevel').jqxSlider({ min: 0, max: 255, ticksFrequency: 25.5, value: 0, step: 25.5, theme: theme });
+                $('#blueLevel').jqxSlider({ min: 0, max: 255, ticksFrequency: 25.5, value: 255, step: 25.5, theme: theme });
+                $('#alphaLevel').jqxSlider({ min: 0, max: 1, ticksFrequency: 0.1, value: 1, step: 0.1, theme: theme });
+            } catch (e) {
+                alert(e);
+            }
+            $('#redLevel').bind('change', function (event) {
+                setColor();
+            });
+            $('#greenLevel').bind('change', function (event) {
+                setColor();
+            });
+            $('#blueLevel').bind('change', function (event) {
+                setColor();
+            });
+            $('#alphaLevel').bind('change', function (event) {
+                setColor();
+            });
+
+            setColor();
+
+            $('#jqxcheckbox').jqxCheckBox({ checked: true, width: 200, theme: theme });
+            $('#jqxcheckbox').bind('change', function (event) {
+                var checked = event.args.checked;
+                var value = 'default';
+                if (!checked) {
+                    value = 'fixed';
+                }
+                $('#redLevel').jqxSlider({ mode: value });
+                $('#greenLevel').jqxSlider({ mode: value });
+                $('#blueLevel').jqxSlider({ mode: value });
+                $('#alphaLevel').jqxSlider({ mode: value });
+            });
+        });
+        function setColor() {
+            var red = fixHex(Math.round($('#redLevel').jqxSlider('value')).toString(16)),
+                green = fixHex(Math.round($('#greenLevel').jqxSlider('value')).toString(16)),
+                blue = fixHex(Math.round($('#blueLevel').jqxSlider('value')).toString(16));
+            $('#colorBlock').css('background-color', '#' + red + green + blue);
+            $('#colorBlock').fadeTo(0, $('#alphaLevel').jqxSlider('value'));
+            $('#colorLabel').fadeTo(0, $('#alphaLevel').jqxSlider('value'));
+            $('#colorLabel').html(('#' + red + green + blue).toUpperCase());
+        }
+
+        function fixHex(hex) {
+            return (hex.length < 2) ? '0' + hex : hex;
+        }
+    </script>
+    <style type="text/css">
+        .colorLabel
+        {
+            font-size: 14px;
+            color: #999;
+            padding: 2px;
+            margin: 3px;
+            border: 1px solid #aaa;
+            height: 18px;
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background: #fff;
+            font-weight: bold;
+            width: 70px;
+        }
+        .colorBlock
+        {
+            border: 1px solid #aaa;
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+    </style>
+</head>
+<body class='default'>
+    <div style="width: 550px">
+        <div style="height: 250px;">
+            <div style="float: left">
+                <span style="font-style: italic;">Red</span>
+                <div id='redLevel'>
+                </div>
+                <span style="font-style: italic;">Green</span>
+                <div id='greenLevel'>
+                </div>
+                <span style="font-style: italic;">Blue</span>
+                <div id='blueLevel'>
+                </div>
+                <span style="font-style: italic;">Alpha</span>
+                <div id='alphaLevel'>
+                </div>
+            </div>
+            <div class="colorBlock jqx-rc-all" id="colorBlock">
+                <div class="colorLabel" id="colorLabel">
+                </div>
+            </div>
+        </div>
+     
+       <div id="jqxcheckbox">Smooth Thumb Drag</div>
+    </div>
+</body>
+</html>

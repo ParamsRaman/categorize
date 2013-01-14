@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <title>jqxScrollView API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>width</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    320
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxScrollView's width.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ width: '250px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>height</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    320
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxScrollView's height.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ height: '250px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxScrollView's disabled property.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ disabled: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>buttonsOffset</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    [0, 0]
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxScrollView's buttonsOffset property. This property sets the offset from the default location of the navigation buttons.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>buttonsOffset</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ buttonsOffset: [30, 30] }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>moveThreshold</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0.5
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxScrollView's moveThreshold property. The moveThreshold property specifies how much the user should drag the current element to navigate to next/previous element.
+                            Values should be set from 0.1 to 1. 0.5 means 50% of the element's width.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>moveThreshold</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ moveThreshold: 0.6 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>currentPage</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the jqxScrollView's currentPage property. The currentPage specifies the displayed element.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>currentPage</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ currentPage: 1 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>animationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    30
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the animationDuration property. Specifies the duration of the animation which starts when the current page is changed.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>animationDuration</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ animationDuration: 500}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>showButtons</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the navigation buttons are visible.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>showButtons</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({ showButtons: false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>bounceEnabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the bounce effect is enabled when pages are changed.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>bounceEnabled</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({bounceEnabled: false});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>slideShow</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Indicates whether the slideShow mode is enabled. In this mode, pages are changed automatically in a time interval.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>slideShow</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({slideShow: true});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span36'>slideDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    3000
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the duration in milliseconds of a time interval. The current page is changed when the time interval is elapsed.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxScrollView with the <code>slideDuration</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView({slideDuration: 4000});</code></pre>
+                    </div>
+                </td>
+            </tr>  
+                   <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>pageChanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+                <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the current page is changed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the pageChanged event by type: jqxScrollView.
+                        </p>
+                        <pre><code>
+$('#jqxScrollView').bind('pageChanged', function (event) 
+{
+    var page = event.args.currentPage;
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods
+                    </h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>refresh</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Refreshes the widget.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the refresh method.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView('refresh'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>changePage</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Navigates to a page.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the changePage method.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView('changePage', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>forward</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Navigates to the next page.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the forward method.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView('forward'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>back</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Navigates to the previous page.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the back method.
+                        </p>
+                        <pre><code>$("#jqxScrollView").jqxScrollView('back'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

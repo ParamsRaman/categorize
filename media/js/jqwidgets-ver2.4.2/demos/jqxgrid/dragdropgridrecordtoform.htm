@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>This example shows how to setup a one way drag and drop from a Grid to a Form.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.selection.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdragdrop.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="generatedata.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+
+            var source =
+            {
+                localdata: generatedata(10),
+                datatype: "array"
+            };
+
+            var dataAdapter = new $.jqx.dataAdapter(source);
+            var columns = [
+                  { text: 'First Name', dataField: 'firstname', width: 100 },
+                  { text: 'Last Name', dataField: 'lastname', width: 100 },
+                  { text: 'Product', dataField: 'productname' }
+                ];
+
+            // create data grids.
+            $("#grid").jqxGrid(
+            {
+                width: 400,
+                source: dataAdapter,
+                theme: theme,
+                autoheight: true,
+                columns: columns
+            });
+
+            // select all grid cells.
+            var gridCells = $('#grid').find('.jqx-grid-cell');
+
+            // initialize the jqxDragDrop plug-in. Set its drop target to the second Grid.
+            gridCells.jqxDragDrop({ appendTo: 'body', theme: theme, dragZIndex: 99999,
+                dropAction: 'none',
+                initFeedback: function (feedback) {
+                    feedback.height(70);
+                    feedback.width(220);
+                }
+            });
+
+            // initialize the dragged object.
+            gridCells.bind('dragStart', function (event) {
+                var value = $(this).text();
+                var cell = $("#grid").jqxGrid('getcellatposition', event.args.pageX, event.args.pageY);
+                $(this).jqxDragDrop('data', $("#grid").jqxGrid('getrowdata', cell.row));
+
+                // update feedback's display value.
+                var feedback = $(this).jqxDragDrop('feedback');
+                var feedbackContent = $(this).parent().clone();
+                var table = '<table>';
+                $.each(feedbackContent.children(), function (index) {
+                    table += '<tr>';
+                    table += '<td>';
+                    table += columns[index].text + ': ';
+                    table += '</td>';
+                    table += '<td>';                   
+                    table += $(this).text();
+                    table += '</td>';
+                    table += '</tr>';
+                });
+
+                table += '</table>';
+                feedback.html(table);
+            });
+
+            gridCells.bind('dragEnd', function (event) {
+                var value = $(this).jqxDragDrop('data');
+                var pageX = event.args.pageX;
+                var pageY = event.args.pageY;
+                var $form = $("#form");
+
+                var targetX = $form.offset().left;
+                var targetY = $form.offset().top;
+                var width = $form.width();
+                var height = $form.height();
+
+                // fill the form if the user dropped the dragged item over it.
+                if (pageX >= targetX && pageX <= targetX + width) {
+                    if (pageY >= targetY && pageY <= targetY + height) {
+                        $("#firstName").val(value.firstname);
+                        $("#lastName").val(value.lastname);
+                        $("#product").val(value.productname);
+                    }
+                }
+            });
+
+            $("#form").jqxExpander({ width: 250, theme: theme });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div style="float: left;" id="grid">
+        </div>
+        <div style="margin-left: 20px; float: left;" id="form">
+            <div>
+                Form Panel
+            </div>
+            <div>
+                <form>
+                <table>
+                    <tr>
+                        <td>
+                            First Name:
+                        </td>
+                        <td>
+                            <input id="firstName" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name:
+                        </td>
+                        <td>
+                            <input id="lastName" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Product:
+                        </td>
+                        <td>
+                            <input id="product" />
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Mask Input, Masked Input, MaskedInput, MaskBox, Mask TextBox, Input Mask, Input, jqxMaskedInput" />
+    <meta name="description" content="This page represents the help documentation of the jqxMaskedInput widget." />
+    <title>jqxMaskedInput API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>value</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the masked input's value.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a MaskedInput with the <code>value</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>mask</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    '#####'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the masked input's mask.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxMaskedInput with the <code>mask</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxMaskedInput").jqxMaskedInput({ width: 250, height: 25, mask: '###-##-####'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets width of the masked input in pixels. Only positive values have effect.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxMaskedInput with the <code>width</code> property specified.
+                        </p>
+                        <pre>$('#jqxMaskedInput').jqxMaskedInput({ width: '250px'});<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets height of the masked input in pixels.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a MaskedInput with the <code>height</code> property specified.
+                        </p>
+                        <pre>$('#jqxMaskedInput').jqxMaskedInput({ height: '25px'});<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>textAlign</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    left
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the text alignment.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a MaskedInput with the <code>textAlign</code> property specified.
+                        </p>
+                        <pre>$('#jqxMaskedInput').jqxMaskedInput({ textAlign: "right"});<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>readOnly</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the readOnly state of the input.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxMaskedInput with the <code>readOnly</code> property specified.
+                        </p>
+                        <pre>$('#jqxMaskedInput').jqxMaskedInput({ readOnly: true });<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>promptChar</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    "_"
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the prompt char displayed when an editable char is empty.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxMaskedInput with the <code>promptChar</code> property specified.
+                        </p>
+                        <pre>$('#jqxMaskedInput').jqxMaskedInput({ promptChar: "." });<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>valuechanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the value is changed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the valuechanged event by type: jqxMaskedInput.
+                        </p>
+                        <pre><code>$('#jqxMaskedInput').bind('valuechanged', function () { // Some code here.}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>textchanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the text is changed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the textchanged event by type: jqxMaskedInput.
+                        </p>
+                        <pre><code>$('#jqxMaskedInput').bind('textchanged', function (event) { // Some code here.}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>maskedValue</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the editable input value without mask characters. For example: If your
+                            mask string is set to '(###)###' and you invoke the maskedValue method passing '4444'
+                            as parameter, the jqxMaskedInput widget should display '(444)___'. 
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the maskedValue method.
+                        </p>
+                        <pre><code>@param String, Number</code></pre>
+                        <pre><code>$("#jqxMaskedInput").jqxMaskedInput('maskedValue', value);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>inputValue</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the editable input value without mask characters. For example: If your
+                            mask string is set to '(###)###' and you invoke the inputValue method passing '4444'
+                            as parameter, the jqxMaskedInput widget should display '(444)4__'.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the inputValue method.
+                        </p>
+                        <pre><code>@param String, Number</code></pre>
+                        <pre><code>$("#jqxMaskedInput").jqxMaskedInput('inputValue', value);</code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>val</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the value.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Get the value using the val method.
+                        </p>
+                        <pre><code>var value = $('#jqxMaskedInput').jqxMaskedInput('val');</code></pre>
+                        <p>
+                            Set the value using the val method.
+                        </p>
+                        <pre><code>$('#jqxMaskedInput').jqxMaskedInput('val', 1242);</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

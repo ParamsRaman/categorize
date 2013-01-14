@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery Tree, Tree Widget, TreeView" /> 
+    <meta name="description" content="The jqxTree displays a hierarchical collection of items. You
+        can populate it from 'UL' or by using its 'source' property." />
+    <title id='Description'>The jqxTree displays a hierarchical collection of items. You
+        can populate it from 'UL' or by using its 'source' property.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxpanel.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxtree.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+
+            // Create jqxTree
+            $('#jqxTree').jqxTree({ height: '400px', width: '300px', theme: theme });
+
+            // Create and initialize Buttons
+            $('#Add').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#Remove').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#Disable').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#EnableAll').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#Expand').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#Collapse').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#ExpandAll').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#CollapseAll').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#Next').jqxButton({ height: '25px', width: '100px', theme: theme });
+            $('#Previous').jqxButton({ height: '25px', width: '100px', theme: theme });
+
+            // Add 
+            $('#Add').click(function () {
+                var selectedItem = $('#jqxTree').jqxTree('selectedItem');
+
+                if (selectedItem != null) {
+                    $('#jqxTree').jqxTree('addTo', { label: 'Item' }, selectedItem.element);
+                }
+                else {
+                    $('#jqxTree').jqxTree('addTo', { label: 'Item' });
+                }
+            });
+
+            // Remove 
+            $('#Remove').click(function () {
+                var selectedItem = $('#jqxTree').jqxTree('selectedItem');
+                if (selectedItem != null) {
+                    $('#jqxTree').jqxTree('removeItem', selectedItem.element);
+                }
+            });
+
+            // Disable
+            $('#Disable').click(function () {
+                var selectedItem = $('#jqxTree').jqxTree('selectedItem');
+                if (selectedItem != null) {
+                    $('#jqxTree').jqxTree('disableItem', selectedItem.element);
+                }
+            });
+
+            // Expand
+            $('#Expand').click(function () {
+                var selectedItem = $('#jqxTree').jqxTree('selectedItem');
+                if (selectedItem != null) {
+                    $('#jqxTree').jqxTree('expandItem', selectedItem.element);
+                }
+            });
+
+            // Expand
+            $('#Collapse').click(function () {
+                var selectedItem = $('#jqxTree').jqxTree('selectedItem');
+                if (selectedItem != null) {
+                    $('#jqxTree').jqxTree('collapseItem', selectedItem.element);
+                }
+            });
+
+            // Expand All
+            $('#ExpandAll').click(function () {
+                $('#jqxTree').jqxTree('expandAll');
+            });
+
+            // Collapse All
+            $('#CollapseAll').click(function () {
+                $('#jqxTree').jqxTree('collapseAll');
+            });
+
+            // Enable All
+            $('#EnableAll').click(function () {
+                $('#jqxTree').jqxTree('enableAll');
+            });
+
+            // Select Next Item
+            $('#Next').click(function () {
+                var selectedItem = $("#jqxTree").jqxTree('selectedItem');
+                var nextItem = $("#jqxTree").jqxTree('getNextItem', selectedItem.element);
+                if (nextItem != null) {
+                    $("#jqxTree").jqxTree('selectItem', nextItem.element);
+                    $("#jqxTree").jqxTree('ensureVisible', nextItem.element);
+                }
+            });
+
+            // Select Previous Item
+            $('#Previous').click(function () {
+                var selectedItem = $("#jqxTree").jqxTree('selectedItem');
+                var prevItem = $("#jqxTree").jqxTree('getPrevItem', selectedItem.element);
+                if (prevItem != null) {
+                    $("#jqxTree").jqxTree('selectItem', prevItem.element);
+                    $("#jqxTree").jqxTree('ensureVisible', prevItem.element);
+                }
+            });
+            $('#jqxTree').jqxTree('selectItem', $("#jqxTree").find('li:first')[0]);
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div style='float: left;'>
+            <div id='jqxTree' style='float: left; margin-left: 20px;'>
+                <ul>
+                    <li id='home'>Home</li>
+                    <li item-expanded='true'>Solutions
+                        <ul>
+                            <li>Education</li>
+                            <li>Financial services</li>
+                            <li>Government</li>
+                            <li>Manufacturing</li>
+                            <li>Solutions
+                                <ul>
+                                    <li>Consumer photo and video</li>
+                                    <li>Mobile</li>
+                                    <li>Rich Internet applications</li>
+                                    <li>Technical communication</li>
+                                    <li>Training and eLearning</li>
+                                    <li>Web conferencing</li>
+                                </ul>
+                            </li>
+                            <li>All industries and solutions</li>
+                        </ul>
+                    </li>
+                    <li>Products
+                        <ul>
+                            <li>PC products</li>
+                            <li>Mobile products</li>
+                            <li>All products</li>
+                        </ul>
+                    </li>
+                    <li>Support
+                        <ul>
+                            <li>Support home</li>
+                            <li>Customer Service</li>
+                            <li>Knowledge base</li>
+                            <li>Books</li>
+                            <li>Training and certification</li>
+                            <li>Support programs</li>
+                            <li>Forums</li>
+                            <li>Documentation</li>
+                            <li>Updates</li>
+                        </ul>
+                    </li>
+                    <li>Communities
+                        <ul>
+                            <li>Designers</li>
+                            <li>Developers</li>
+                            <li>Educators and students</li>
+                            <li>Partners</li>
+                            <li>By resource
+                                <ul>
+                                    <li>Labs</li>
+                                    <li>TV</li>
+                                    <li>Forums</li>
+                                    <li>Exchange</li>
+                                    <li>Blogs</li>
+                                    <li>Experience Design</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Company
+                        <ul>
+                            <li>About Us</li>
+                            <li>Press</li>
+                            <li>Investor Relations</li>
+                            <li>Corporate Affairs</li>
+                            <li>Careers</li>
+                            <li>Showcase</li>
+                            <li>Events</li>
+                            <li>Contact Us</li>
+                            <li>Become an affiliate</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div style='margin-left: 60px; float: left;'>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Add' value="Add" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Remove' value="Remove" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Disable' value="Disable" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Expand' value="Expand" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Collapse' value="Collapse" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='ExpandAll' value="Expand All" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='CollapseAll' value="Collapse All" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='EnableAll' value="Enable All" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Next' value="Next Item" />
+                </div>
+                <div style='margin-top: 10px;'>
+                    <input type="button" id='Previous' value="Previous Item" />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

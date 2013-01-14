@@ -1,0 +1,1352 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <meta name="keywords" content="jQuery, Calendar, Month Calendar, DatePicker" />
+    <meta name="description" content="This page represents the help documentation of the jqxCalendar widget." />
+    <title>jqxCalendar API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disables (true) or enables (false) the calendar. Can be set when initialising (first
+                            creating) the calendar.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$("#Calendar").jqxCalendar({ disabled: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>minDate</span>
+                </td>
+                <td>
+                    <span>Date</span>
+                </td>
+                <td>
+                    1900, 1, 1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Represents the minimum navigation date.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>minDate</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar('setMinDate', new Date(2000, 0, 1));</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>maxDate</span>
+                </td>
+                <td>
+                    <span>Date</span>
+                </td>
+                <td>
+                    2100, 1, 1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Represents the maximum navigation date.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>maxDate</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar('setMaxDate', new Date(2012, 0, 1));</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>stepMonths</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Represents the calendar`s navigation step when the left or right navigation button
+                            is clicked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>stepMonths</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ stepMonths: 2, width: '250px', height: '250px'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the width of the Calendar.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ width: '250px', height: '250px' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the height of the Calendar.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ width: '250px', height: '200px' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>value</span>
+                </td>
+                <td>
+                    <span>Date</span>
+                </td>
+                <td>
+                    Today
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the Calendar's value.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>value</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ width: '250px', height: '200px' });</code></pre>
+                        <pre><code>$("#jqxWidget").jqxCalendar({ value: $.jqx._jqxDateTimeInput.getDateTime(new Date(2011, 9, 1)) });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>firstDayOfWeek</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets which day to display in the first day column. By default the calendar displays
+                            'Sunday' as first day.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>firstDayOfWeek</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ firstDayOfWeek: 1 });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>showWeekNumbers</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value whether the week`s numbers are displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>showWeekNumbers</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ showWeekNumbers: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>showDayNames</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value whether the day names are displayed. By default, the day names are
+                            displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>showDayNames</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ showDayNames: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>enableWeekend</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether weekend persists its view state.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>enableWeekend</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ enableWeekend: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>enableOtherMonthDays</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the other month days are enabled.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>enableOtherMonthDays</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ enableOtherMonthDays: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>showOtherMonthDays</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value whether the other month days are displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>showOtherMonthDays</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ showOtherMonthDays: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>rowHeaderWidth</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the row header width.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>rowHeaderWidth</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ rowHeaderWidth:30, width: '250px', height: '250px'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>columnHeaderHeight</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    20
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the Calendar colomn header's height. In the column header are displayed the
+                            calendar day names.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>columnHeaderHeight</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ columnHeaderHeight: 30, width: '250px', height:'250px' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>titleHeight</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    25
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the title height where the navigation arrows are displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>titleHeight</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ titleHeight: 40, width: '250px', height: '250px'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>dayNameFormat</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'firstTwoLetters'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the name format of days of the week. Possible values: 'default', 'shortest',
+                            'firstTwoLetters', 'firstLetter', 'full'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>dayNameFormat</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ dayNameFormat : 'firstTwoLetters'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>titleFormat</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    MMMM yyyy
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the title format for the title section. Possible values:
+                            <br />
+                            "d"-the day of the month;<br />
+                            "dd"-the day of the month;
+                            <br />
+                            "ddd"-the abbreviated name of the day of the week;<br />
+                            "dddd"- the full name of the day of the week;<br />
+                            "h"-the hour, using a 12-hour clock from 1 to 12;
+                            <br />
+                            "hh"-the hour, using a 12-hour clock from 01 to 12;
+                            <br />
+                            "H"-the hour, using a 24-hour clock from 0 to 23;<br />
+                            "HH"- the hour, using a 24-hour clock from 00 to 23;
+                            <br />
+                            "m"-the minute, from 0 through 59;<br />
+                            "mm"-the minutes,from 00 though59;<br />
+                            "M"- the month, from 1 through 12;<br />
+                            "MM"- the month, from 01 through 12;<br />
+                            "MMM"-the abbreviated name of the month;<br />
+                            "MMMM"-the full name of the month;<br />
+                            "s"-the second, from 0 through 59;
+                            <br />
+                            "ss"-the second, from 00 through 59;
+                            <br />
+                            "t"- the first character of the AM/PM designator;<br />
+                            "tt"-the AM/PM designator;
+                            <br />
+                            "y"- the year, from 0 to 99;
+                            <br />
+                            "yy"- the year, from 00 to 99;
+                            <br />
+                            "yyy"-the year, with a minimum of three digits;
+                            <br />
+                            "yyyy"-the year as a four-digit number;
+                            <br />
+                            "yyyyy"-the year as a four-digit number.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>titleFormat</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ titleFormat: "MMMM yyyy"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>readOnly</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the calendar in read only state.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>readOnly</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({readOnly: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>showFooter</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the calendar's footer is displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>showFooter</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ showFooter: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span45'>selectionMode</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'default'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the selection mode. The possible values are: 'none', 'default' and 'range'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>selectionMode</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ selectionMode: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span46'>todayString</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'Today'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the 'Today' string displayed when the 'showFooter' property is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>todayString</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ todayString: 'Today' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span47'>clearString</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    'Clear'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the 'Clear' string displayed when the 'showFooter' property is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>clearString</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ clearString: 'Clear' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>culture</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    default
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the jqxCalendar's culture. The culture settings are contained within a file
+                            with the language code appended to the name, e.g. jquery.glob.de-DE.js for German.
+                            To set the culture, you need to include the jquery.glob.de-DE.js and set the culture
+                            property to the culture's name, e.g. 'de-DE'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>culture</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({culture: 'en-US' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>enableFastNavigation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the fast navigation is enabled.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>enableFastNavigation</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({ enableFastNavigation: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>enableHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the hover state is enabled. The hover state is activated
+                            when the mouse cursor is over a calendar cell. The hover state is automatically
+                            disabled when the calendar is displayed in touch devices.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>enableHover</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({enableHover: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>enableAutoNavigation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the auto navigation is enabled. When this property
+                            is true, click on other month date will automatically navigate to the previous or
+                            next month.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>enableAutoNavigation</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({enableAutoNavigation: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>enableTooltips</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets a value indicating whether the tool tips are enabled.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>enableTooltips</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({enableToolTips: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>backText</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    Back
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the tooltip text displayed when the mouse cursor is over the back navigation
+                            button.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>backText</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({backText: "Back" });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>forwardText</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    Forward
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the tooltip text displayed when the mouse cursor is over the forward navigation
+                            button.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a calendar with the <code>forwardText</code> property specified.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar({forwardText: "Forward" });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>specialDates</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    new Array()
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Add a special date to the Calendar.
+                        </p>
+                        <pre><code>$("#jqxWidget").jqxCalendar('addSpecialDate', new Date(2011, 6, 29)); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>backButtonClick</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the calendar back navigation button is clicked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the backButtonClick event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('backButtonClick', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>nextButtonClick</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the calendar next navigation button is clicked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the nextButtonClick event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('nextButtonClick', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>valuechanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the Calendar's value property is changed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the valuechanged event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('valuechanged', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span30'>cellMouseDown</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the cell mouse down is clicked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the cellMouseDown event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('cellMouseDown', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>cellMouseUp</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the cell mouse up is clicked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the cellMouseUp event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('cellMouseUp', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span32'>cellSelected</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the cell is selected.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the cellSelected event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('cellSelected', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span33'>cellUnselected</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the cell is unselected.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the cellUnselected event by type: jqxCalendar.
+                        </p>
+                        <pre><code>$('#Calendar').bind('cellUnselected', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span34'>navigateForward</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the navigateForward method is called, the calendar navigates forward with a
+                            specific month step(by default 1).
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke to the navigateForward method.
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar('navigateForward', 5); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span36'>navigateBackward</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the navigateBackward method is called, the calendar navigates backward with
+                            a specific month step(by default 1).
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the navigateBackward method,
+                        </p>
+                        <pre><code>$('#Calendar').jqxCalendar('navigateBackward', 5); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>setMinDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setMinDate method is called, the user sets the lowest date to which it
+                            is possible to navigate.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setMinDate method.
+                        </p>
+                        <pre><code>$('#Calendar ').jqxCalendar('setMinDate', new Date(2008, 0, 1));</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span38'>getMinDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the getMinDate method is called, the user gets the lowest navigation date set
+                            to the Calendar.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getMinDate method.
+                        </p>
+                        <pre><code>var minDate = $('#Calendar').jqxCalendar('getMinDate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span39'>setMaxDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setMaxDate method is called, the user sets the hightest date to which it
+                            is possible to navigate.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setMaxDate method.
+                        </p>
+                        <pre><code>$('#Calendar ').jqxCalendar('setMaxDate', new Date(2012, 0, 1)); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span40'>getMaxDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the getMaxDate method is called, the user gets the hightest navigation date
+                            set to the Calendar.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getMaxDate method.
+                        </p>
+                        <pre><code>var getMaxDate= $('#Calendar').jqxCalendar('getMaxDate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span41'>setDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the setDate method is called, the user sets the current month displayed in
+                            the Calendar..
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setDate method.
+                        </p>
+                        <pre><code>$('#Calendar ').jqxCalendar('setDate', new Date(2012, 0, 1)); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span42'>getDate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            When the getDate method is called, the user gets the current month displayed in
+                            the Calendar.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getDate method.
+                        </p>
+                        <pre><code>var getDate= $('#Calendar').jqxCalendar('getDate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span43'>setRange</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the selection range when the selectionMode is set to 'range'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getDate method.
+                        </p>
+                        <pre><code>
+var date1 = new Date();
+date1.setFullYear(2012, 7, 7);
+
+var date2 = new Date();
+date2.setFullYear(2012, 7, 15);
+$("#Calendar").jqxCalendar('setRange', date1, date2);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span44'>getRange</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the selection range when the selectionMode is set to 'range'.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getDate method.
+                        </p>
+                        <pre><code>
+var range = $("#Calendar").jqxCalendar('getRange');
+var from = range.from;
+var to = range.to;
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

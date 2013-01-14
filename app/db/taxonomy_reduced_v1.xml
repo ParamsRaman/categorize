@@ -1,0 +1,13 @@
+<category name="amazon shopping">
+	<category name="clothing">
+		<category name="accessories">
+			<category name="scarves">
+				<category name="woollen scarves"></category>
+				<category name="silk scarves"></category>
+				<category name="knit scarves">
+					<item id="18">LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins</item>
+				</category>
+			</category>
+		</category>		
+	</category>
+</category>

@@ -1,0 +1,481 @@
+<category name="amazon shopping">
+	<category name="clothing">
+		<category name="clothing accessories">
+			<category name="scarf collection">
+				<category name="woollen scarves"></category>
+				<category name="silk scarves"></category>
+				<category name="knit scarves">
+					<item id="18">LibbySue-Elegant Knit Shawl Stole Scarf Bordered in Sequins</item>
+				</category>
+			</category>
+			<category name="luggage, bags &amp;amp; travel">
+				<category name="bags &amp; backpacks">
+					<category name="gym bags"></category>
+					<category name="school backpack"></category>
+					<category name="hiking bag"></category>
+				</category>	
+				<category name="luggage">
+					<category name="carry on"></category>
+					<category name="rolling luggage"></category>
+				</category>	
+				<category name="travel accessories">
+					<category name="luggage tags">
+						<item id="1">Samsonite Luggage 2 Pack Vinyl ID Tag</item>
+					</category>
+					<category name="shoe bags"></category>
+				</category>
+			</category>
+		</category>		
+		<category name="mens clothing">
+			<category name="shirts &amp; polos">
+				<category name="turtle necks"></category>
+				<category name="mens formals"></category>
+				<category name="sports casuals"></category>
+			</category>	
+			<category name="sleepwear &amp; robes">
+				<category name="pajamas">
+					<category name="pajama tops"></category>
+					<category name="pajama bottoms"></category>
+				</category>	
+				<category name="robes">
+					<category name="cotton robes"></category>
+					<category name="satin robes">
+						<item id="4">Intimo Men's Classic Satin Robe</item>
+					</category>
+				</category>	
+			</category>		
+			<category name="socks">
+				<category name="dress socks"></category>
+				<category name="sports socks"></category>
+			</category>	
+		</category>		
+		<category name="womens clothing">
+			<category name="cold weather">
+				<category name="ear muffs">
+					<item id="3">180s Women's Tahoe Ear Warmer</item>
+				</category>
+				<category name="gloves">
+					<item id="2">Seirus Innovation Men's Hyperlite All Weather Glove</item>
+				</category>
+				<category name="scarves for winter"></category>
+			</category>	
+			<category name="coats &amp; jackets">
+				<category name="woollen jacket"></category>
+				<category name="leather jacket"></category>
+			</category>	
+			<category name="dresses">
+				<category name="womens formals"></category>
+				<category name="sundresses">
+					<item id="19">Ecko Juniors Sundress Dress - Style ERF06075</item>
+				</category>
+				<category name="tank"></category>
+			</category>	
+		</category>		
+	</category>
+	<category name="home">
+			<category name="kitchen &amp; dining">
+				<category name="bakeware">
+					<category name="bakers &amp; casseroles">
+						<category name="casseroles"></category>
+						<category name="bakers"></category>
+					</category>
+					<category name="baking tools &amp; accessories">
+						<category name="beaters"></category>
+						<category name="baking cups"></category>
+						<category name="cookie cutters"></category>
+						<category name="mixing bowls"></category>
+					</category>
+				</category>
+				<category name="bar tools &amp; glasses">
+					<category name="glassware &amp; stemware">
+						<category name="beer mugs"></category>
+						<category name="juice glasses"></category>
+						<category name="shot glasses">
+							<item id="17">Kikkerland Drunk Shot Glasses, Set of 4</item>
+						</category>
+						<category name="tumblers"></category>
+						<category name="wine glasses">
+							<category name="wine goblets"></category>
+							<category name="tasting sets"></category>
+						</category>
+					</category>
+					<category name="corkscrews &amp; openers">
+						<category name="champagne openers"></category>
+						<category name="pump corkscrews"></category>
+						<category name="screwpull levers"></category>
+					</category>
+				</category>
+				<category name="cookware">
+					<category name="pressure cookers"></category>
+					<category name="roasting pans"></category>
+					<category name="lids"></category>
+					<category name="tea kettles"></category>
+					<category name="steamers"></category>
+				</category>
+				<category name="dining room furniture">
+					<category name="dining chair"></category>
+					<category name="extendable tables"></category>
+				</category>
+				<category name="kitchen knives &amp; cutlery">
+					<category name="cake knives"></category>
+					<category name="chef's knives"></category>
+					<category name="cutting boards">
+						<item id="16">Totally Bamboo 20-7930 3-Piece Cutting Board Set</item>
+					</category>
+					<category name="electric knives"></category>
+					<category name="knife sharpeners"></category>
+					<category name="specialty knives">
+						<category name="mincing knives"></category>
+						<category name="seafood knives"></category>
+						<category name="food knives"></category>
+					</category>
+				</category>
+			</category>
+			<category name="home appliances">
+				<category name="air conditioners &amp; fans">
+					<category name="ceiling fans &amp; accessories">
+						<category name="ceiling fans"></category>
+						<category name="ceiling fan accessories">
+							<category name="down rods"></category>
+							<category name="remote control">
+								<item id="15">Heath Zenith SL-6135 Basic Solutions Indoor Remote Control</item>
+							</category>
+						</category>
+					</category>
+					<category name="household fans">
+						<category name="pedestal fans"></category>
+						<category name="table fans"></category>
+						<category name="window fans"></category>
+					</category>
+				</category>
+				<category name="large appliances">
+					<category name="cooktops"></category>
+					<category name="dishwashers">
+						<category name="convertible dishwashers"></category>
+						<category name="portable dishwashers"></category>
+					</category>
+					<category name="food waste disposers"></category>
+					<category name="refrigerators">
+						<category name="freeze-on-top refrigerators"></category>
+						<category name="freeze-on-bottom refrigerators"></category>
+						<category name="side-by-side refrigerators"></category>
+						<category name="freezerless refrigerators"></category>
+					</category>
+					<category name="washers &amp; dryers">
+						<category name="clothes dryers"></category>
+						<category name="clothes washers"></category>
+						<category name="combination washers &amp; dryers"></category>
+					</category>
+				</category>
+				<category name="small appliances">
+					<category name="blenders">
+						<category name="countertop blenders"></category>
+						<category name="hand blenders"></category>
+					</category>
+					<category name="coffee tea &amp; espresso appliances">
+						<category name="beverage warmers"></category>
+						<category name="coffee grinders"></category>
+						<category name="espresso machines">
+							<category name="manual espresso machines"></category>
+							<category name="semi-automatic espresso machines"></category>
+							<category name="super-automatic espresso machines"></category>
+							<category name="steam espresso machines"></category>
+						</category>
+						<category name="milk steamers"></category>
+						<category name="milk frothers"></category>
+					</category>
+					<category name="electric cookware">
+						<category name="can openers"></category>
+						<category name="cookers"></category>
+						<category name="countertop burners"></category>
+						<category name="kettles"></category>
+					</category>
+					<category name="mixers">
+						<category name="hand mixers"></category>
+						<category name="stand mixers"></category>
+					</category>
+				</category>
+			</category>
+			<category name="vacuum cleaning &amp; storage">
+				<category name="air purifiers">
+					<category name="air freshners">
+						<category name="electric air freshners"></category>
+						<category name="air sprays"></category>
+						<category name="solid and liquid freshners"></category>
+					</category>
+				</category>
+				<category name="cleaning supplies">
+					<category name="brushes"></category>
+					<category name="dusting">
+						<category name="dust clothes"></category>
+						<category name="dust mops"></category>
+						<category name="feather dusters"></category>
+					</category>
+					<category name="moping">
+						<category name="buckets"></category>
+						<category name="wet mops"></category>
+						<category name="mop accessories">
+							<category name="mop handles">
+								<item id="12">Rubbermaid FGH12500 Invader Side Gate Wet Mop Gray Aluminum Handle with Large Yellow Plastic Head, 54" Length</item>
+							</category>
+							<category name="mop handles &amp; sponges"></category>
+						</category>
+					</category>
+					<category name="paper towels"></category>
+				</category>
+			</category>
+	</category>		
+	<category name="toys &amp; games">
+		<category name="sports &amp; outdoor">
+			<category name="pools &amp; water">
+				<category name="baby floats"></category>
+				<category name="kiddie pools"></category>
+				<category name="pool toys"></category>
+			</category>
+			<category name="sports">
+				<category name="baseball &amp; softball">
+					<category name="baseball bats">
+						<category name="aluminium"></category>
+						<category name="wood"></category>
+					</category>
+					<category name="baseballs"></category>
+					<category name="batting gloves"></category>
+					<category name="helmets"></category>
+				</category>
+				<category name="basketball">
+					<category name="basketballs"></category>
+					<category name="backboards"></category>
+				</category>
+				<category name="boxing">
+					<category name="punching bags"></category>
+					<category name="boxing gloves"></category>
+				</category>
+			</category>
+		</category>
+		<category name="party supplies">
+			<category name="gift wrapping supplies">
+				<category name="gift bags"></category>
+				<category name="gift wrap ribbons"></category>
+				<category name="gift wrap paper"></category>
+				<category name="wrapping tissue">
+					<item id="13">Gift Wrap Bag Tissue Paper Multi Color 25 Sheets 20 x 20 Inch Made in USA</item>
+				</category>
+			</category>
+			<category name="decorations">
+				<category name="balloons"></category>
+				<category name="banners"></category>
+				<category name="confetti">
+					<item id="14">Happy Birthday Confetti</item>
+				</category>
+			</category>
+		</category>
+		<category name="stuffed animals &amp; plush">
+			<category name="teddy bears"></category>
+			<category name="plush puppets"></category>
+			<category name="animals"></category>
+			<category name="plush backpacks &amp; purses">
+				<category name="plush backpacks"></category>
+				<category name="plush purses"></category>
+			</category>
+		</category>
+	</category>
+	<category name="shoes">
+		<category name="shoe care &amp; cleaning">
+			<category name="polishes"></category>
+			<category name="shoe brushes"></category>
+			<category name="shoe dryers"></category>
+			<category name="shoe care kits &amp; sets"></category>
+		</category>
+		<category name="mens shoes">
+			<category name="athletic mens">
+				<category name="running">
+					<category name="track &amp; field">
+						<item id="10">ASICS Men's Japan Thunder 3 Track and Field Shoe</item>
+					</category>
+					<category name="spikes"></category>
+					<category name="trail"></category>
+				</category>
+				<category name="volleyball"></category>
+				<category name="tennis"></category>
+			</category>
+			<category name="boat shoes"></category>
+			<category name="boots">
+				<category name="athletic &amp; outdoor">
+					<category name="hiking boots"></category>
+					<category name="rain boots">
+						<item id="9">Bogs Men's Classic Ultra Mid Waterproof Boot</item>
+					</category>
+				</category>
+			</category>
+			<category name="sandals">
+				<category name="slides"></category>
+				<category name="sports sandals"></category>
+			</category>
+			<category name="slippers">
+				<category name="outdoor soles"></category>
+				<category name="moccasins"></category>
+			</category>
+		</category>
+		<category name="womens shoes">
+			<category name="athletic womens">
+				<category name="boating"></category>
+				<category name="rowing"></category>
+				<category name="cycling"></category>
+				<category name="running"></category>
+				<category name="golf"></category>
+				<category name="skateboarding"></category>
+				<category name="skate shoes"></category>
+			</category>
+			<category name="boots">
+				<category name="flat"></category>
+				<category name="pull-on"></category>
+				<category name="water-proof"></category>
+				<category name="zip"></category>
+			</category>
+			<category name="boat shoes"></category>
+			<category name="fashion sneakers">
+				<category name="mary janes"></category>
+				<category name="sling-back"></category>
+				<category name="slip-on"></category>
+			</category>
+			<category name="sandals">
+				<category name="platform"></category>
+				<category name="wedges">
+					<item id="11">BANDOLINO HAPPYME WEDGE SANDAL LIGHT NATURAL SYNTHETIC WOMENS SIZE 7.5 M</item>
+				</category>
+			</category>
+		</category>
+	</category>
+	<category name="electronics">
+		<category name="accessories &amp; supplies">
+			<category name="audio &amp; video accessories">
+				<category name="antennas">
+					<category name="radio antennas"></category>
+					<category name="tv antennas">
+						<item id="5">Sewell Direct SW-29480 HDTV Antenna</item>
+					</category>
+				</category>
+				<category name="blank media">
+					<category name="CD-R disc"></category>
+					<category name="DVD-R disc"></category>
+					<category name="Minidiscs"></category>
+					<category name="Data Cartridges"></category>
+				</category>
+				<category name="plugs &amp; adapters"></category>
+				<category name="speaker accessories">
+					<category name="speaker cables"></category>
+					<category name="speaker mounts"></category>
+					<category name="speaker stands">
+						<item id="6">SANUS SYSTEMS BF-31B Wood Speaker Stands</item>
+					</category>
+				</category>
+			</category>
+			<category name="microphones">
+				<category name="wireless microphones">
+					<category name="handheld microphones"></category>
+					<category name="headset microphones"></category>
+				</category>
+				<category name="dynamic microphones">
+					<category name="instrument"></category>
+					<category name="vocal"></category>
+					<category name="multipurpose"></category>
+				</category>
+			</category>
+			<category name="telephone accessories">
+				<category name="caller ID displays"></category>
+				<category name="batteries"></category>
+				<category name="phone cards"></category>
+			</category>
+		</category>
+		<category name="computers &amp; accessories">
+			<category name="printers">
+				<category name="inkjet"></category>
+				<category name="laser"></category>
+				<category name="all-in-one"></category>
+			</category>
+			<category name="video projectors">
+				<category name="DLP projectors"></category>
+				<category name="LCD projectors"></category>
+			</category>
+			<category name="scanners"></category>
+			<category name="networking products">
+				<category name="hubs"></category>
+				<category name="modems"></category>
+				<category name="access points"></category>
+				<category name="routers"></category>
+				<category name="switches"></category>
+			</category>
+			<category name="mice &amp; keyboards">
+				<category name="mice">
+					<category name="laser mice"></category>
+					<category name="optical mice">
+						<item id="7">Logitech B100 Optical USB Mouse</item>
+					</category>
+					<category name="notebook mice"></category>
+				</category>
+				<category name="presentation pointers">
+					<category name="laser pointers"></category>
+					<category name="presentation remotes"></category>
+				</category>
+			</category>
+		</category>
+		<category name="televisions &amp; video">
+			<category name="disc players &amp; recorders">
+				<category name="blu-ray disc players"></category>
+				<category name="DVD players"></category>
+				<category name="portable DVD players"></category>
+			</category>
+			<category name="Televisions">
+				<category name="TVs"></category>
+				<category name="TV-DVD combinations"></category>
+			</category>
+		</category>
+		<category name="photo &amp; camera">
+			<category name="camcorders">
+				<category name="high definition"></category>
+				<category name="flash memory"></category>
+				<category name="digital DVD"></category>
+			</category>
+			<category name="digital cameras">
+				<category name="digital SLRs"></category>
+				<category name="point &amp; shoot digital cameras"></category>
+			</category>
+			<category name="lenses">
+				<category name="camcorder lenses">
+					<item id="20">37mm 0.3x Baby Death Fisheye Lens for Video Camcorder</item>
+				</category>
+				<category name="point &amp; shoot camera lenses"></category>
+				<category name="SLR camera lenses">
+					<category name="digital SLR lenses"></category>
+					<category name="film SLR lenses"></category>
+				</category>
+			</category>
+			<category name="binoculars, telescopes &amp; optics">
+				<category name="binoculars"></category>
+				<category name="microscopes">
+					<category name="compound microscopes"></category>
+					<category name="stereo microscopes"></category>
+				</category>
+				<category name="telescopes">
+					<category name="reflectors">
+						<item id="8">Orion SkyScanner 100mm TableTop Reflector Telescope</item>
+					</category>
+					<category name="refractors"></category>
+				</category>
+			</category>
+		</category>
+		<category name="GPS &amp; navigation">
+			<category name="GPS mapping software"></category>
+			<category name="handheld GPS"></category>
+			<category name="vehicle GPS">
+				<category name="in-dash navigation"></category>
+				<category name="motorcycle GPS"></category>
+			</category>
+			<category name="sports &amp; outdoors GPS">
+				<category name="hiking GPS units"></category>
+				<category name="cycling GPS units"></category>
+				<category name="running GPS units"></category>
+			</category>
+		</category>
+	</category>
+</category>

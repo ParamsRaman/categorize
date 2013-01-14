@@ -1,0 +1,94 @@
+18||a0||casseroles||juice glasses||extendable tables||steamers||cutting boards||remote control||air sprays||mop handles||batting gloves||hiking boots
+18||a1||formals||pajama tops||satin robes||turtle necks||leather jacket||dresses||ear muffs||tank||woollen jacket||robes
+18||a2||gym bags||rolling luggage||shoe bags||school backpack||luggage tags||bags & backpacks||luggage||bags & travel||travel accessories||luggage
+18||a3||woollen scarves||silk scarves
+18||n1||clothing
+18||n2||accessories
+18||n3||scarves
+18||n4||knit scarves
+1||a0||casseroles||juice glasses||extendable tables||steamers||cutting boards||remote control||air sprays||mop handles||batting gloves||hiking boots
+1||a1||formals||pajama tops||satin robes||turtle necks||leather jacket||dresses||ear muffs||tank||woollen jacket||robes
+1||a2||woollen scarves||silk scarves||knit scarves
+1||a3||luggage||carry on||hiking bag||gym bags||rolling luggage||school backpack
+1||a4||shoe bags
+1||n1||clothing
+1||n2||accessories
+1||n3||luggage||bags & travel
+1||n4||travel accessories
+1||n5||luggage tags
+4||a0||casseroles||juice glasses||extendable tables||steamers||cutting boards||remote control||air sprays||mop handles||batting gloves||hiking boots
+4||a1||woollen scarves||carry on||hiking bag||shoe bags||gym bags||knit scarves||gloves||ear muffs||formals||rolling luggage
+4||a2||formals||turtle necks||sports casuals||dress socks||sports socks||shirts & polos
+4||a3||pajamas||pajama tops||pajama bottoms
+4||a4||cotton robes
+4||n1||clothing
+4||n2||mens
+4||n3||sleepwear & robes
+4||n4||robes
+4||n5||satin robes
+3||a0||casseroles||juice glasses||extendable tables||steamers||cutting boards||remote control||air sprays||mop handles||batting gloves||hiking boots
+3||a1||silk scarves||gym bags||rolling luggage||shoe bags||hiking bag||turtle necks||pajama tops||sports socks||cotton robes||mens
+3||a2||woollen jacket||leather jacket||dresses||formals||sundresses||tank||coats & jackets
+3||a3||gloves||scarves    
+3||n1||clothing
+3||n2||womens
+3||n3||cold weather
+3||n4||ear muffs
+2||a0||casseroles||juice glasses||extendable tables||steamers||cutting boards||remote control||air sprays||mop handles||batting gloves||hiking boots
+2||a1||silk scarves||gym bags||rolling luggage||shoe bags||hiking bag||turtle necks||pajama tops||sports socks||cotton robes||mens
+2||a2||woollen jacket||leather jacket||dresses||formals||sundresses||tank||coats & jackets
+2||a3||scarves||ear muffs
+2||n1||clothing 
+2||n2||womens
+2||n3||cold weather
+2||n4||gloves
+19||a0||casseroles||juice glasses||extendable tables||steamers||cutting boards||remote control||air sprays||mop handles||batting gloves||hiking boots
+19||a1||silk scarves||gym bags||rolling luggage||shoe bags||hiking bag||turtle necks||pajama tops||sports socks||cotton robes||mens
+19||a2||woollen jacket||leather jacket||scarves||coats & jackets||ear muffs||gloves||cold weather
+19||a3||formals||tank
+19||n1||clothing
+19||n2||womens
+19||n3||dresses
+19||n4||sundresses
+17||a0||gym bags||pajamas||silk scarves||ear muffs||party supplies||balloons||rain boots||skate shoes||blank media||routers
+17||a1||ceiling fans||home appliances||hand blenders||stand mixers||electric cookware||paper towels||dust mops||air freshners||kettles||can openers
+17||a2||casseroles||bakers||mixing bowls||roasting pans||pressure cookers||dining chair||dining room furniture||cutting boards||cake knives||food knives
+17||a3||screwpull levers||pump corkscrews||champagne openers||corkscrew & openers
+17||a4||beer mugs||juice glasses||wine glasses||wine goblets||tasting sets
+17||n1||home
+17||n2||kitchen & dining
+17||n3||bar tools & glasses
+17||n4||glassware & stemware
+17||n5||shot glasses
+16||a0||gym bags||pajamas||silk scarves||ear muffs||party supplies||balloons||rain boots||skate shoes||blank media||routers
+16||a1||ceiling fans||home appliances||hand blenders||stand mixers||electric cookware||paper towels||dust mops||air freshners||kettles||can openers
+16||a2||casseroles||baking cups||mixing bowls||shot glasses||pump corkscrews||tumblers||tea kettles||lids||cookware||extendable tables||dining chair
+16||a3||cake knives||chef's knives||knife sharpeners||food knives||electric knives||specialty knives||seafood knives
+16||n1||home
+16||n2||kitchen & dining
+16||n3||kitchen knives & cutlery
+16||n4||cutting boards
+15||a0||gym bags||pajamas||silk scarves||ear muffs||party supplies||balloons||rain boots||skate shoes||blank media||routers
+15||a1||mixing bowls||cookie cutters||bakeware||casseroles||beer mugs||tea kettles||air sprays||wet mops||cleaning supplies||air purifiers
+15||a2||hand blenders||milk frothers||can openers||mixers||coffee grinders||refrigerators||clothes washers||portable dishwashers||cooktops||food waste disposers
+15||a3||household fans||table fans||window fans||pedestal fans
+15||a4||ceiling fans
+15||a5||down rods
+15||n1||home
+15||n2||home appliances
+15||n3||air conditioners & fans
+15||n4||ceiling fans & accessories
+15||n5||accessories
+15||n6||remote control
+12||a0||gym bags||pajamas||silk scarves||ear muffs||party supplies||balloons||rain boots||skate shoes||blank media||routers
+12||a1||bakers||mixing bowls||tumblers||baking cups||screwpull levers||roasting plans||dining room furniture||ceiling fans||household fans||table fans
+12||a2||air purifiers||air sprays||electric air freshners||solid and liquid freshners||air freshners
+12||a3||paper towels||dust clothes||dust mops||feather dusters||brushers||dusting
+12||a4||buckets||wet mops
+12||a5||mop handles & sponges
+12||n1||home
+12||n2||vacuum cleaning & storage
+12||n3||cleaning supplies
+12||n4||moping
+12||n5||accessories
+12||n6||mop handles

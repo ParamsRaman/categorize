@@ -1,0 +1,710 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Menu, MainMenu, jqxMenu, Context Menu, Vertical Menu, Horizontal Menu, Menu Widget, Web Menu, Top Menu" />
+    <meta name="description" content="This page represents the help documentation of the jqxMenu widget(includes Menu, Context Menu and Vertical Menu)." />
+    <title>jqxMenu API Reference></title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>mode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    horizontal
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the menu's display mode. Possible Values: 'horizontal', 'vertical','popup'</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>mode</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ width: '250px', height: '200px', mode: "vertical" });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the width.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>width</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ width: '250px' });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the height.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>height</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ height: '100px' });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>easing</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    easeInOutSine
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the animation's easing to one of the JQuery's supported easings.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>easing</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ easing: 'easeInOutSine' });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>animationShowDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the duration of the show animation.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>animationShowDuration</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ animationShowDuration: 200 });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>animationHideDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    250
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the duration of the hide animation.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>animationHideDuration</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ animationHideDuration: "fast" });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>animationHideDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    500
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the delay before the start of the hide animation.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>animationHideDelay</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ animationHideDelay: 500 });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>animationShowDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    200
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the delay before the start of the show animation.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>animationShowDelay</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ animationHideDelay: 500 });
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>autoCloseInterval</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    10000
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the time interval after which all opened items will be closed. When you open a new sub menu, the interval is cleared.
+                            If you want to disable this automatic closing behavior of the jqxMenu, you need to set the autoCloseInterval property to 0. 
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>autoCloseInterval</code> property specified.
+                        </p>
+                        <pre><code></code></pre>
+                        $('#jqxMenu').jqxMenu({ autoCloseInterval: 0 });
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>autoSizeMainItems</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Auto-Sizes the jqxMenu's main items when the menu's mode is 'horizontal'.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>autoSizeMainItems</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({autoSizeMainItems: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>autoCloseOnClick</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Automatically closes the opened popups after a click.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>autoCloseOnClick</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({autoCloseOnClick: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>enableRoundedCorners</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the rounded corners. This setting has effectin browsers that
+                            support the 'border-radius CSS setting.'</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>enableRoundedCorners</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({enableRoundedCorners: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the jqxMenu.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({disabled: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>autoOpenPopup</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Opens the Context Menu when the right-mouse button is pressed. When this property
+                            is set to false, the Open and Close functions can be used to open and close the
+                            Context Menu.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>autoOpenPopup</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({autoOpenPopup: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>autoOpen</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Opens the top level menu items when the user hovers them.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>autoOpen</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({autoOpen: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>enableHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the hover state.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>enableHover</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({enableHover:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>clickToOpen</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Opens an item after a click by the user.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxMenu with the <code>clickToOpen</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu({clickToOpen: true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>shown</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when any of the jqxMenu Sub Menus is displayed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the shown event by type: jqxMenu.
+                        </p>
+                        <pre><code>$('#jqxMenu').bind('shown', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>closed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when any of the jqxMenu Sub Menus is closed.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the closed event by type: jqxMenu.
+                        </p>
+                        <pre><code>$('#jqxMenu').bind('closed', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>itemclick</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a menu item is clicked.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the itemclick event by type: jqxMenu.
+                        </p>
+                        <pre><code>$('#jqxMenu').bind('itemclick', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>initialized</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered after the menu is initialized.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the initialized event by type: jqxMenu.
+                        </p>
+                        <pre><code>$('#jqxMenu').bind('initialized', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>closeItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Closes a menu item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the closeItem method.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu('closeItem', menuItemId);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>openItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Opens a menu item</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the openItem method.
+                        </p>
+                        <pre><code>$('#jqxMenu').jqxMenu('openItem', menuItemId);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>setItemOpenDirection</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the item's popup open direction</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setItemOpenDirection method.
+                        </p>
+                             <pre><code>// @param id</code></pre>
+                             <pre><code>// @param String - horizontal direction</code></pre>
+                             <pre><code>// @param String - vertical direction</code></pre>
+                             <pre><code>$("#jqxMenu").jqxMenu('setItemOpenDirection', 'Services', 'right', 'up');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>close</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Closes the menu (only in context menu mode).</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the close method.
+                        </p>
+                        <pre><code>$("#jqxMenu").jqxMenu('close')</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>open</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Opens the menu(only in context menu mode).</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the open method.
+                        </p>
+                        <pre><code>var scrollTop = $(window).scrollTop();<br />var scrollLeft = $(window).scrollLeft();<br />contextMenu.jqxMenu('open', parseInt(event.clientX) + 5 + scrollLeft, parseInt(event.clientY) + 5 + scrollTop);</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Button, Toggle Button, Repeat Button, Link Button, Help Documentation" />
+    <meta name="description" content="This page represents the help documentation of the jqxButton, jqxToggleButton, jqxRepeatButton and jqxLinkButton widgets." />
+    <title>jqxButton, jqxToggleButton, jqxRepeatButton and jqxLinkButton API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disables the jqxButtonGroup.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxButtonGroup with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxButtonGroup').jqxButtonGroup({disabled: false });</code></pre>
+                    </div>
+                </td>
+            </tr>
+                 <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>mode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'default'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the jqxButtonGroup's mode. Possible values:'checkbox', 'radio', 'default'. 
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxButtonGroup with the <code>mode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxButtonGroup').jqxButtonGroup({mode: 'radio' });</code></pre>
+                    </div>
+                </td>
+            </tr>
+                  <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>enableHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables or disabled the highlight state.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxButtonGroup with the <code>enableHover</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxButtonGroup').jqxButtonGroup({enableHover: true });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>selected</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a button is selected - in checkboxes or radio buttons mode.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the selected event by type: jqxButtonGroup.
+                        </p>
+                        <pre><code>$('#jqxButtonGroup').bind('selected', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>unselected</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a button is unselected - in checkboxes or radio buttons mode.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unselected event by type: jqxButtonGroup.
+                        </p>
+                        <pre><code>$('#jqxButtonGroup').bind('unselected', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+    <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>buttonclick</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when a button is clicked.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the buttonclick event by type: jqxButtonGroup.
+                        </p>
+                        <pre><code>$('#jqxButtonGroup').bind('buttonclick', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>setSelection</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Selects a button.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the setSelection method.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButtonGroup('setSelection', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>getSelection</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets the selected button.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the getSelection method.
+                        </p>
+                        <pre><code>var btn = $('#jqxButton').jqxButtonGroup('getSelection'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>enableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Enables a button at specific index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the enableAt method.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButtonGroup('enableAt', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>disableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Disables a button at specific index.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the disableAt method.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButtonGroup('disableAt', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+                  <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Enables the jqxButtonGroup.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButtonGroup('enable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Disables jqxButtonGroup.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#jqxButton').jqxButtonGroup('disable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

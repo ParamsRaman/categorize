@@ -1,0 +1,1254 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Tree, jQuery Tree, TreeView, Tree Widget, jqxTree" />
+    <meta name="description" content="This page represents the help documentation of the jqxTree widget." />
+    <title>jqxTree API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the tree width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({width:"200px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the panel height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({height:"400px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the tree is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>easing</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'easeInOutCirc'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the animation's easing to one of the JQuery's supported easings. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>easing</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ easing: 'easeInOutCirc' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>animationShowDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                   350
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets the duration of the show animation. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>animationShowDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ animationShowDuration: 500 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>animationHideDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                   fast
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets the duration of the hide animation. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>animationHideDuration</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ animationHideDuration: 500 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>enableHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Enables or disables the hover state. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>enableHover</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ enableHover: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>keyboardNavigation</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Enables or disables the key navigation.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>keyboardNavigation</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ keyboardNavigation: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>toggleMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                   dblclick
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Gets or sets user interaction used for expanding or collapsing any item. Possible values ['click', 'dblclick'].</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>toggleMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ toggleMode: 'click' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>source</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                   null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                            <p>
+                            Specifies the jqxTree's data source. Use this property to populate the jqxTree.</p>
+                            <h4>
+                                Code examples</h4>
+                            <p>
+                                Initialize a jqxTree with the <code>source</code> property specified.
+                            </p>
+                        <pre><code>
+var source = [
+    { label: "Item 1", expanded: true, items: [
+        { label: "Item 1.1" },
+        { label: "Item 1.2", selected: true }
+    ]
+    },
+    { label: "Item 2" },
+    { label: "Item 3" },
+    { label: "Item 4", items: [
+        { label: "Item 4.1" },
+        { label: "Item 4.2" }
+    ]
+    },
+    { label: "Item 5" },
+    { label: "Item 6" },
+    { label: "Item 7" }
+];
+
+    // create jqxTree
+$('#jqxTree').jqxTree({ source: source, width: '330px'});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>checkboxes</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Gets or sets whether the tree should display a checkbox next to each item. In order to use this feature, you need
+                       to include the jqxcheckbox.js.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>checkboxes</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ checkboxes: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>hasThreeStates</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Gets or sets whether the tree checkboxes have three states - checked, unchecked and indeterminate.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>hasThreeStates</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ hasThreeStates: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span42'>allowDrag(requires jqxdragdrop.js)</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables the dragging of Tree Items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>allowDrag</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxTree").jqxTree({allowDrag:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span43'>allowDrop(requires jqxdragdrop.js)</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables the dropping of Tree Items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>allowDrop</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxTree").jqxTree({allowDrop:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+       <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span47'>dragStart</span>
+                </td>
+                <td>
+                    <span>Function</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Callback function which is called when a drag operation starts.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the dragStart property
+                        </p>
+                        <pre><code>
+$("#jqxTree").jqxTree({dragStart: function (item) {
+        // disable dragging of 'Café au lait' item.
+        if (item.label == 'Café au lait')
+            return false;
+                        
+        // enable dragging for the item.
+        return true;
+    }
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+      <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span48'>dragEnd</span>
+                </td>
+                <td>
+                    <span>Function</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Callback function which is called when a drag operation ends.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the dragEnd property
+                        </p>
+                        <pre><code>
+$("#jqxTree").jqxTree({dragEnd: function (droppedItem) {
+
+    }
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+     <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>toggleIndicatorSize</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                   16
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Gets or sets whether the size of the expand/collapse arrows.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxTree with the <code>toggleIndicatorSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree({ toggleIndicatorSize: 0 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>expand</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Expand is triggered when the user expands a tree item.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the expand event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('expand', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>collapse</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Collapse is triggered when the user collapses a tree item.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the collapse event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('collapse', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>select</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Select is triggered when the user selects a tree item.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the select event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('select', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>initialized</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         The initialized event is triggered when the jqxTree is created and initialized.  
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the initialized event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('initialized', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>add</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Add event is triggered when the user adds a new tree item. 
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the add event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('add', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>removed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Removed event is triggered when the user removes a tree item.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the remove event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('remove', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>checkchange</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Checkchange is triggered when the user checks, unchecks or the checkbox is in indeterminate state.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the checkchange event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('checkchange', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                 <td class="documentation-option-type-click">
+                    <span id='Span45'>dragStart</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user starts a drag operation. 
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the dragStart event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('dragStart', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                 <td class="documentation-option-type-click">
+                    <span id='Span46'>dragEnd</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user drops an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the dragEnd event by type: jqxTree.
+                        </p>
+                        <pre><code>$('#jqxTree').bind('dragEnd', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>ensureVisible</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Ensures the visibility of an element.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the ensureVisible method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('ensureVisible', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>addTo</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p> Adds an element.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the addTo method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+// @param parentElement (li tag) - optional parameter, which specifies the parent item. If not specified, the new element is added as last tree item. 
+$('#jqxTree').jqxTree('addTo', element, parentElement);
+                        </code></pre>
+<br />
+The following code adds a new item to the jqxTree:
+<pre><code>
+$('#jqxTree').jqxTree('addTo', { label: 'Item' });
+</code></pre>
+<br />
+The following code adds a new sub item to the first tree item:
+<pre><code>
+var treeItems = $("#jqxTree").jqxTree('getItems');
+var firstItem = treeItems[0];
+var firstItemElement = firstItem.element;
+$('#jqxTree').jqxTree('addTo', { label: 'Item' }, firstItemElement);
+</code></pre>
+<br />
+The following code adds a new sub item to a tree item by using the item's ID.
+<pre><code>
+var elementByID = $('#jqxTree').find("#home")[0];
+$('#jqxTree').jqxTree('addTo', { label: 'Item' }, elementByID);
+</code></pre>
+The following code adds a new item with custom HTML and specific ID to the jqxTree.
+<pre style='margin: 10px;' class='code'>$(<span style=" clear: both; padding: 0px; margin: 0px;">'#jqxTree').jqxTree('addTo', { html: <span style="clear: both; padding: 0px; margin: 0px;>"<span style="clear: both; padding: 0px; margin: 0px; color: #11a;">&lt;span style='font-weight: bold;' id='myItem'</span>&gt;</span>Item<span style="clear: both; padding: 0px; margin: 0px;>&lt;/span&gt;</span>"</span> });<div/></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>removeItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Removes an element.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the removeItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('removeItem', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span33'>clear</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Removes all elements.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the clear method.
+                        </p>
+                        <pre><code>
+$('#jqxTree').jqxTree('clear');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>disableItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p> Disables a tree item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disableItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('disableItem', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>checkItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p> Checks a tree item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the checkItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+// @param true, false or null. - CheckBox state.
+$('#jqxTree').jqxTree('checkItem', element, true);
+                         </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>enableItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Enables a tree item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enableItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('enableItem', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>lockItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Locks a tree item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the lockItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('lockItem', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>unlockItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Unlocks a tree item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the unlockItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('unlockItem', element);
+                         </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>getItems</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Gets an array with all tree items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getItems method.
+                        </p>
+                        <pre><code>var items = $('#jqxTree').jqxTree('getItems');</code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span34'>getItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Gets the tree item associated to a LI tag passed as parameter.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+var item = $('#jqxTree').jqxTree('getItem', element);</code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span38'>getSelectedItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Gets the selected tree item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getSelectedItem method.
+                        </p>
+                        <pre><code>
+var item = $('#jqxTree').jqxTree('getSelectedItem');</code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>getPrevItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Gets the item above another item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getPrevItem method.
+                        </p>
+                        <pre><code>
+var selectedItem = $("#jqxTree").jqxTree('selectedItem');
+var prevItem = $("#jqxTree").jqxTree('getPrevItem', selectedItem.element);
+</code></pre>
+   <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span36'>getNextItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Gets the item below another item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getNextItem method.
+                        </p>
+                        <pre><code>
+var selectedItem = $("#jqxTree").jqxTree('selectedItem');
+var nextItem = $("#jqxTree").jqxTree('getNextItem', selectedItem.element);
+</code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>selectItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Selects an item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the selectItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag)          
+$('#jqxTree').jqxTree('selectItem', element);
+                        </code></pre>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the selectItem method.
+                        </p>
+                        <pre><code>
+ $('#jqxTree').jqxTree('selectItem', $("#jqxTree").find('li:first')[0]);
+                        </code></pre>
+                       
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>collapseAll</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Collapses all items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the collapseAll method.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree('collapseAll');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span30'>expandAll</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Expandes all items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the expandAll method.
+                        </p>
+                        <pre><code>$('#jqxTree').jqxTree('expandAll');</code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>collapseItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Collapses a tree item by passing an element as parameter.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the collapseItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('collapseItem', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span32'>expandItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p> Expands a tree item by passing an element as parameter.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the expandItem method.
+                        </p>
+                        <pre><code>
+// @param element (li tag) 
+$('#jqxTree').jqxTree('expandItem', element);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

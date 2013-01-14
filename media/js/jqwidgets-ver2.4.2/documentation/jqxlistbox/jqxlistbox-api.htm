@@ -1,0 +1,1480 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <title>jqxListBox API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the listbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxListBox').jqxListBox({ disabled: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>width</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the listbox width.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({ width: '250px', height: '250px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>height</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the listbox height.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({ width: '250px', height: '250px' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>multiple</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the multiple selection. When this property is set to true, the
+                            user can select multiple items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>multiple</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({multiple: true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>selectedIndex</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    -1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the selected index.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>selectedIndex</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({selectedIndex: 2 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>source</span>
+                </td>
+                <td>
+                    <span>Array</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the items source.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>source</code> property specified.
+                        </p>
+                        <pre><code>var data = [</code></pre>
+                        <pre><code>"Affogato",</code></pre>
+                        <pre><code>"Americano",</code></pre>
+                        <pre><code>"Bicerin"</code></pre>
+                        <pre><code>];</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox({source: data});</code></pre>
+                        <br />
+                        Binding using the jqx.dataAdapter(requires jqxdata.js):
+<pre><code>
+// url of the data.
+var url = "../sampledata/customers.txt";
+var parentsLength = $("#jqxWidget").parents().length;
+if (parentsLength > 3) {
+    url = 'demos/sampledata/customers.txt';
+}
+
+// prepare the data. Set the datatype to 'json', 'xml', 'tsv', 'array', 'local' or 'csv.
+var source =
+{
+    datatype: "json",
+    datafields: [
+        { name: 'CompanyName' },
+        { name: 'ContactName' }
+    ],
+    id: 'id',
+    url: url
+};
+// create a new instance of the jqx.dataAdapter.
+var dataAdapter = new $.jqx.dataAdapter(source);
+
+// Create a jqxListBox
+$("#jqxWidget").jqxListBox({ source: dataAdapter, displayMember: "ContactName", valueMember: "CompanyName", width: 200, height: 250, theme: theme });
+</code></pre>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span35'>displayMember</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the displayMember of the Items. The displayMember specifies the name of an object property to display. The name is contained in the collection specified by the 'source' property.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>displayMember</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({displayMember: 'firstName'});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span36'>valueMember</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    ""
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the valueMember of the Items. The valueMember specifies the name of an object property to set as a 'value' of the list items. The name is contained in the collection specified by the 'source' property.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>valueMember</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({valueMember: 'lastName'});</code></pre>
+                    </div>
+                </td>
+            </tr>  
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span41'>clear</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Clears all items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the clear method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('clear'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>scrollBarSize</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    17
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the scrollbars size.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>scrollBarSize</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({scrollBarSize: 25});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>enableHover</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the hover state.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>enableHover</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({enableHover: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span38'>incrementalSearch</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the incrementalSearch property. An incremental search begins searching as soon as you type the first character of the search string. As you type in the search string, jqxListBox automatically selects the found item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>incrementalSearch</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({incrementalSearch: false});</code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+            <td class="documentation-option-type-click">
+                    <span id='Span40'>incrementalSearchDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    700
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the incrementalSearchDelay property. The incrementalSearchDelay specifies the time-interval in milliseconds after which the previous search string is deleted. The timer starts
+                            when you stop typing.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>incrementalSearchDelay</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({incrementalSearchDelay: 400});</code></pre>
+                    </div>
+                </td>
+            </tr>
+              <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span39'>searchMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    startswith
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the item incremental search mode. When the user types some text in a focused ListBox, 
+                            the jqxListBox widget tries to find the searched item using the entered text and the selected search mode. 
+                            Possible Values: 'none, 'contains', 'containsignorecase', 'equals', 'equalsignorecase', 'startswithignorecase', 'startswith', 'endswithignorecase', 'endswith'
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>searchMode</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({searchMode: 'contains' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>enableSelection</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables/disables the selection.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>enableSelection</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({enableSelection: false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>equalItemsWidth</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the items width should be equal to the listbox's width.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>equalItemsWidth</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({equalItemsWidth:false}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>itemHeight</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    -1
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the height of the jqxListBox Items. When the itemHeight == - 1, each
+                            item's height is equal to its desired height.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>itemHeight</code> property specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({itemHeight: 25});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>checkboxes</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the listbox should display a checkbox next to each item.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>checkboxes</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({checkboxes:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+   <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>autoHeight</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the listbox's height is equal to the sum of each item's height</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>autoHeight</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({autoHeight:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+               <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>hasThreeStates</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the checkboxes have three states - checked, unchecked and indeterminate.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>hasThreeStates</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({hasThreeStates:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span42'>allowDrag(requires jqxdragdrop.js)</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables the dragging of ListBox Items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>allowDrag</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({allowDrag:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span43'>allowDrop(requires jqxdragdrop.js)</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables the dropping of ListBox Items.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>allowDrop</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({allowDrop:true}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span44'>dropAction(requires jqxdragdrop.js)</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'default'.
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the drop action when an item is dropped. Possible values: 'default', 'copy' or 'none'. The 'copy' action adds a clone of the dropped item.
+                            The 'none' action means that the dropped item will not be added to a new collection and will not be removed from its parent collection.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxListBox with the <code>dropAction</code> property
+                            specified.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox({dropAction:'copy'}); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span47'>dragStart</span>
+                </td>
+                <td>
+                    <span>Function</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Callback function which is called when a drag operation starts.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the dragStart property
+                        </p>
+                        <pre><code>
+$("#jqxListBox").jqxListBox({dragStart: function (item) {
+        // disable dragging of 'Café au lait' item.
+        if (item.label == 'Café au lait')
+            return false;
+                        
+        // enable dragging for the item.
+        return true;
+    }
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+      <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span48'>dragEnd</span>
+                </td>
+                <td>
+                    <span>Function</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Callback function which is called when a drag operation ends.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the dragEnd property
+                        </p>
+                        <pre><code>
+$("#jqxListBox").jqxListBox({dragEnd: function (droppedItem) {
+
+    }
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span52'>renderer</span>
+                </td>
+                <td>
+                    <span>Function</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Callback function which is called when an item is rendered. By using the renderer function, you can customize the look of the list items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Set the renderer property
+                        </p>
+                        <pre><code>
+$('#listbox').jqxListBox({renderer: function (index, label, value) {
+        var datarecord = data[index];
+        return datarecord.firstname + " " + datarecord.lastname;
+    }
+});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>select</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user selects an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the select event by type: jqxListBox.
+                        </p>
+                        <pre><code>$('#jqxListBox').bind('select', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>unselect</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user unselects an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the unselect event by type: jqxListBox.
+                        </p>
+                        <pre><code>$('#jqxListBox').bind('unselect', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>change</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user selects an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the change by type: jqxListBox.
+                        </p>
+                        <pre><code>$('#jqxListBox').bind('change', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+        <td class="documentation-option-type-click">
+                    <span id='Span26'>checkChange</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user checks or unchecks an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the checkchange event by type: jqxListBox.
+                        </p>
+                        <pre><code>$('#jqxListBox').bind('checkChange', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                 <td class="documentation-option-type-click">
+                    <span id='Span45'>dragStart</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user starts a drag operation. 
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the dragStart event by type: jqxListBox.
+                        </p>
+                        <pre><code>$('#jqxListBox').bind('dragStart', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                 <td class="documentation-option-type-click">
+                    <span id='Span46'>dragEnd</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user drops an item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the dragEnd event by type: jqxListBox.
+                        </p>
+                        <pre><code>$('#jqxListBox').bind('dragEnd', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>addItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Adds a new item to the jqxListBox. Returns 'true', if the new item is added or false if the item is not added.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the addItem method.
+                        </p>
+                        <pre><code>// @param String</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('addItem', 'jQuery' ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>insertAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Inserts a new item to the jqxListBox. Returns 'true', if the new item is inserted or false if the insertaion fails.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the insertAt method.
+                        </p>
+                        <pre><code>// @param String</code></pre>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('insertAt', 'jQuery', 1 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>removeAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Removes an item from the listbox. Index is a number of the item to remove. Returns true, if the item is removed or false, if the
+                            item is not removed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the removeAt method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('removeAt', 3 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>disableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disables an item by index. Index is a number.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disableAt method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('disableAt', 8 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>enableAt</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Enables a disabled item by index. Index is a number.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enableAt method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('enableAt', 3 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span32'>getItems</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets all ListBox items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getItems method.
+                        </p>
+                        <pre><code>var items = $("#jqxListBox").jqxListBox('getItems'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span49'>getSelectedItems</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the selected ListBox items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getSelectedItems method.
+                        </p>
+                        <pre><code>var items = $("#jqxListBox").jqxListBox('getSelectedItems'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+                <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span53'>getCheckedItems</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the checked ListBox items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getCheckedItems method.
+                        </p>
+                        <pre><code>var items = $("#jqxListBox").jqxListBox('getCheckedItems'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>ensureVisible</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Ensures that an item is visible. index is number. If necessary scrolls to the item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the ensureVisible method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('ensureVisible', 2 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>getItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets item by index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getItem method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>var item = $("#jqxListBox").jqxListBox('getItem', 1 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span33'>getSelectedItem</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the selected item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getSelectedItem method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>var item = $("#jqxListBox").jqxListBox('getSelectedItem'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span34'>getSelectedIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets the index of the selected item.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getSelectedIndex method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>var index = $("#jqxListBox").jqxListBox('getSelectedIndex'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>selectIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Selects item. Index is number .
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the selectIndex method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('selectIndex', 0 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>unselectIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Unselects item by index.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the unselectIndex method.
+                        </p>
+                        <pre><code>// @param Number</code></pre>
+                        <pre><code>$("#jqxListBox").jqxListBox('unselectIndex', 5 ); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>clearSelection</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Clears all selected items.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the clearSelection method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('clearSelection'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+               <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>checkIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Checks a list item when the 'checkboxes' property value is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'checkIndex' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('checkIndex', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>uncheckIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Unchecks a list item when the 'checkboxes' property value is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'uncheckIndex' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('uncheckIndex', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>indeterminateIndex</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            indeterminates a list item when the 'checkboxes' property value is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'indeterminateIndex' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('indeterminateIndex', 0); </code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>checkAll</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Checks all list items when the 'checkboxes' property value is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'checkAll' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('checkAll'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+         <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span30'>uncheckAll</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Unchecks all list items when the 'checkboxes' property value is true.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'uncheckAll' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('uncheckAll'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span50'>beginUpdate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Stops the ListBox's rendering. That method is usually used when multiple items need to be inserted or removed dynamically.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'beginUpdate' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('beginUpdate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+             <td class="documentation-option-type-click">
+                    <span id='Span51'>endUpdate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Starts the ListBox's rendering and refreshes the ListBox. That method is usually used in combination with the 'beginUpdate' method when multiple items need to be inserted or removed dynamically.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the 'endUpdate' method.
+                        </p>
+                        <pre><code>$("#jqxListBox").jqxListBox('endUpdate'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

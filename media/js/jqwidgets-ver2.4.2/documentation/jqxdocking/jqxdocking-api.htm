@@ -1,0 +1,921 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Window JavaScript, jQuery Window, Window, Window Widget, jqxWindow" />
+    <meta name="description" content="This page represents the help documentation of the jqxWindow widget." />
+    <title>jqxWindow API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the docking's width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({width:"200px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the docking's height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({height:"400px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the docking is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>orientation</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    horizontal
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets docking's orientation. This property is setting whether the panels are going to be side by side or below each other. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>orientation</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ orientation: 'vertical' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>mode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                   default
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets docking's mode. There are three modes - default, docked, floating. In the default mode the user can
+                          drop every window inside any docking panel or outside the docking panels. In the docked mode the user can drop every window just 
+                          into the docking panels and in the floating mode the user can drop any window just outside of the docking panels.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>mode</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ mode: 'docked' }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>floatingWindowOpacity</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0.3
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the opacity of the window which is currently dragged by the user.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>floatingWindowOpacity</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ floatingWindowOpacity: 0.5 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span33'>panelsRoundedCorners</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets whether the panels of the docking are going to be with rounded corners.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>panelsRoundedCorners</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ panelsRoundedCorners: false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>windowsMode</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                   null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets specific mode for each window. The value of the property is object with keys - window's ids and values - specific modes.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>windowsMode</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ windowsMode: { 'window0': 'default', 'window1': 'docked' } }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>cookies</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                         Enables or disables the cookies. If the cookies are enabled then the docking layout is going to be saved and kept every time the page is being reloaded.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>cookies</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ cookies: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>cookieOptions</span>
+                </td>
+                <td>
+                    <span>Object</span>
+                </td>
+                <td>
+                   {}
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Sets or gets the cookie options.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>cookieOptions</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ cookieOptions: { domain: 'jqwidgets.com', expires: 90 } }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span34'>windowsOffset</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                   5
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                       Sets or gets the offset between the windows.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxDocking with the <code>windowsOffset</code> property specified.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking({ windowsOffset: 3 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>dragStart</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user start to drag any window.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the dragStart event by type: jqxDocking.
+                        </p>
+                        <pre><code>$('#docking').bind('dragStart', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>dragEnd</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user drop any window.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the dragEnd event by type: jqxDocking.
+                        </p>
+                        <pre><code>$('#docking').bind('dragEnd', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>move</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Moving window to specific position into specific panel. This method have three parameters. The first one is id of the window
+                            we want to move, the second one is number of the panel where we want to move our window and the last one is the position into this panel.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the move method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('move', 'windowId', 0, 1);
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>exportLayout</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p> Exporting docking's layout into a JSON string.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the exportLayout method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('exportLayout');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>importLayout</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Importing the docking layout from a JSON string.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the importLayout method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('importLayout', '{"panel0": {"window2":{"collapsed":false}},"floating":{"window1":{"x":"150px","y":"70px",
+                                        "width":"381px","height":"auto","collapsed":false}},"orientation": "horizontal"}');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Disabling the jqxDocking.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('disable');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span22'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Enabling the docking</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('enable');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span23'>setWindowMode</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Setting mode to a specific window. This method accepts two arguments - window id and mode type.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setWindowMode method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('setWindowMode', 'windowId','default');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span24'>hideCloseButton</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Hiding the close button of a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the hideCloseButton method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('hideCloseButton', 'windowId');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span25'>showCloseButton</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Showing the close button of a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the showCloseButton method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('showCloseButton', 'windowId');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span26'>hideCollapseButton</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Hiding the collapse button of a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the hideCollapseButton method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('hideCollapseButton', 'windowId');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span28'>showCollapseButton</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Showing the collapse button of a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the showCollapseButton method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('showCollapseButton', 'windowId');
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span29'>expandWindow</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Expanding a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the expandWindow method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('expandWindow', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>collapseWindow</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Collapsing a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the collapseWindow method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('collapseWindow', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>setWindowPosition</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Moving window in floating mode to a specific position.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setWindowPosition method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('setWindowPosition', 'windowId', 300, 531);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>hideAllCloseButtons</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Hiding the close buttons of all windows.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the hideAllCloseButtons method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('hideAllCloseButtons');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>hideAllCollapseButtons</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Hiding the collapse buttons of all windows.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the hideAllCollapseButtons method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('hideAllCollapseButtons');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>showAllCloseButtons</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Showing the close buttons of all windows.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the showAllCloseButtons method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('showAllCloseButtons');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>showAllCollapseButtons</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Showing the collapse buttons of all windows.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the showAllCollapseButtons method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('showAllCollapseButtons');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>pinWindow</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Pinning a specific window</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the pinWindow method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('pinWindow', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>unpinWindow</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Unpinning a specific window</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the unpinWindow method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('unpinWindow', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>enableWindowResize</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Enabling the resize of a specific window which is not docked into a panel.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enableWindowResize method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('enableWindowResize', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span30'>disableWindowResize</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Disabling the resize of a specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disableWindowResize method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('disableWindowResize', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span31'>addWindow</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Adding new window to the docking. This method accepts four arguments. The first one is id of the window we wish to add to the docking. The second argument 
+                        is window's mode (default, docked, floating) the third argument is the panel's number and the last one is the position into the panel.
+                        The last three arguments are optional.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the addWindow method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('addWindow', 'windowId', 'default', 0, 1);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span32'>closeWindow</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>Closing specific window.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the closeWindow method.
+                        </p>
+                        <pre><code>$('#docking').jqxDocking('closeWindow', 'windowId');</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery MaskedInput, MaskedInput, Input, Mask TextBox, TextBox, Mask, jqxMaskedInput" /> 
+    <meta name="description" content="The jqxMaskedInput widget uses a mask to distinguish between
+        proper and improper user input. You can define phone number, ssn, zip code, dates,
+        etc. masks by setting the jqxMaskedInput mask property."/>
+    <title id='Description'>The jqxMaskedInput widget uses a mask to distinguish between
+        proper and improper user input. You can define phone number, ssn, zip code, dates,
+        etc. masks by setting the jqxMaskedInput mask property. </title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmaskedinput.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+
+            // Create jqxMaskedInputs
+            $("#numericInput").jqxMaskedInput({ width: '250px', height: '25px', theme: theme });
+            $("#zipCodeInput").jqxMaskedInput({ width: 250, height: 25, mask: '#####-####', theme: theme });
+            $("#ssnInput").jqxMaskedInput({ width: 250, height: 25, mask: '###-##-####', theme: theme });
+            $("#phoneInput").jqxMaskedInput({ width: 250, height: 25, mask: '(###)###-####', theme: theme });
+            $("#regexInput").jqxMaskedInput({ width: 250, height: 25, mask: '###.###.###.###', theme: theme });
+            $("#disabledInput").jqxMaskedInput({ width: 250, height: 25, disabled: true, theme: theme });
+            // set regular expressions.
+            var regexFirstDigit = '(\\b[0-2])';
+            for (i = 0; i < 15; i++) {
+                if (i == 0 || i == 4 || i == 8 || i == 12) {
+                    $("#regexInput").jqxMaskedInput('setRegex', i, regexFirstDigit);
+                }
+            }
+
+            $("#regexInput").bind('valuechanged', function () {
+                var value = $("#regexInput").jqxMaskedInput('value');
+                var regex = '(\\b[0-5])';
+                var regexFull = '(\\b[0-9])';
+                var setRegex = false;
+                var newValue = '';
+                var startPattern = function (index) {
+                    return index == 0 || index == 4 || index == 8 || index == 12;
+                }
+
+                var startDigit = -1;
+                // updates the regular expressions.
+                for (i = 0; i < 15; i++) {
+                    if (startPattern(i)) {
+                        setRegex = false;
+                        if (value[i] == '2') {
+                            setRegex = true;
+                        }
+
+                        startDigit = parseInt(value[i]);
+                        newValue += value[i];
+                    }
+                    else {
+                        if (startDigit == 2) {
+                            if (parseInt(value[i]) > 5) {
+                                newValue += '5';
+                            }
+                            else newValue += value[i];
+                        }
+                        else newValue += value[i];
+
+                        if (setRegex) {
+                            $("#regexInput").jqxMaskedInput('setRegex', i, regex);
+                        }
+                        else {
+                            $("#regexInput").jqxMaskedInput('setRegex', i, regexFull);
+                        }
+                    }
+                }
+
+                $("#regexInput").jqxMaskedInput('maskedValue', newValue);
+            });
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget' style="font-size: 13px; font-family: Verdana; float: left;">
+        <div style='margin-top: 10px;'>
+            Numeric</div>
+        <div style='margin-top: 3px;' id='numericInput'>
+        </div>
+        <div style='margin-top: 10px;'>
+            Zip Code</div>
+        <div style='margin-top: 3px;' id='zipCodeInput'>
+        </div>
+        <div style='margin-top: 10px;'>
+            SSN</div>
+        <div style='margin-top: 3px;' id='ssnInput'>
+        </div>
+        <div style='margin-top: 10px;'>
+            Phone Number</div>
+        <div style='margin-top: 3px;' id='phoneInput'>
+        </div>
+        <div style='margin-top: 10px;'>
+            IP Address (ex: 255.255.255.255)
+        </div>
+        <div style='margin-top: 3px;' id='regexInput'>
+        </div>
+        <div style='margin-top: 10px;'>
+            Disabled
+        </div>
+        <div style='margin-top: 3px;' id='disabledInput'>
+        </div>
+    </div>
+</body>
+</html>

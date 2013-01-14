@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/Site.css" media="screen" />
+<link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" media="screen" />
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.classic.css" media="screen" />
+    <link rel="stylesheet" href="../../Styles/qunit-git.css" media="screen" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../Scripts/qunit-git.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxsplitter.js"></script>
+    <title>jqxSplitter Tests</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var panes = [$('#s1'), $('#s2'), $('#s3'), $('#s4')],
+                panels = [{ collapsible: true, size: 30, max: 40, min: 10 },
+                          { collapsible: true, size: 40, max: 50, min: 10 },
+                          { collapsible: true, size: 50, max: 60, min: 10 },
+                          { collapsible: false, size: 60, max: 100, min: 10}];
+            $('#jqxSplitter').jqxSplitter({ width: 180, height: 400, theme: 'classic', panels: panels, enableCollapseAnimation: false });
+            module('Rendering');
+
+            test('Checking splitter\'s rendering', function () {
+                var children = $('#jqxSplitter').children();
+                for (var i = 0; i < children.length; i += 1) {
+                    if (i % 2 === 1) {
+                        ok(children[i].className.indexOf('splitbar') >= 0, 'Checking whether the split bars are created correctly');
+                    } else {
+                        ok(children[i].className.indexOf('panel') >= 0, 'Checking whether the panels are recognized correctly');
+                    }
+                }
+            });
+
+            module('Layout');
+
+            test('Panels size', function () {
+                var width = 30;
+                for (var i = 0; i < panes.length - 1; i += 1, width += 10) {
+                    equal(panes[i].width(), width, 'Check if the pane width is set correctly.');
+                }
+                for (var i = 0; i < panes.length; i += 1) {
+                    equal($('#jqxSplitter').height(), panes[i].height(), 'Check if the pane height is set correctly.');
+                }
+            });
+
+            module('Methods');
+
+            test('Collapsing collapsible items', function () {
+                var prevCollapsedSize = panes[0].width(), prevSize = panes[1].width();
+                $('#jqxSplitter').jqxSplitter('collapseAt', 0);
+                equal(panes[0].width(), 0, 'The first pane should be collapsed');
+                equal(panes[1].width(), prevCollapsedSize + prevSize, 'The second pane should be with width equal to it\'s width before it\'s prev pane width + the prev pane width before it\'s collapse');
+                $('#jqxSplitter').jqxSplitter('expandAt', 0);
+                equal(panes[0].width(), prevCollapsedSize, 'The first pane should be width it\'s previous size');
+                equal(panes[1].width(), prevSize, 'The second pane should width it\'s previous size');
+            });
+
+            test('Collapsing non-collapsible items', function () {
+                var prevCollapsedSize = panes[3].width(), prevSize = panes[2].width();
+                $('#jqxSplitter').jqxSplitter('collapseAt', 3);
+                equal(panes[3].width(), prevCollapsedSize, 'Collapsed item size shouldn\'t be changed');
+                equal(panes[2].width(), prevSize, 'Collapsed item\'s prev (because we are collapsing the last one) panel size shouldn\'t be changed');
+            });
+
+            test('Exporting layout', function () {
+                var layout = $('#jqxSplitter').jqxSplitter('exportLayout'),
+                    layoutObject = $.parseJSON(layout),
+                    orientation = layoutObject.orientation,
+                    panelsExport = layoutObject.panels;
+                equal($('#jqxSplitter').jqxSplitter('orientation'), orientation, 'Splitter\'s orientation should be the same as the exported');
+                for (var i = 0; i < panelsExport.length -1; i += 1) {
+                    var panel = panelsExport[i];
+                    for (var property in panel) {
+                        if (panels[i].hasOwnProperty(property)) {
+                            equal('' + panel[property], '' + panels[i][property], 'Checking the panels properties.');
+                        }
+                    }
+                }
+            });
+
+            test('Disable/enable', function () {
+                $('#jqxSplitter').jqxSplitter('disable');
+                var children = $('#jqxSplitter').children();
+                for (var i = 0; i < children.length; i += 1) {
+                    if (i % 2 === 1) {
+                        ok(!$(children[i]).data('events'), 'This item should not have any events');
+                    }
+                }
+                $('#jqxSplitter').jqxSplitter('enable');
+                for (var i = 0; i < children.length; i += 1) {
+                    if (i % 2 === 1) {
+                        ok($(children[i]).data('events'), 'This item should have any events');
+                    }
+                }
+            });
+
+            //            module('Events');
+
+            //            test('Expand/collapse', function () {                
+            //                var collapsed = false, expanded = false;
+            //                $('#jqxSplitter').bind('expanded', function () {
+            //                    expanded = true;
+            //                });
+            //                $('#jqxSplitter').bind('collapsed', function () {
+            //                    collapsed = true;
+            //                });
+            //                $('jqxSplitter').jqxSplitter('collapseAt', 0);
+            //                ok(collapsed, 'Checking whether collapsed event is triggered.');
+            //                $('jqxSplitter').jqxSplitter('expandAt', 0);
+            //                ok(expanded, 'Checking whether expanded event is triggered.');
+            //            });
+
+        });
+    </script>
+</head>
+<body>
+    <div style="height: 0px">
+        <div id='jqxSplitter' style="visibility: hidden;">
+            <div id="s1"></div>
+            <div id="s2"></div>
+            <div id="s3"></div>
+            <div id="s4"></div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div>
+        <h1 id="qunit-header">
+            QUnit jqxSlider</h1>
+        <h2 id="qunit-banner">
+        </h2>
+        <div id="qunit-testrunner-toolbar">
+        </div>
+        <h2 id="qunit-userAgent">
+        </h2>
+        <ol id="qunit-tests">
+        </ol>
+        <div id="qunit-fixture">
+            test markup, will be hidden</div>
+    </div>
+</body>
+</html>

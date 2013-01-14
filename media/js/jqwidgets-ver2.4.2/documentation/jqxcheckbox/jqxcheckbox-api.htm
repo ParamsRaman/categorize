@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, CheckBox, Radio Button, RadioButton, CheckInput, RadioInput, Button" />
+    <meta name="description" content="This page represents the help documentation of the jqxCheckBox and jqxRadioButton widgets." />
+    <title>jqxCheckBox and jqxRadioButton API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({width:"200px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({height:"400px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets whether the CheckBox is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>animationShowDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    250
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the delay of the fade animation when the CheckBox is going to be opened.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>animationShowDelay</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({ animationShowDelay: 200 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>animationHideDelay</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    300
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the delay of the fade animation when the CheckBox is going to be closed.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>animationHideDelay</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({ animationHideDelay: 200 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>boxSize</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    "13px"
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets the checkbox's size.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>boxSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({ boxSize:"15px" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>checked</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the ckeck state. Possible Values: true, false and null(when the hasThreeStates property value is true).</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>checked</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({ checked:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>  
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>hasThreeStates</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the checkbox has 3 states - checked, unchecked and indeterminate.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>hasThreeStates</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({ hasThreeStates:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>enableContainerClick</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets whether the clicks on the container are handled as clicks on the check box.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>enableContainerClick</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({enableContainerClick :true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>locked</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                   true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Gets or sets whether the checkbox is locked. In this mode the user is not allowed to check/uncheck the checkbox.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>locked</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({locked :true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>groupName</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                   ""
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Gets or sets the group name. When this property is set, the checkboxes in the same group behave as radio buttons.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxCheckBox with the <code>groupName</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox({groupName :"Panel" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>checked</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Checked' event is triggered when the checkbox is checked.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the checked event by type: jqxCheckBox.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').bind('checked', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>unchecked</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Unchecked' event is triggered when the checkbox is unchecked.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the unchecked event by type: jqxCheckBox.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').bind('unchecked', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>indeterminate</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Indeterminate' event is triggered when the checkbox's ckecked property is going to be null.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the indeterminate event by type: jqxCheckBox.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').bind('indeterminate', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>change</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           'Change' is triggered when the checkbox's state changes from one state to another.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the change event by type: jqxCheckBox.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').bind('change', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>check</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Checks the ckeckbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the check method.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox('check');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>uncheck</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Unchecks the ckeckbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the uncheck method.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox('uncheck');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>indeterminate</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                           Sets the indeterminate state(checked property value is going to be null after calling this method).</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the indeterminate method.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox('indeterminate');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>toggle</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Toggles the check state. This method is automatically called when the user clicks the checkbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the toggle method.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox('toggle');</code></pre>
+                    </div>
+                </td>
+            </tr>
+             <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Disables the checkbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox('disable');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                          Enables the checkbox.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                        <pre><code>$('#jqxCheckBox').jqxCheckBox('enable');</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

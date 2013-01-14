@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+   <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+   <meta name="keywords" content="jQuery, Panel, jqxPanel, Scrollable Panel, Overflow Panel" />
+   <meta name="description" content="This page represents the help documentation of the jqxPanel widget." />
+   <title>jqxPanel API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the panel width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxPanel with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel({width:"200px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the panel height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxPanel with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel({height:"400px"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>sizeMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'fixed'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Sets the sizing mode. In the 'fixed' mode, the panel displays scrollbars, if its content requires it. 
+                        In the wrap mode, the scrollbars are not displayed and the panel automatically changes its size.
+                        Possible Values: 'fixed', 'wrap'.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxPanel with the <code>sizeMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel({sizeMode: "wrap"});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>autoUpdate</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                        Automatically updates the panel, if its children size is changed. </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxPanel with the <code>autoUpdate</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel({autoUpdate: true});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the panel is disabled.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxPanel with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel({ disabled:true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>scrollBarSize</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    17
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the scrollbars size.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxPanel with the <code>scrollBarSize</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel({ scrollBarSize: 20 }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>layout</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Occurs when the layout is performed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the shown event by type: jqxPanel.
+                        </p>
+                        <pre><code>$('#jqxPanel').bind('layout', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+                  <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>append</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Appends an element to the panel's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Add element to the panel
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel('append', $('#elementId')[0]);</code></pre>
+                    </div>
+                </td>
+            </tr>
+                     <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>prepend</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Prepends an element to the panel's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Add element to the panel
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel('prepend', $('#elementId')[0]);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>remove</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Remove an element from the panel's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Removes an element from the panel.
+                        </p>
+                        <pre><code>$('#jqxPanel').jqxPanel('remove', $('#elementId')[0]);</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>clearcontent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Clears the panel's content.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <pre><code>$('#jqxPanel').jqxPanel('clearcontent');</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>scrollTo</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Scroll to specific position.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <pre><code>$('#jqxPanel').jqxPanel('scrollTo', 10, 20);</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>getScrollHeight</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Get the scrollable height.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <pre><code>var height = $('#jqxPanel').jqxPanel('getScrollHeight');</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>getVScrollPosition</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Get the vertical scrollbar's position.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <pre><code>var position = $('#jqxPanel').jqxPanel('getVScrollPosition');</code></pre>
+                    </div>
+                </td>
+            </tr>
+          <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>getScrollWidth</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Get the scrollable width.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <pre><code>var width = $('#jqxPanel').jqxPanel('getScrollWidth');</code></pre>
+                    </div>
+                </td>
+            </tr>
+           <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>getHScrollPosition</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Get the horizontal scrollbar's position.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <pre><code>var position = $('#jqxPanel').jqxPanel('getHScrollPosition');</code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <title>jqxExpander API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>expandAnimationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the expanding animation duration.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>expandAnimationDuration</code> property
+                            specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px',expandAnimationDuration:350
+                            });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>collapseAnimationDuration</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    400
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the collapsing animation duration.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>collapseAnimationDuration</code> property
+                            specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px',collapseAnimationDuration:350});
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>expanded</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets expander's state (collapsed or expanded).</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>expanded</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', expanded: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>disabled</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether the expander is disabled.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>disabled</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', disabled: true }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>animationType</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    slide
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the animation type. Possible values ['slide', 'fade', 'none'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>animationType</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', animationType: "none" });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>headerPosition</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    top
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets header's position. Possible values ['top', 'bottom']</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>headerPosition</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', headerPosition: "bottom"
+                            }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>toggleMode</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    click
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets user interaction used for expanding or collapsing the content. Possible
+                            values ['click', 'dblclick', 'mouseenter', 'none'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>toggleMode</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', toggleMode: "none" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>arrowPosition</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    left
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets header's arrow position. Possible values ['left', 'right'].</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>arrowPosition</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', arrowPosition: "right" });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>showArrow</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    true
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets whether header's arrow is going to be shown.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>showArrow</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', showArrow:false }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span9'>height</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets expander's height. Possible values - 'auto' and string like this 'Npx'
+                            where N is any Number.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>height</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', height:"auto" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span11'>width</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    auto
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets expander's width. Possible values - 'auto' and string like this 'Npx'
+                            where N is any Number.</p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Initialize a jqxExpander with the <code>width</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander({ width: '200px', height:"auto" }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>expanding</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the jqxExpander is going to be expanded.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the expanding event by type: jqxExpander.
+                        </p>
+                        <pre><code>$('#jqxExpander').bind('expanding', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span10'>expanded</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the jqxExpander is expanded.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the expanded event by type: jqxExpander.
+                        </p>
+                        <pre><code>$('#jqxExpander').bind('expanded', function () { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span12'>collapsing</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the jqxExpander is going to be collapsed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the collapsing event by type: jqxExpander.
+                        </p>
+                        <pre><code>$('#jqxExpander').bind('collapsing', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span13'>collapsed</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the jqxExpander is collapsed.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Bind to the collapsed event by type: jqxExpander.
+                        </p>
+                        <pre><code>$('#jqxExpander').bind('collapsed', function () { // Some code here. });
+                        </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>collapse</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Method which is collapsing the expander.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the collapse method.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander('collapse'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span14'>expand</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Method used for expanding the expander's content.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the expand method.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander('expand'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span15'>setContentHeight</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Setting content's height.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setContentHeight method.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander('setContentHeight', '200px'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span16'>setHeaderContent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method is setting specific content to the expander's header.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setHeaderContent method.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander('setHeaderContent', 'Header'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span17'>setContent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method is setting specific content to the expander.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the setContent method.
+                        </p>
+                        <pre><code>$('#jqxExpander').jqxExpander('setContent', 'Content'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span18'>getContent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Getting expander's content.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getContent method.
+                        </p>
+                        <pre><code>var content = $('#jqxExpander').jqxExpander('getContent'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span19'>getHeaderContent</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Getting expander's header content.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the getHeaderContent method.
+                        </p>
+                        <pre><code>var header = $('#jqxExpander').jqxExpander('getHeaderContent'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span20'>disable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method is disabling the expander.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the disable method.
+                        </p>
+                        <pre><code>var header = $('#jqxExpander').jqxExpander('disable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span21'>enable</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This method is enabling the expander.
+                        </p>
+                        <h4>
+                            Code example</h4>
+                        <p>
+                            Invoke the enable method.
+                        </p>
+                       <pre><code>var header = $('#jqxExpander').jqxExpander('enable'); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

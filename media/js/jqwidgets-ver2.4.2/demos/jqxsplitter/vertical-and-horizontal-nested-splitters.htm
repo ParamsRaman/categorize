@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            $('#container').jqxSplitter({ theme: theme, width: '100%', height: '100%', orientation: 'horizontal', panels: [{ size: 200 }, { size: 300}] });
+            $('#nested').jqxSplitter({ theme: theme, orientation: 'vertical', panels: [{ size: 150 }, { size: 300 }, { size: 150}] });
+        });
+    </script>
+    <style type="text/css">
+        html, body
+        {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class='default'>
+    <div id="container">
+        <div class="splitter-panel">
+            North
+        </div>
+        <div class="splitter-panel" id="nested">
+            <div class="splitter-panel">
+                West
+            </div>
+            <div class="splitter-panel" id="secondNested">
+                Center
+            </div>
+            <div class="splitter-panel">
+                East
+            </div>
+        </div>
+        <div class="splitter-panel" id="thirdNested">
+            Sourth
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../../Styles/jqx.apireference.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <meta name="keywords" content="jQuery, Progress, Progress Bar, Progress Widget, jqxProgressBar" />
+    <meta name="description" content="This page represents the help documentation of the jqxProgressBar widget." />
+    <title>jqxProgressBar API Reference</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".documentation-option-type-click").click(function (event) {
+                $(event.target).parents('tr').next().find(".property-content").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="properties">
+        <h2 class="documentation-top-header">
+            Properties</h2>
+        <table class="documentation-table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Type
+                </th>
+                <th>
+                    Default
+                </th>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='property-name-disabled'>value</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the progress bar's value The value should be set between min(default
+                            value: 0) and max(default value: 100).</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>value</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxProgressBar').jqxProgressBar({ width: 200, height: 25, value: 100});</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span1'>max</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    100
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the progress max value.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>max</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxProgressBar').jqxProgressBar({ width: 200, height: 25, max: 150 });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span2'>min</span>
+                </td>
+                <td>
+                    <span>Number</span>
+                </td>
+                <td>
+                    0
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the progress min value.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>min</code> property specified.
+                        </p>
+                        <pre><code>$('#jqxProgressBar').jqxProgressBar({ width: 200, height: 25, min: 10 });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span3'>orientation</span>
+                </td>
+                <td>
+                    <span>String</span>
+                </td>
+                <td>
+                    'horizontal'
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the orientation.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>orientation</code> property specified.
+                        </p>
+                        <pre>$('#jqxProgressBar').jqxProgressBar({orientation: "vertical"  });<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span4'>width</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the progress bar width.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>width</code> property specified.
+                        </p>
+                        <pre>$('#jqxProgressBar').jqxProgressBar({width:"250px"  });<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span5'>height</span>
+                </td>
+                <td>
+                    <span>Number/String</span>
+                </td>
+                <td>
+                    null
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the progress bar height.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>height</code> property specified.
+                        </p>
+                        <pre>$('#jqxProgressBar').jqxProgressBar({height:"100px"  });<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span6'>showText</span>
+                </td>
+                <td>
+                    <span>Boolean</span>
+                </td>
+                <td>
+                    false
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Gets or sets the visibility of the progress bar's percentage's text.</p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Initialize a jqxProgressBar with the <code>showText</code> property specified.
+                        </p>
+                        <pre>$('#jqxProgressBar').jqxProgressBar({showText:true});<code></code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Events</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span27'>valuechanged</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the value is changed.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the valuechanged event by type: jqxProgressBar.
+                        </p>
+                        <pre><code>$('#jqxProgressBar').bind('valuechanged', function () { // Some code here. });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span7'>invalidvalue</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the user enters an invalid value( value which is not Number or is out of the min - max range. )
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the invalidvalue event by type: jqxProgressBar.
+                        </p>
+                        <pre><code>$('#jqxProgressBar').bind('invalidvalue', function (event) { // Some code here. });</code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span8'>complete</span>
+                </td>
+                <td>
+                    <span>Event</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            This event is triggered when the value is equal to the max. value.
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Bind to the complete event by type: jqxProgressBar.
+                        </p>
+                        <pre><code>$('#jqxProgressBar').bind('complete', function (event) { // Some code here. }); </code></pre>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <h2 class="documentation-top-header">
+                        Methods</h2>
+                </td>
+            </tr>
+            <tr>
+                <td class="documentation-option-type-click">
+                    <span id='Span37'>actualValue</span>
+                </td>
+                <td>
+                    <span>Method</span>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan='3' style='width: 100%'>
+                    <div class="documentation-option-description property-content" style="display: none;">
+                        <p>
+                            Sets the progress bar's value
+                        </p>
+                        <h4>
+                            Code examples</h4>
+                        <p>
+                            Invoke the actualValue method.
+                        </p>
+                        <pre><code>//@param Number</code></pre>
+                        <pre><code>$('#jqxProgressBar').jqxProgressBar('actualValue', 50); </code></pre>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="jQuery Splitter, Splitter Widget, Splitter, jqxSplitter" />
+    <title id='Description'>This demonstration shows a complex layout implementation that shows nesting multiple splitters.</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxsplitter.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var theme = getTheme();
+            $('#mainSplitter').jqxSplitter({ theme: theme, width: 600, height: 600, orientation: 'horizontal', panels: [{ size: 130 }, { size: 300 }, { size: 170}] });
+            $('#firstNested').jqxSplitter({ theme: theme, orientation: 'vertical', panels: [{ size: 200 }, { size: 200 }, { size: 200}] });
+            $('#secondNested').jqxSplitter({ theme: theme, orientation: 'horizontal', panels: [{ size: 150}] });
+            $('#thirdNested').jqxSplitter({ theme: theme, orientation: 'vertical', panels: [{ size: 200 }, { size: 200 }, { size: 200}] });
+            function centerChild(element) {
+                var displacementY = ($(element.parent()).height() - element.outerHeight()) / 2,
+                    displacementX = ($(element.parent()).width() - element.outerWidth()) / 2;
+                element.css('top', displacementY);
+                element.css('left', displacementX);
+                return element;
+            }
+            $('#mainSplitter, #firstNested, #secondNested, #thirdNested').bind('resize', function () {
+                centerLabels();
+            });
+            $('#mainSplitter, #firstNested, #secondNested, #thirdNested').bind('expanded', function () {
+                centerLabels();
+            });
+            $('#mainSplitter, #firstNested, #secondNested, #thirdNested').bind('collapsed', function () {
+                centerLabels();
+            });
+            function centerLabels() {
+                var labels = $('.panel-content');
+                for (var i = 0; i < labels.length; i += 1) {
+                    centerChild($(labels[i]));
+                }
+            }
+            centerLabels();
+        });
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div id="mainSplitter">
+            <div class="splitter-panel">
+                <span class="panel-content">North</span></div>
+            <div class="splitter-panel" id="firstNested">
+                <div class="splitter-panel">
+                    <span class="panel-content">West</span></div>
+                <div class="splitter-panel" id="secondNested">
+                    <div class="splitter-panel">
+                        <span class="panel-content">Center</span></div>
+                    <div class="splitter-panel">
+                        <span class="panel-content">Center South</span></div>
+                </div>
+                <div class="splitter-panel">
+                    <span class="panel-content">East</span></div>
+            </div>
+            <div class="splitter-panel" id="thirdNested">
+                <div class="splitter-panel">
+                    <span class="panel-content">South Western</span></div>
+                <div class="splitter-panel">
+                    <span class="panel-content">South Center</span></div>
+                <div class="splitter-panel">
+                    <span class="panel-content">South Eastern</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

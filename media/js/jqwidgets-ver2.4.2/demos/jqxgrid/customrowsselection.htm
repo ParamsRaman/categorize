@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="Description">Custom Rows Selection</title>
+    <link rel="stylesheet" href="../../jqwidgets/styles/jqx.base.css" type="text/css" />
+    <script type="text/javascript" src="../../scripts/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxdata.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.js"></script>
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.edit.js"></script>  
+    <script type="text/javascript" src="../../jqwidgets/jqxgrid.selection.js"></script> 
+    <script type="text/javascript" src="../../jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="../../scripts/gettheme.js"></script>
+     <script type="text/javascript">
+         $(document).ready(function () {
+             var theme = getTheme();
+
+             // prepare the data
+             var data = generatedata(200);
+
+             var source =
+            {
+                localdata: data,
+                datatype: "array",
+                updaterow: function (rowid, rowdata) {
+                    // synchronize with the server - send update command   
+                }
+            };
+
+             var dataAdapter = new $.jqx.dataAdapter(source);
+             var columnCheckBox = null;
+             var updatingCheckState = false;
+             // initialize jqxGrid. Disable the built-in selection.
+             $("#jqxgrid").jqxGrid(
+            {
+                source: dataAdapter,
+                editable: true,
+                theme: theme,
+                enablehover: false,
+                selectionmode: 'none',
+                columns: [
+                  { text: '', datafield: 'available', columntype: 'checkbox', width: 40,
+                      renderer: function () {
+                          return '<div style="margin-left: 10px; margin-top: 5px;"></div>';
+                      },
+                      rendered: function (element) {
+                          $(element).jqxCheckBox({ theme: theme, width: 16, height: 16, animationShowDelay: 0, animationHideDelay: 0 });
+                          columnCheckBox = $(element);
+                          $(element).bind('change', function (event) {
+                              var checked = event.args.checked;
+                              if (checked == null || updatingCheckState) return;
+                              var rowscount = $("#jqxgrid").jqxGrid('getdatainformation').rowscount;
+                              $("#jqxgrid").jqxGrid('beginupdate');
+
+                              if (checked) {
+                                  $("#jqxgrid").jqxGrid('selectallrows');
+                              }
+                              else if (checked == false) {
+                                  $("#jqxgrid").jqxGrid('clearselection');
+                              }
+
+                              for (var i = 0; i < rowscount; i++) {
+                                  $("#jqxgrid").jqxGrid('setcellvalue', i, 'available', event.args.checked);
+                              }
+
+                              $("#jqxgrid").jqxGrid('endupdate');
+                          });
+                      }
+                  },
+                  { text: 'First Name', editable: false, datafield: 'firstname', width: 90 },
+                  { text: 'Last Name', editable: false, datafield: 'lastname', width: 90 },
+                  { text: 'Product', editable: false, datafield: 'productname', width: 200 },
+                  { text: 'Quantity', editable: false, datafield: 'quantity' }
+               ]
+            });
+
+             // select or unselect rows when the checkbox is checked or unchecked.
+             $("#jqxgrid").bind('cellendedit', function (event) {
+                 if (event.args.value) {
+                     $("#jqxgrid").jqxGrid('selectrow', event.args.rowindex);
+                 }
+                 else {
+                     $("#jqxgrid").jqxGrid('unselectrow', event.args.rowindex);
+                 }
+                 if (columnCheckBox) {
+                     var selectedRowsCount = $("#jqxgrid").jqxGrid('getselectedrowindexes').length;
+                     var rowscount = $("#jqxgrid").jqxGrid('getdatainformation').rowscount;
+                     updatingCheckState = true;
+                     if (selectedRowsCount == rowscount) {
+                         $(columnCheckBox).jqxCheckBox('check')
+                     }
+                     else $(columnCheckBox).jqxCheckBox('indeterminate');
+                     updatingCheckState = false;
+                 }
+             });
+         });
+        function generatedata(rowscount) {
+            // prepare the data
+            var data = new Array();
+            var firstNames =
+            [
+                "Andrew", "Nancy", "Shelley", "Regina", "Yoshi", "Antoni", "Mayumi", "Ian", "Peter", "Lars", "Petra", "Martin", "Sven", "Elio", "Beate", "Cheryl", "Michael", "Guylene"
+            ];
+
+             var lastNames =
+            [
+                "Fuller", "Davolio", "Burke", "Murphy", "Nagase", "Saavedra", "Ohno", "Devling", "Wilson", "Peterson", "Winkler", "Bein", "Petersen", "Rossi", "Vileid", "Saylor", "Bjorn", "Nodier"
+            ];
+
+            var productNames =
+            [
+                "Black Tea", "Green Tea", "Caffe Espresso", "Doubleshot Espresso", "Caffe Latte", "White Chocolate Mocha", "Caramel Latte", "Caffe Americano", "Cappuccino", "Espresso Truffle", "Espresso con Panna", "Peppermint Mocha Twist"
+            ];
+          
+            for (var i = 0; i < rowscount; i++) {
+                var row = {};
+                var productindex = Math.floor(Math.random() * productNames.length);
+                var quantity = 1 + Math.round(Math.random() * 10);
+
+                row["available"] = false;
+                row["firstname"] = firstNames[Math.floor(Math.random() * firstNames.length)];
+                row["lastname"] = lastNames[Math.floor(Math.random() * lastNames.length)];
+                row["productname"] = productNames[productindex];
+                row["quantity"] = quantity;
+                data[i] = row;
+            }
+
+            return data;
+        }
+    </script>
+</head>
+<body class='default'>
+    <div id='jqxWidget'>
+        <div id="jqxgrid"></div>
+     </div>
+</body>
+</html>
