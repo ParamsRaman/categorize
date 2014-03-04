@@ -1,8 +1,8 @@
 from boto.mturk.connection import MTurkConnection
 from boto.mturk.question import QuestionContent,Question,QuestionForm, ExternalQuestion, Overview,AnswerSpecification,SelectionAnswer,FormattedContent,FreeTextAnswer
 
-ACCESS_ID = 'AKIAJ2ZI4Q4TRI5JIKGQ'
-SECRET_KEY = 'XOb1eICSQVs5lQxvzQ4K8imNbGIuJAJoPmLR3/lh'
+ACCESS_ID = 'BLABLA' # Replace BLABLA with your access id
+SECRET_KEY = 'BLABLA' # Replace BLABLA with your secret key
 HOST = 'mechanicalturk.sandbox.amazonaws.com'
 
 mtc = MTurkConnection(aws_access_key_id=ACCESS_ID,aws_secret_access_key=SECRET_KEY,host=HOST)
