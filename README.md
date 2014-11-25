@@ -20,7 +20,6 @@ The source code root directory looks like below:
 categorize - 
 
       * app (contains the bootle web application project)
-
                  * db (contains all sqlite db related stuff)
                          * turk.db (this is the database binary file)
                          * taxonomy.xml (this is xml equivalent of the mindmap file which is loaded into the db). I had to remove duplicate nodes at some point.
