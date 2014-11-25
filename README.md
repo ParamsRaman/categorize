@@ -39,7 +39,7 @@ landing_page() is the starting point of the application. Thereafter, depending o
 
 On loading the main html page, populate_tree() method reads the taxonomy.xml file and loads all items into a the custom TreeNode object. After that this tree object is navigated to set up all tasks as required.
 
-Task Distribution Table is used to keep track of the types of questions we have asked already and how we create the questions (combination of items and +ve, -ve buckets, etc). More details on how this distribution table looks like and is used, type: http://localhost:8080/db when running the application. This /db url basically displays the current state of the sqlite db (for debugging purposes only).
+Task Distribution Table is used to keep track of the types of questions we have asked already and how we create the questions (combination of items and +ve, -ve buckets, etc). More details on how this distribution table looks like and is used, type: [http://localhost:8080/db](http://localhost:8080/db) when running the application. This /db url basically displays the current state of the sqlite db (for debugging purposes only).
 
 There are a bunch of utility methods like find_uplist(), find_nodes_in_subtree() etc which I have written to extract/filter nodes from the taxonomy tree as needed.
 
