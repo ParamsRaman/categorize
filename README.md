@@ -49,8 +49,10 @@ I had added lot of debug (print) statements in the code and they will show up in
 
 1. Install bottle web framework.
 2. Go to the source code directory and type:
+
 ```$ python main.py
 ```
+
 3. Navigate to the url: [http://localhost:8080](http://localhost:8080) on the browser. You should be able to see the application and complete the tasks according to the instructions.
 4. I have set the maximum # of tasks to be 5 in a config file, so after 5 tasks the db is updated. At that point, you can also view the contents of the database and the format of data in the tables by typing: [http://localhost:8080/db](http://localhost:8080/db) .
 
