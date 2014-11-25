@@ -28,8 +28,28 @@ categorize -
                  * views.py (this is the MAIN source code file that contains most of the logic. **I have described the important methods in this file in a separate section below!**
                  * taxonomy_tree.py (contains a custom definitoin of TreeNode class used by views.py. I could not find a python based tree implementation, so defined one myself. Advantage of this was that I could write my own methods to traverse the tree in ways to suit our experiment).
 
-        * mechanical_turk (contains boto library and createHIT.py - which is the python boto code to create an ExternalQuestion type task in mechanical turk). This works, but the frame issue **has to be fixed**.
-        * media (contains the css files used, javascript and importantly all the images for the products etc which are pulled by the html files when displayed). I think at this point, we restricted ourselves to only 20 products (leaf level nodes).
-        * packages (contains bottle which is the web framework, jinja which is the templating engine for all the UI stuff)
-        * app.yaml, index.yaml (are bottle specific files that need to be present)
+      * mechanical_turk (contains boto library and createHIT.py - which is the python boto code to create an ExternalQuestion type task in mechanical turk). This works, but the frame issue **has to be fixed**.
+      * media (contains the css files used, javascript and importantly all the images for the products etc which are pulled by the html files when displayed). I think at this point, we restricted ourselves to only 20 products (leaf level nodes).
+      * packages (contains bottle which is the web framework, jinja which is the templating engine for all the UI stuff)
+      * app.yaml, index.yaml (are bottle specific files that need to be present)
+
+##### High-level overview of the main.py file (contains most of the logic):
+
+landing_page() is the starting point of the application. Thereafter, depending on the type of next task we want to create, we call load_interface1(), load_interface2() or load_interface3() methods. Only interface1 has been fully implemented currently. Rest two methods are just stubs for now.
+
+On loading the main html page, populate_tree() method reads the taxonomy.xml file and loads all items into a the custom TreeNode object. After that this tree object is navigated to set up all tasks as required.
+
+Task Distribution Table is used to keep track of the types of questions we have asked already and how we create the questions (combination of items and +ve, -ve buckets, etc). More details on how this distribution table looks like and is used, type: http://localhost:8080/db when running the application. This /db url basically displays the current state of the sqlite db (for debugging purposes only).
+
+There are a bunch of utility methods like find_uplist(), find_nodes_in_subtree() etc which I have written to extract/filter nodes from the taxonomy tree as needed.
+
+I had added lot of debug (print) statements in the code and they will show up in the output as well. My code verification process consisted of examining this output and matching it against the taxonomy mindmap file (.mm file opened up in FreeMind) to see if my logic was correct.
+
+##### How to run the application:
+
+1. Install bottle web framework.
+2. Go to the source code directory and type:
+$ python main.py
+3. Navigate to the url: http://localhost:8080 on the browser. You should be able to see the application and complete the tasks according to the instructions.
+4. I have set the maximum # of tasks to be 5 in a config file, so after 5 tasks the db is updated. At that point, you can also view the contents of the database and the format of data in the tables by typing: http://localhost:8080/db .
 
